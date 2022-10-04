@@ -1,0 +1,456 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{71AA582C-1D4F-41C4-9ED1-481AA35BE2B9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LauncherForAll</RootNamespace>
+    <AssemblyName>LauncherForAll</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <UpdateUrl>http://localhost/LauncherForAll/</UpdateUrl>
+    <ProductName>LauncherForAll</ProductName>
+    <PublisherName>RedZ_Nouggy</PublisherName>
+    <SuiteName>RedZ_Apps</SuiteName>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationVersion>1.0.0.5</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>LauncherForAll.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\LauncherForAll.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>485D8ED9672C3AB06DC8471E596FF07D7077C150</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>LauncherForAll_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cake.Powershell, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Cake.Powershell.1.0.1\lib\net46\Cake.Powershell.dll</HintPath>
+    </Reference>
+    <Reference Include="CircularProgressBar, Version=2.8.0.16, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>packages\CircularProgressBar.2.8.0.16\lib\net40\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Siticone.Desktop.UI, Version=2.0.9.0, Culture=neutral, PublicKeyToken=422d444a8a9fa6db, processorArchitecture=MSIL">
+      <HintPath>packages\Siticone.Desktop.UI.2.0.9\lib\net40\Siticone.Desktop.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Management.Automation, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Cake.Powershell.1.0.1\lib\net46\System.Management.Automation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="WinFormAnimation, Version=1.6.0.4, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>packages\WinFormAnimation.1.6.0.4\lib\net40\WinFormAnimation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProgressBar1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProgressBar1.Designer.cs">
+      <DependentUpon>FormProgressBar1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Alert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Alert.Designer.cs">
+      <DependentUpon>Form_Alert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBrowseApps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBrowseApps.Designer.cs">
+      <DependentUpon>frmBrowseApps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBrowseApps2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBrowseApps2.Designer.cs">
+      <DependentUpon>frmBrowseApps2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGames.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGames.Designer.cs">
+      <DependentUpon>frmGames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGames2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGames2.Designer.cs">
+      <DependentUpon>frmGames2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfo.Designer.cs">
+      <DependentUpon>frmInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOtherApps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOtherApps.Designer.cs">
+      <DependentUpon>frmOtherApps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOtherApps2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOtherApps2.Designer.cs">
+      <DependentUpon>frmOtherApps2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSettings.Designer.cs">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWebBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWebBrowser.Designer.cs">
+      <DependentUpon>frmWebBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RJControls\RJToggleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProgressBar1.resx">
+      <DependentUpon>FormProgressBar1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Alert.resx">
+      <DependentUpon>Form_Alert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBrowseApps.resx">
+      <DependentUpon>frmBrowseApps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBrowseApps2.resx">
+      <DependentUpon>frmBrowseApps2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGames.resx">
+      <DependentUpon>frmGames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGames2.resx">
+      <DependentUpon>frmGames2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfo.resx">
+      <DependentUpon>frmInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOtherApps.resx">
+      <DependentUpon>frmOtherApps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOtherApps2.resx">
+      <DependentUpon>frmOtherApps2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSettings.resx">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWebBrowser.resx">
+      <DependentUpon>frmWebBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="LauncherForAll_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\BackgroundImage.png" />
+    <None Include="Resources\BackgroundImageLite.png" />
+    <None Include="Resources\Ethernet.png" />
+    <None Include="Resources\HotSpot.png" />
+    <None Include="Resources\HWiNFO64.png" />
+    <None Include="Resources\Radarr.png" />
+    <None Include="Resources\RedMod-Logo.png" />
+    <None Include="Resources\Spotify.png" />
+    <None Include="Resources\Steam.png" />
+    <None Include="Resources\SteelSeries.png" />
+    <None Include="Resources\Title1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background-Buttons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackgroundImage1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Discord.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dashlane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RocketLeague.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LeagueOfLegends.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CSGO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diablo3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Valorant.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Overwatch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minecraft.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AOE3D.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HMM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CODMW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GTAV.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GolfIt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RimWorld.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\success.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lively.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RTX.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\infos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\infos1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PowerOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LauncherForAll.ico" />
+    <Content Include="RedMod-Logo.ico" />
+    <None Include="Resources\DS4.png" />
+    <None Include="Resources\OpenVPN.jpg" />
+    <None Include="Resources\AWS1.png" />
+    <None Include="Resources\Bazarr.png" />
+    <None Include="Resources\owncloud.png" />
+    <None Include="Resources\netdata.png" />
+    <None Include="Resources\Tautulli.png" />
+    <None Include="Resources\Apps-Icon.png" />
+    <None Include="Resources\RedMod-Apps-Icon.png" />
+    <None Include="Resources\RedMod-NoBorder.png" />
+    <None Include="Resources\NoBorder.png" />
+    <None Include="Resources\Sonarr.png" />
+    <None Include="Resources\OneNote.png" />
+    <None Include="Resources\blueMod1.png" />
+    <None Include="Resources\RedMod-Back.png" />
+    <None Include="Resources\RedMod-BackRight.png" />
+    <None Include="Resources\Back.png" />
+    <None Include="Resources\BackRight.png" />
+    <None Include="Resources\Home.png" />
+    <None Include="Resources\RedMod-Home.png" />
+    <None Include="Resources\RedMod-webBrowser.png" />
+    <None Include="Resources\webBrowser.png" />
+    <None Include="Resources\BlueMod-Games.png" />
+    <None Include="Resources\Twitch.png" />
+    <None Include="Resources\yt.png" />
+    <None Include="Resources\Battle.png" />
+    <None Include="Resources\Porofessor.png" />
+    <None Include="Resources\HyperV.png" />
+    <None Include="Resources\WindowsTerminal.png" />
+    <None Include="Resources\Signal.png" />
+    <None Include="Resources\GoogleChrome.png" />
+    <None Include="Resources\Outlook.png" />
+    <None Include="Resources\VS.png" />
+    <None Include="Resources\VSCode.png" />
+    <None Include="Resources\EpicGames.png" />
+    <None Include="Resources\Teams.png" />
+    <None Include="Resources\wireguard.png" />
+    <None Include="Resources\PaintNET.png" />
+    <None Include="Resources\RedMod-Logo.ico" />
+    <None Include="Resources\RedMod-Title.png" />
+    <None Include="Resources\LauncherForAll.ico" />
+    <None Include="Resources\RedMod_Icon.bmp" />
+    <None Include="Resources\RedMod-Games1.png" />
+    <None Include="Resources\BlueMod-Apps.png" />
+    <None Include="Resources\RedMod-Apps.png" />
+    <None Include="Resources\RedMod-Wupdate.png" />
+    <None Include="Resources\RedMod-ProfileDefault-2.png" />
+    <None Include="Resources\RedMod-settings.png" />
+    <None Include="Resources\RedMod-Ethernet.png" />
+    <None Include="Resources\RedMod-DisableNotifIcon.png" />
+    <None Include="Resources\ProfileDefault.png" />
+    <None Include="Resources\settings.png" />
+    <None Include="Resources\Background-Buttons1.png" />
+    <None Include="Resources\BackgroundImageLite1.png" />
+    <None Include="Resources\redMod1.png" />
+    <None Include="Resources\DisableNotifIcon.png" />
+    <None Include="Resources\PLEX.png" />
+    <None Include="Resources\Office.png" />
+    <None Include="Resources\Microsoft-Store.jpg" />
+    <None Include="Resources\Wupdate.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
