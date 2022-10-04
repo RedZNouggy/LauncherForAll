@@ -276,6 +276,7 @@
     <None Include="Resources\Ethernet.png" />
     <None Include="Resources\HotSpot.png" />
     <None Include="Resources\HWiNFO64.png" />
+    <None Include="Resources\OpenVPN.png" />
     <None Include="Resources\Radarr.png" />
     <None Include="Resources\RedMod-Logo.png" />
     <None Include="Resources\Spotify.png" />
@@ -392,7 +393,6 @@
     <Content Include="LauncherForAll.ico" />
     <Content Include="RedMod-Logo.ico" />
     <None Include="Resources\DS4.png" />
-    <None Include="Resources\OpenVPN.jpg" />
     <None Include="Resources\AWS1.png" />
     <None Include="Resources\Bazarr.png" />
     <None Include="Resources\owncloud.png" />
