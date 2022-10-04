@@ -50,7 +50,6 @@ namespace LauncherForAll
             frm.showAlert(msg, type);
         }
 
-
         public Form1()
         {
             InitializeComponent();
@@ -94,6 +93,9 @@ namespace LauncherForAll
             // RedMod ?
             if (File.Exists(programData + @"\LauncherForAll\Set_redMod.config"))
             {
+                // RegistryKey key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\AccountPicture\Users\");
+
+
                 this.BackColor = PurpleColor;
 
                 this.panel1.BackColor = BlackPurpleColor;
