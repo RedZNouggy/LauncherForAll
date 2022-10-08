@@ -201,8 +201,7 @@ namespace LauncherForAll
                 Process Overwolf = new Process();
 
                 // Preparing the launch of LeagueClient
-                LeagueClient.StartInfo.FileName = @"S:\Riot Games\Riot Client\RiotClientServices.exe";
-                LeagueClient.StartInfo.Arguments = @"--launch - product = league_of_legends--launch - patchline = live";
+                LeagueClient.StartInfo.FileName = @"C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Riot Games\Riot Client.lnk";
 
                 // Preparing the launch of Overwolf
                 Overwolf.StartInfo.FileName = @"D:\Overwolf\OverwolfLauncher.exe";
@@ -227,8 +226,7 @@ namespace LauncherForAll
                 Process LeagueClient = new Process();
 
                 // Preparing the launch of LeagueClient
-                LeagueClient.StartInfo.FileName = @"S:\Riot Games\Riot Client\RiotClientServices.exe";
-                LeagueClient.StartInfo.Arguments = @"--launch - product = league_of_legends--launch - patchline = live";
+                LeagueClient.StartInfo.FileName = @"C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Riot Games\Riot Client.lnk";
 
                 // Launch LeagueClient
                 LeagueClient.Start();
