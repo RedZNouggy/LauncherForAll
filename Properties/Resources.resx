@@ -160,6 +160,9 @@
   <data name="RTX" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RTX.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="RedMod-ProfileDefault" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RedMod-ProfileDefault.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="BlueMod-Apps" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BlueMod-Apps.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -172,8 +175,8 @@
   <data name="Diablo3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Diablo3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Tautulli" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Tautulli.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PLEX" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PLEX.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,11 +199,11 @@
   <data name="RedMod-ProfileDefault-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RedMod-ProfileDefault-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Bazarr" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Bazarr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Apps-Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Apps-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ethernet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ethernet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Spotify" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Spotify.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -210,9 +213,6 @@
   </data>
   <data name="BlueMod-Games" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BlueMod-Games.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SteelSeries" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SteelSeries.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="RedMod_Logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RedMod-Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -235,8 +235,8 @@
   <data name="owncloud" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\owncloud.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Minecraft" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Minecraft.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SteelSeries" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SteelSeries.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Home" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -253,14 +253,17 @@
   <data name="Wupdate" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Wupdate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="OpenVPN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OpenVPN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BackgroundImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BackgroundImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="OneNote" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\OneNote.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="RocketLeague" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RocketLeague.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sonarr" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sonarr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -310,14 +313,11 @@
   <data name="Twitch" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Twitch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="RedMod-settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RedMod-settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Teams" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Teams.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PaintNET" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PaintNET.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="VS" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\VS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AWS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AWS1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -348,11 +348,11 @@
   <data name="BackgroundImageLite1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BackgroundImageLite1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ethernet" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ethernet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="RocketLeague" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RocketLeague.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Teams" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Teams.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Minecraft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Minecraft.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="WindowsTerminal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WindowsTerminal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -366,8 +366,11 @@
   <data name="warning" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\warning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SL" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="RedMod-Title" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RedMod-Title.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RedMod-settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RedMod-settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="radarr" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Radarr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -390,8 +393,8 @@
   <data name="RedMod-Apps" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RedMod-Apps.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="RedMod-ProfileDefault" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RedMod-ProfileDefault.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Bazarr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bazarr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="infos1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\infos1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -399,14 +402,14 @@
   <data name="info" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BackgroundImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BackgroundImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="VS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Background-Buttons1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Background-Buttons1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="RedMod-Title" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RedMod-Title.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Tautulli" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tautulli.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="HWiNFO64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HWiNFO64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -435,7 +438,7 @@
   <data name="BakkesMod" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BakkesMod1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="OpenVPN" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\OpenVPN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="VMWare" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VMWare.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

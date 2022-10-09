@@ -149,8 +149,8 @@ namespace LauncherForAll
                 this.buttonTwitch.FlatAppearance.BorderSize = 0;
                 this.buttonTwitch.FlatStyle = FlatStyle.Flat;
 
-                this.buttonOBSLauncher.FlatAppearance.BorderSize = 0;
-                this.buttonOBSLauncher.FlatStyle = FlatStyle.Flat;
+                this.buttonVMWare.FlatAppearance.BorderSize = 0;
+                this.buttonVMWare.FlatStyle = FlatStyle.Flat;
 
                 this.buttonPlex.FlatAppearance.BorderSize = 0;
                 this.buttonPlex.FlatStyle = FlatStyle.Flat;
@@ -260,8 +260,8 @@ namespace LauncherForAll
                 this.buttonTwitch.FlatAppearance.BorderSize = 1;
                 this.buttonTwitch.FlatStyle = FlatStyle.Popup;
 
-                this.buttonOBSLauncher.FlatAppearance.BorderSize = 1;
-                this.buttonOBSLauncher.FlatStyle = FlatStyle.Popup;
+                this.buttonVMWare.FlatAppearance.BorderSize = 1;
+                this.buttonVMWare.FlatStyle = FlatStyle.Popup;
 
                 this.buttonPlex.FlatAppearance.BorderSize = 1;
                 this.buttonPlex.FlatStyle = FlatStyle.Popup;
@@ -1117,6 +1117,34 @@ namespace LauncherForAll
             else
             {
                 this.Alert("DS4 Windows already Launched", Form_Alert.enmType.Warning);
+            }
+        }
+
+        private void buttonVMWare_Click(object sender, EventArgs e)
+        {
+            Process VMWarePro = new Process();
+
+
+            if (Process.GetProcessesByName("vmware").Length == 0)
+            {
+                // Preparing to Launch VMWare Pro
+                VMWarePro.StartInfo.FileName = @"D:\VMWare\vmware.exe";
+
+                // Launch VMWare Pro
+                VMWarePro.Start();
+
+                if (VMWarePro.Responding == true)
+                {
+                    this.Alert("VMWare Launched", Form_Alert.enmType.Success);
+                }
+                else
+                {
+                    this.Alert("VMWare not Launched", Form_Alert.enmType.Error);
+                }
+            }
+            else
+            {
+                this.Alert("VMWare already Launched", Form_Alert.enmType.Warning);
             }
         }
     }
