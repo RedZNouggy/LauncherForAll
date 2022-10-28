@@ -1,14 +1,9 @@
-﻿using Microsoft.Win32;
-using System;
-using System.Configuration;
+﻿using System;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
-using System.Management.Automation;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
-using System.Xml.Linq;
-using System.Management.Automation;
 
 namespace LauncherForAll
 {

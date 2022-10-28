@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.IO;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
 
@@ -8,6 +9,19 @@ namespace LauncherForAll
 {
     public partial class frmInfo : Form
     {
+
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn
+        (
+           int nLeftRect,
+           int nTopRect,
+           int nRightRect,
+           int nBottomRect,
+           int nWidthEllipse,
+           int nHeightEllipse
+
+        );
+
         // RedMod Colors
         // 255 255 255 White
         private Color WhiteColor = Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -26,6 +40,8 @@ namespace LauncherForAll
         public frmInfo()
         {
             InitializeComponent();
+
+            Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
 
             string programData = Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData);
 
