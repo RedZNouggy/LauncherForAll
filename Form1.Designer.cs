@@ -1,4 +1,6 @@
-﻿namespace LauncherForAll
+﻿using System.Windows.Forms;
+
+namespace LauncherForAll
 { 
     public partial class Form1
     {
@@ -20,7 +22,7 @@
             base.Dispose(disposing);
         }
 
-        #region Code généré par le Concepteur Windows Form
+        /// region Code généré par le Concepteur Windows Form
 
         /// <summary>
         /// Méthode requise pour la prise en charge du concepteur - ne modifiez pas
@@ -282,7 +284,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(1300, 795);
+           // this.ClientSize = new System.Drawing.Size(1300, 795);
             this.Controls.Add(this.siticonePanel1);
             this.Controls.Add(this.buttonMinimize);
             this.Controls.Add(this.pnlFormLoader);
@@ -291,9 +293,16 @@
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(1920, 1040);
+            int screenWidth = Screen.PrimaryScreen.Bounds.Width;
+            int screenHeight = Screen.PrimaryScreen.Bounds.Height;
+            this.MaximumSize = new System.Drawing.Size(screenWidth, screenHeight);
+            this.MinimumSize = new System.Drawing.Size(1300, 795);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+//            int currentSizeWidth = screenWidth - 640;
+  //          int currentSizeHeight = screenHeight - 360;
+   //         this.Size = new System.Drawing.Size(currentSizeWidth, currentSizeHeight);
+    //        this.ClientSize = new System.Drawing.Size(currentSizeWidth, currentSizeHeight);
             this.Text = "LauncherrForAll";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.contextMenuStrip1.ResumeLayout(false);
@@ -305,7 +314,7 @@
 
         }
 
-        #endregion
+        // endregion
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button buttonOtherApps;

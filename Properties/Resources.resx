@@ -136,6 +136,9 @@
   <data name="Battle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Battle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="snapchat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snapchat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Background-Buttons" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Background-Buttons.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -235,8 +238,8 @@
   <data name="owncloud" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\owncloud.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SteelSeries" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SteelSeries.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Minecraft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Minecraft.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Home" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -310,14 +313,14 @@
   <data name="EpicGames" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\EpicGames.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Twitch" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Twitch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Teams" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Teams.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SteelSeries" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SteelSeries.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PaintNET" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PaintNET.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Twitch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Twitch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AWS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AWS1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -351,8 +354,8 @@
   <data name="RocketLeague" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RocketLeague.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Minecraft" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Minecraft.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Teams" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Teams.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="WindowsTerminal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WindowsTerminal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -426,6 +429,9 @@
   <data name="RedMod-DisableNotifIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RedMod-DisableNotifIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="VMWare" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VMWare.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="blueMod" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\blueMod1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -438,7 +444,7 @@
   <data name="BakkesMod" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BakkesMod1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="VMWare" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\VMWare.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="proxmox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\proxmox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

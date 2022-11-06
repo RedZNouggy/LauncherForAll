@@ -643,6 +643,16 @@ namespace LauncherForAll.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap proxmox {
+            get {
+                object obj = ResourceManager.GetObject("proxmox", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap R6 {
             get {
                 object obj = ResourceManager.GetObject("R6", resourceCulture);
@@ -896,6 +906,16 @@ namespace LauncherForAll.Properties {
         internal static System.Drawing.Bitmap SL {
             get {
                 object obj = ResourceManager.GetObject("SL", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap snapchat {
+            get {
+                object obj = ResourceManager.GetObject("snapchat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

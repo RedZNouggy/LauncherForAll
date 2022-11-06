@@ -92,8 +92,8 @@ namespace LauncherForAll
                 this.buttonChrome.FlatAppearance.BorderSize = 0;
                 this.buttonChrome.FlatStyle = FlatStyle.Flat;
 
-                this.buttonSignal.FlatAppearance.BorderSize = 0;
-                this.buttonSignal.FlatStyle = FlatStyle.Flat;
+                this.buttonAWS.FlatAppearance.BorderSize = 0;
+                this.buttonAWS.FlatStyle = FlatStyle.Flat;
 
                 this.buttonHWM.FlatAppearance.BorderSize = 0;
                 this.buttonHWM.FlatStyle = FlatStyle.Flat;
@@ -110,8 +110,8 @@ namespace LauncherForAll
                 this.buttonHWiNFO64.FlatAppearance.BorderSize = 0;
                 this.buttonHWiNFO64.FlatStyle = FlatStyle.Flat;
 
-                this.buttonHVM.FlatAppearance.BorderSize = 0;
-                this.buttonHVM.FlatStyle = FlatStyle.Flat;
+                this.buttonProxmox.FlatAppearance.BorderSize = 0;
+                this.buttonProxmox.FlatStyle = FlatStyle.Flat;
 
                 this.buttonHotSpot.FlatAppearance.BorderSize = 0;
                 this.buttonHotSpot.FlatStyle = FlatStyle.Flat;
@@ -203,8 +203,8 @@ namespace LauncherForAll
                 this.buttonChrome.FlatAppearance.BorderSize = 1;
                 this.buttonChrome.FlatStyle = FlatStyle.Popup;
 
-                this.buttonSignal.FlatAppearance.BorderSize = 1;
-                this.buttonSignal.FlatStyle = FlatStyle.Popup;
+                this.buttonAWS.FlatAppearance.BorderSize = 1;
+                this.buttonAWS.FlatStyle = FlatStyle.Popup;
 
                 this.buttonHWM.FlatAppearance.BorderSize = 1;
                 this.buttonHWM.FlatStyle = FlatStyle.Popup;
@@ -221,8 +221,8 @@ namespace LauncherForAll
                 this.buttonHWiNFO64.FlatAppearance.BorderSize = 1;
                 this.buttonHWiNFO64.FlatStyle = FlatStyle.Popup;
 
-                this.buttonHVM.FlatAppearance.BorderSize = 1;
-                this.buttonHVM.FlatStyle = FlatStyle.Popup;
+                this.buttonProxmox.FlatAppearance.BorderSize = 1;
+                this.buttonProxmox.FlatStyle = FlatStyle.Popup;
 
                 this.buttonHotSpot.FlatAppearance.BorderSize = 1;
                 this.buttonHotSpot.FlatStyle = FlatStyle.Popup;
@@ -374,37 +374,17 @@ namespace LauncherForAll
             }
         }
 
-        private void buttonSignal_Click(object sender, EventArgs e)
+        private void buttonSnapchat_Click(object sender, EventArgs e)
         {
-            /*/ TestConnection
-            if (frmGames.CheckForInternetConnection() == false)
-            {
-                this.Alert("Check For your Internet connection...", Form_Alert.enmType.Error);
-            }
-            */
-            if (Process.GetProcessesByName("Signal").Length == 0)
-            {
-                Process Signal = new Process();
+            Process Snapchat = new Process();
 
-                // Preparing to Launch Signal
-                Signal.StartInfo.FileName = @"C:\Users\samen\AppData\Local\Programs\signal-desktop\Signal.exe";
+            // Preparing to Launch Snapchat
+            Snapchat.StartInfo.FileName = @"C:\Program Files\Google\Chrome\Application\chrome_proxy.exe";
+            Snapchat.StartInfo.Arguments = " --profile-directory=Default --app-id=abdndmcckigaeepaljhpcngbfdkbiggb";
 
-                // Launch Signal
-                Signal.Start();
-
-                if (Signal.Responding == true)
-                {
-                    this.Alert("Signal Launched", Form_Alert.enmType.Success);
-                }
-                else
-                {
-                    this.Alert("Signal not Launched", Form_Alert.enmType.Error);
-                }
-            }
-            else
-            {
-                this.Alert("Signal is already Launched", Form_Alert.enmType.Warning);
-            }
+            // Launch Signal
+            Snapchat.Start();
+            this.Alert("Snapchat Launched", Form_Alert.enmType.Success);
         }
 
         private void buttonHWM_Click(object sender, EventArgs e)
@@ -693,51 +673,28 @@ namespace LauncherForAll
 
         private void buttonTwitch_Click(object sender, EventArgs e)
         {
-            /*/ TestConnection
-            if (frmGames.CheckForInternetConnection() == false)
-            {
-                this.Alert("Check For your Internet connection...", Form_Alert.enmType.Error);
-            }
-            */
             if (Process.GetProcessesByName("Twitch").Length == 0)
             {
                 Process Twitch = new Process();
 
                 // Preparing to Launch Twitch
-                Twitch.StartInfo.FileName = @"D:\Twitch\Bin\Twitch.exe";
+                Twitch.StartInfo.FileName = @"https://www.twitch.tv/";
 
                 // Launch Twitch
                 Twitch.Start();
-
-                if (Twitch.Responding == true)
-                {
-                    this.Alert("Twitch Launched", Form_Alert.enmType.Success);
-                }
-                else
-                {
-                    this.Alert("Twitch not Launched", Form_Alert.enmType.Error);
-                }
-            }
-            else
-            {
-                this.Alert("Twitch is already Launched", Form_Alert.enmType.Warning);
+                this.Alert("Twitch Launched", Form_Alert.enmType.Success);
             }
         }
 
         private void buttonOBSLauncher_Click(object sender, EventArgs e)
         {
-            /*/ TestConnection
-            if (frmGames.CheckForInternetConnection() == false)
-            {
-                this.Alert("Check For your Internet connection...", Form_Alert.enmType.Error);
-            }
-            */
             if (Process.GetProcessesByName("Streamlabs OBS").Length == 0)
             {
                 Process OBS = new Process();
 
                 // Preparing to Launch OBS
                 OBS.StartInfo.FileName = @"D:\SteamLabs\Streamlabs OBS\Streamlabs OBS.exe";
+
 
                 // Launch OBS
                 OBS.Start();
@@ -894,43 +851,32 @@ namespace LauncherForAll
 
         private void buttonTautulli_Click(object sender, EventArgs e)
         {
-            Process.Start("http://samsrv:8181/home");
+            Process.Start("http://samtautulli:8181/home");
             this.Alert("Tautulli Launched", Form_Alert.enmType.Success);
         }
 
         private void buttonOwncloud_Click(object sender, EventArgs e)
         {
-            Process.Start("http://samsrv/owncloud/index.php/login");
+            Process.Start("http://samsrv2/owncloud/index.php/login");
             this.Alert("Owncloud Launched", Form_Alert.enmType.Success);
         }
 
-        private void buttonBazarr_Click(object sender, EventArgs e)
+        private void buttonAWS_Click(object sender, EventArgs e)
         {
             Process.Start("https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fus-east-1.console.aws.amazon.com%2Fconsole%2Fhome%3FhashArgs%3D%2523%26isauthcode%3Dtrue%26nc2%3Dh_ct%26region%3Dus-east-1%26skipRegion%3Dtrue%26src%3Dheader-signin%26state%3DhashArgsFromTB_us-east-1_d1ff62bdc895fc29&client_id=arn%3Aaws%3Asignin%3A%3A%3Aconsole%2Fcanvas&forceMobileApp=0&code_challenge=-Yh_03EoTGCpRiR-TxhBRtVY4Xu3N8R-qhu02xe1rzM&code_challenge_method=SHA-256");
             this.Alert("AWS Launched", Form_Alert.enmType.Success);
         }
 
-        private void buttonHVM_Click(object sender, EventArgs e)
+        private void buttonProxmox_Click(object sender, EventArgs e)
         {
-            Process HVM = new Process();
+            Process Proxmox = new Process();
 
-            // Preparing to Launch Hyper-V
-            HVM.StartInfo.FileName = @"C:\Windows\System32\mmc.exe";
-            HVM.StartInfo.Arguments = @" C:\Windows\System32\virtmgmt.msc";
+            // Preparing to Launch Proxmox
+            Proxmox.StartInfo.FileName = @"https://samproxmox:8006/#v1:0:18:4:::::8::";
 
-            HVM.StartInfo.WorkingDirectory = @"C:\Program Files\Hyper-V\";
-
-            // Launch Hyper-V
-            HVM.Start();
-
-            if (HVM.Responding == true)
-            {
-                this.Alert("Hyper-V Launched", Form_Alert.enmType.Success);
-            }
-            else
-            {
-                this.Alert("Hyper-V not Launched", Form_Alert.enmType.Error);
-            }
+            // Launch Proxmox
+            Proxmox.Start();
+            this.Alert("Proxmox Launched", Form_Alert.enmType.Success);
         }
 
         private void buttonHWiNFO64_Click_1(object sender, EventArgs e)

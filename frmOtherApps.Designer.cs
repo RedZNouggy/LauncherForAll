@@ -45,7 +45,7 @@
             this.buttonOpenVPN = new System.Windows.Forms.Button();
             this.buttonTautulli = new System.Windows.Forms.Button();
             this.buttonHotSpot = new System.Windows.Forms.Button();
-            this.buttonHVM = new System.Windows.Forms.Button();
+            this.buttonProxmox = new System.Windows.Forms.Button();
             this.buttonMsstore = new System.Windows.Forms.Button();
             this.buttonOneNote = new System.Windows.Forms.Button();
             this.buttonTeams = new System.Windows.Forms.Button();
@@ -60,7 +60,7 @@
             this.buttonBakkesMod = new System.Windows.Forms.Button();
             this.buttonSpotify = new System.Windows.Forms.Button();
             this.buttonHWM = new System.Windows.Forms.Button();
-            this.buttonSignal = new System.Windows.Forms.Button();
+            this.buttonSnapchat = new System.Windows.Forms.Button();
             this.buttonChrome = new System.Windows.Forms.Button();
             this.buttonOutlook = new System.Windows.Forms.Button();
             this.buttonVS = new System.Windows.Forms.Button();
@@ -87,7 +87,7 @@
             this.pnlFormLoader.Controls.Add(this.buttonOpenVPN);
             this.pnlFormLoader.Controls.Add(this.buttonTautulli);
             this.pnlFormLoader.Controls.Add(this.buttonHotSpot);
-            this.pnlFormLoader.Controls.Add(this.buttonHVM);
+            this.pnlFormLoader.Controls.Add(this.buttonProxmox);
             this.pnlFormLoader.Controls.Add(this.buttonMsstore);
             this.pnlFormLoader.Controls.Add(this.buttonOneNote);
             this.pnlFormLoader.Controls.Add(this.buttonTeams);
@@ -102,7 +102,7 @@
             this.pnlFormLoader.Controls.Add(this.buttonBakkesMod);
             this.pnlFormLoader.Controls.Add(this.buttonSpotify);
             this.pnlFormLoader.Controls.Add(this.buttonHWM);
-            this.pnlFormLoader.Controls.Add(this.buttonSignal);
+            this.pnlFormLoader.Controls.Add(this.buttonSnapchat);
             this.pnlFormLoader.Controls.Add(this.buttonChrome);
             this.pnlFormLoader.Controls.Add(this.buttonOutlook);
             this.pnlFormLoader.Controls.Add(this.buttonVS);
@@ -134,7 +134,7 @@
             this.buttonAWS.Size = new System.Drawing.Size(70, 70);
             this.buttonAWS.TabIndex = 130;
             this.buttonAWS.UseVisualStyleBackColor = true;
-            this.buttonAWS.Click += new System.EventHandler(this.buttonBazarr_Click);
+            this.buttonAWS.Click += new System.EventHandler(this.buttonAWS_Click);
             // 
             // buttonNext1
             // 
@@ -175,7 +175,7 @@
             // 
             this.buttonOwncloud.BackgroundImage = global::LauncherForAll.Properties.Resources.owncloud;
             this.buttonOwncloud.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonOwncloud.Location = new System.Drawing.Point(566, 290);
+            this.buttonOwncloud.Location = new System.Drawing.Point(288, 290);
             this.buttonOwncloud.Name = "buttonOwncloud";
             this.buttonOwncloud.Size = new System.Drawing.Size(70, 70);
             this.buttonOwncloud.TabIndex = 126;
@@ -186,7 +186,7 @@
             // 
             this.buttonTransmission.BackgroundImage = global::LauncherForAll.Properties.Resources.Transmission;
             this.buttonTransmission.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTransmission.Location = new System.Drawing.Point(664, 393);
+            this.buttonTransmission.Location = new System.Drawing.Point(754, 393);
             this.buttonTransmission.Name = "buttonTransmission";
             this.buttonTransmission.Size = new System.Drawing.Size(70, 70);
             this.buttonTransmission.TabIndex = 125;
@@ -197,7 +197,7 @@
             // 
             this.buttonSonarr.BackgroundImage = global::LauncherForAll.Properties.Resources.Sonarr;
             this.buttonSonarr.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonSonarr.Location = new System.Drawing.Point(574, 393);
+            this.buttonSonarr.Location = new System.Drawing.Point(664, 393);
             this.buttonSonarr.Name = "buttonSonarr";
             this.buttonSonarr.Size = new System.Drawing.Size(70, 70);
             this.buttonSonarr.TabIndex = 123;
@@ -208,7 +208,7 @@
             // 
             this.buttonRadarr.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonRadarr.BackgroundImage")));
             this.buttonRadarr.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonRadarr.Location = new System.Drawing.Point(476, 393);
+            this.buttonRadarr.Location = new System.Drawing.Point(566, 393);
             this.buttonRadarr.Name = "buttonRadarr";
             this.buttonRadarr.Size = new System.Drawing.Size(70, 70);
             this.buttonRadarr.TabIndex = 122;
@@ -219,7 +219,7 @@
             // 
             this.buttonPlex.BackgroundImage = global::LauncherForAll.Properties.Resources.PLEX;
             this.buttonPlex.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonPlex.Location = new System.Drawing.Point(288, 393);
+            this.buttonPlex.Location = new System.Drawing.Point(378, 393);
             this.buttonPlex.Name = "buttonPlex";
             this.buttonPlex.Size = new System.Drawing.Size(70, 70);
             this.buttonPlex.TabIndex = 121;
@@ -275,7 +275,7 @@
             // 
             this.buttonTautulli.BackgroundImage = global::LauncherForAll.Properties.Resources.Tautulli;
             this.buttonTautulli.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTautulli.Location = new System.Drawing.Point(378, 393);
+            this.buttonTautulli.Location = new System.Drawing.Point(468, 393);
             this.buttonTautulli.Name = "buttonTautulli";
             this.buttonTautulli.Size = new System.Drawing.Size(70, 70);
             this.buttonTautulli.TabIndex = 115;
@@ -293,17 +293,17 @@
             this.buttonHotSpot.UseVisualStyleBackColor = true;
             this.buttonHotSpot.Click += new System.EventHandler(this.buttonHotSpot_Click);
             // 
-            // buttonHVM
+            // buttonProxmox
             // 
-            this.buttonHVM.BackgroundImage = global::LauncherForAll.Properties.Resources.HyperV;
-            this.buttonHVM.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.buttonHVM.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonHVM.Location = new System.Drawing.Point(754, 393);
-            this.buttonHVM.Name = "buttonHVM";
-            this.buttonHVM.Size = new System.Drawing.Size(70, 70);
-            this.buttonHVM.TabIndex = 113;
-            this.buttonHVM.UseVisualStyleBackColor = true;
-            this.buttonHVM.Click += new System.EventHandler(this.buttonHVM_Click);
+            this.buttonProxmox.BackgroundImage = global::LauncherForAll.Properties.Resources.proxmox;
+            this.buttonProxmox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonProxmox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonProxmox.Location = new System.Drawing.Point(288, 393);
+            this.buttonProxmox.Name = "buttonProxmox";
+            this.buttonProxmox.Size = new System.Drawing.Size(70, 70);
+            this.buttonProxmox.TabIndex = 113;
+            this.buttonProxmox.UseVisualStyleBackColor = true;
+            this.buttonProxmox.Click += new System.EventHandler(this.buttonProxmox_Click);
             // 
             // buttonMsstore
             // 
@@ -459,16 +459,16 @@
             this.buttonHWM.UseVisualStyleBackColor = true;
             this.buttonHWM.Click += new System.EventHandler(this.buttonHWM_Click);
             // 
-            // buttonSignal
+            // buttonSnapchat
             // 
-            this.buttonSignal.BackgroundImage = global::LauncherForAll.Properties.Resources.Signal;
-            this.buttonSignal.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonSignal.Location = new System.Drawing.Point(283, 290);
-            this.buttonSignal.Name = "buttonSignal";
-            this.buttonSignal.Size = new System.Drawing.Size(70, 70);
-            this.buttonSignal.TabIndex = 97;
-            this.buttonSignal.UseVisualStyleBackColor = true;
-            this.buttonSignal.Click += new System.EventHandler(this.buttonSignal_Click);
+            this.buttonSnapchat.BackgroundImage = global::LauncherForAll.Properties.Resources.snapchat;
+            this.buttonSnapchat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonSnapchat.Location = new System.Drawing.Point(574, 290);
+            this.buttonSnapchat.Name = "buttonSnapchat";
+            this.buttonSnapchat.Size = new System.Drawing.Size(70, 70);
+            this.buttonSnapchat.TabIndex = 97;
+            this.buttonSnapchat.UseVisualStyleBackColor = true;
+            this.buttonSnapchat.Click += new System.EventHandler(this.buttonSnapchat_Click);
             // 
             // buttonChrome
             // 
@@ -567,7 +567,7 @@
         private System.Windows.Forms.Button buttonOpenVPN;
         private System.Windows.Forms.Button buttonTautulli;
         private System.Windows.Forms.Button buttonHotSpot;
-        private System.Windows.Forms.Button buttonHVM;
+        private System.Windows.Forms.Button buttonProxmox;
         private System.Windows.Forms.Button buttonMsstore;
         private System.Windows.Forms.Button buttonOneNote;
         private System.Windows.Forms.Button buttonTeams;
@@ -582,7 +582,7 @@
         private System.Windows.Forms.Button buttonBakkesMod;
         private System.Windows.Forms.Button buttonSpotify;
         private System.Windows.Forms.Button buttonHWM;
-        private System.Windows.Forms.Button buttonSignal;
+        private System.Windows.Forms.Button buttonSnapchat;
         private System.Windows.Forms.Button buttonChrome;
         private System.Windows.Forms.Button buttonOutlook;
         private System.Windows.Forms.Button buttonVS;

@@ -52,7 +52,7 @@ namespace LauncherForAll
             pnlNav.Height = buttonGames.Height;
             pnlNav.Top = buttonGames.Top;
             pnlNav.Left = buttonGames.Left;
-
+            this.CenterToScreen();
             label2.Text = Environment.UserName;
         }
 

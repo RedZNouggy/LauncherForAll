@@ -392,6 +392,8 @@
   <ItemGroup>
     <Content Include="LauncherForAll.ico" />
     <Content Include="RedMod-Logo.ico" />
+    <None Include="Resources\proxmox.png" />
+    <None Include="Resources\snapchat.png" />
     <None Include="Resources\VMWare.png" />
     <None Include="Resources\DS4.png" />
     <None Include="Resources\AWS1.png" />

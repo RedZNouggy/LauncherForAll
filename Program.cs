@@ -1,9 +1,7 @@
 ﻿using System;
 using System.IO;
-using System.Diagnostics;
 using System.Windows.Forms;
 using System.Security.Principal;
-using System.Security.AccessControl;
 
 namespace LauncherForAll
 {
@@ -14,13 +12,6 @@ namespace LauncherForAll
         {
             Form_Alert frm = new Form_Alert();
             frm.showAlert(msg, type);
-        }
-
-        private static bool IsAdministrator()
-        {
-            WindowsIdentity identity = WindowsIdentity.GetCurrent();
-            WindowsPrincipal principal = new WindowsPrincipal(identity);
-            return principal.IsInRole(WindowsBuiltInRole.Administrator);
         }
 
         [STAThread]
