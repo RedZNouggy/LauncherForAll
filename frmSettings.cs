@@ -137,9 +137,9 @@ namespace LauncherForAll
                 }
                 else
                 {
-                    DirectorySecurity ds = Directory.GetAccessControl(programData + @"\LauncherForAll");
-                    ds.AddAccessRule(new FileSystemAccessRule("Everyone", FileSystemRights.FullControl, AccessControlType.Allow));
-                    Directory.SetAccessControl(programData + @"\LauncherForAll", ds);
+                    // DirectorySecurity ds = Directory.GetAccessControl(programData + @"\LauncherForAll");
+                    // ds.AddAccessRule(new FileSystemAccessRule("Everyone", FileSystemRights.FullControl, AccessControlType.Allow));
+                    // Directory.SetAccessControl(programData + @"\LauncherForAll", ds);
 
                     File.WriteAllText(programData + @"\LauncherForAll\Set_StartNotification.config", "1");
                 }
@@ -149,18 +149,18 @@ namespace LauncherForAll
                 // Not redMod
                 if (File.Exists(programData + @"\LauncherForAll\Set_StartNotification.config"))
                 {
-                    DirectorySecurity ds = Directory.GetAccessControl(programData + @"\LauncherForAll");
-                    ds.AddAccessRule(new FileSystemAccessRule("Everyone", FileSystemRights.FullControl, AccessControlType.Allow));
-                    Directory.SetAccessControl(programData + @"\LauncherForAll", ds);
+                    // DirectorySecurity ds = Directory.GetAccessControl(programData + @"\LauncherForAll");
+                    // ds.AddAccessRule(new FileSystemAccessRule("Everyone", FileSystemRights.FullControl, AccessControlType.Allow));
+                    // Directory.SetAccessControl(programData + @"\LauncherForAll", ds);
 
                     File.Delete(programData + @"\LauncherForAll\Set_StartNotification.config");
                 }
                 else
                 {
                     // redMod
-                    DirectorySecurity ds = Directory.GetAccessControl(programData + @"\LauncherForAll");
-                    ds.AddAccessRule(new FileSystemAccessRule("Everyone", FileSystemRights.FullControl, AccessControlType.Allow));
-                    Directory.SetAccessControl(programData + @"\LauncherForAll", ds);
+                    // DirectorySecurity ds = Directory.GetAccessControl(programData + @"\LauncherForAll");
+                    // ds.AddAccessRule(new FileSystemAccessRule("Everyone", FileSystemRights.FullControl, AccessControlType.Allow));
+                    // Directory.SetAccessControl(programData + @"\LauncherForAll", ds);
 
                     try
                     {
@@ -187,9 +187,9 @@ namespace LauncherForAll
                 }
                 else
                 {
-                    DirectorySecurity ds = Directory.GetAccessControl(programData + @"\LauncherForAll");
-                    ds.AddAccessRule(new FileSystemAccessRule("Everyone", FileSystemRights.FullControl, AccessControlType.Allow));
-                    Directory.SetAccessControl(programData + @"\LauncherForAll", ds);
+                    // DirectorySecurity ds = Directory.GetAccessControl(programData + @"\LauncherForAll");
+                    // ds.AddAccessRule(new FileSystemAccessRule("Everyone", FileSystemRights.FullControl, AccessControlType.Allow));
+                    // Directory.SetAccessControl(programData + @"\LauncherForAll", ds);
 
                     File.WriteAllText(programData + @"\LauncherForAll\Set_redMod.config", "1");
                     Application.Restart();
@@ -200,9 +200,9 @@ namespace LauncherForAll
                 // Not redMod
                 if (File.Exists(programData + @"\LauncherForAll\Set_redMod.config"))
                 {
-                    DirectorySecurity ds = Directory.GetAccessControl(programData + @"\LauncherForAll");
-                    ds.AddAccessRule(new FileSystemAccessRule("Everyone", FileSystemRights.FullControl, AccessControlType.Allow));
-                    Directory.SetAccessControl(programData + @"\LauncherForAll", ds);
+                    // DirectorySecurity ds = Directory.GetAccessControl(programData + @"\LauncherForAll");
+                    // ds.AddAccessRule(new FileSystemAccessRule("Everyone", FileSystemRights.FullControl, AccessControlType.Allow));
+                    // Directory.SetAccessControl(programData + @"\LauncherForAll", ds);
 
                     File.Delete(programData + @"\LauncherForAll\Set_redMod.config");
 
@@ -211,9 +211,9 @@ namespace LauncherForAll
                 else
                 {
                     // redMod
-                    DirectorySecurity ds = Directory.GetAccessControl(programData + @"\LauncherForAll");
-                    ds.AddAccessRule(new FileSystemAccessRule("Everyone", FileSystemRights.FullControl, AccessControlType.Allow));
-                    Directory.SetAccessControl(programData + @"\LauncherForAll", ds);
+                    // DirectorySecurity ds = Directory.GetAccessControl(programData + @"\LauncherForAll");
+                    // ds.AddAccessRule(new FileSystemAccessRule("Everyone", FileSystemRights.FullControl, AccessControlType.Allow));
+                    // Directory.SetAccessControl(programData + @"\LauncherForAll", ds);
 
                     try
                     {
@@ -240,9 +240,9 @@ namespace LauncherForAll
                 }
                 else
                 {
-                    DirectorySecurity ds = Directory.GetAccessControl(programData + @"\LauncherForAll");
-                    ds.AddAccessRule(new FileSystemAccessRule("Everyone", FileSystemRights.FullControl, AccessControlType.Allow));
-                    Directory.SetAccessControl(programData + @"\LauncherForAll", ds);
+                    // DirectorySecurity ds = Directory.GetAccessControl(programData + @"\LauncherForAll");
+                    // ds.AddAccessRule(new FileSystemAccessRule("Everyone", FileSystemRights.FullControl, AccessControlType.Allow));
+                    // Directory.SetAccessControl(programData + @"\LauncherForAll", ds);
 
                     File.WriteAllText(programData + @"\LauncherForAll\Set_AppsFlat.config", "1");
                 }
@@ -252,9 +252,9 @@ namespace LauncherForAll
                 // Not    
                 if (File.Exists(programData + @"\LauncherForAll\Set_AppsFlat.config"))
                 {
-                    DirectorySecurity ds = Directory.GetAccessControl(programData + @"\LauncherForAll");
-                    ds.AddAccessRule(new FileSystemAccessRule("Everyone", FileSystemRights.FullControl, AccessControlType.Allow));
-                    Directory.SetAccessControl(programData + @"\LauncherForAll", ds);
+                    // DirectorySecurity ds = Directory.GetAccessControl(programData + @"\LauncherForAll");
+                    // ds.AddAccessRule(new FileSystemAccessRule("Everyone", FileSystemRights.FullControl, AccessControlType.Allow));
+                    // Directory.SetAccessControl(programData + @"\LauncherForAll", ds);
 
                     File.Delete(programData + @"\LauncherForAll\Set_AppsFlat.config");
 
@@ -262,9 +262,9 @@ namespace LauncherForAll
                 else
                 {
                     // AppsFlat
-                    DirectorySecurity ds = Directory.GetAccessControl(programData + @"\LauncherForAll");
-                    ds.AddAccessRule(new FileSystemAccessRule("Everyone", FileSystemRights.FullControl, AccessControlType.Allow));
-                    Directory.SetAccessControl(programData + @"\LauncherForAll", ds);
+                    // DirectorySecurity ds = Directory.GetAccessControl(programData + @"\LauncherForAll");
+                    // ds.AddAccessRule(new FileSystemAccessRule("Everyone", FileSystemRights.FullControl, AccessControlType.Allow));
+                    // Directory.SetAccessControl(programData + @"\LauncherForAll", ds);
 
                     try
                     {
@@ -291,9 +291,9 @@ namespace LauncherForAll
                 }
                 else
                 {
-                    DirectorySecurity ds = Directory.GetAccessControl(programData + @"\LauncherForAll");
-                    ds.AddAccessRule(new FileSystemAccessRule("Everyone", FileSystemRights.FullControl, AccessControlType.Allow));
-                    Directory.SetAccessControl(programData + @"\LauncherForAll", ds);
+                    // DirectorySecurity ds = Directory.GetAccessControl(programData + @"\LauncherForAll");
+                    // ds.AddAccessRule(new FileSystemAccessRule("Everyone", FileSystemRights.FullControl, AccessControlType.Allow));
+                    // Directory.SetAccessControl(programData + @"\LauncherForAll", ds);
 
                     File.WriteAllText(programData + @"\LauncherForAll\Set_BrowseApps.config", "1");
                 }
@@ -303,9 +303,9 @@ namespace LauncherForAll
                 // Not    
                 if (File.Exists(programData + @"\LauncherForAll\Set_BrowseApps.config"))
                 {
-                    DirectorySecurity ds = Directory.GetAccessControl(programData + @"\LauncherForAll");
-                    ds.AddAccessRule(new FileSystemAccessRule("Everyone", FileSystemRights.FullControl, AccessControlType.Allow));
-                    Directory.SetAccessControl(programData + @"\LauncherForAll", ds);
+                    // DirectorySecurity ds = Directory.GetAccessControl(programData + @"\LauncherForAll");
+                    // ds.AddAccessRule(new FileSystemAccessRule("Everyone", FileSystemRights.FullControl, AccessControlType.Allow));
+                    // Directory.SetAccessControl(programData + @"\LauncherForAll", ds);
 
                     File.Delete(programData + @"\LauncherForAll\Set_BrowseApps.config");
 
@@ -313,9 +313,9 @@ namespace LauncherForAll
                 else
                 {
                     // Browse
-                    DirectorySecurity ds = Directory.GetAccessControl(programData + @"\LauncherForAll");
-                    ds.AddAccessRule(new FileSystemAccessRule("Everyone", FileSystemRights.FullControl, AccessControlType.Allow));
-                    Directory.SetAccessControl(programData + @"\LauncherForAll", ds);
+                    // DirectorySecurity ds = Directory.GetAccessControl(programData + @"\LauncherForAll");
+                    // ds.AddAccessRule(new FileSystemAccessRule("Everyone", FileSystemRights.FullControl, AccessControlType.Allow));
+                    // Directory.SetAccessControl(programData + @"\LauncherForAll", ds);
 
                     try
                     {
