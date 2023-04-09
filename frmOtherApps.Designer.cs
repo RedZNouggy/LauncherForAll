@@ -33,7 +33,7 @@
             this.buttonVMWare = new System.Windows.Forms.Button();
             this.buttonAWS = new System.Windows.Forms.Button();
             this.buttonNext1 = new Siticone.Desktop.UI.WinForms.SiticoneRoundedButton();
-            this.buttonHWiNFO64 = new System.Windows.Forms.Button();
+            this.buttonMyCanal = new System.Windows.Forms.Button();
             this.buttonOwncloud = new System.Windows.Forms.Button();
             this.buttonTransmission = new System.Windows.Forms.Button();
             this.buttonSonarr = new System.Windows.Forms.Button();
@@ -75,7 +75,7 @@
             this.pnlFormLoader.Controls.Add(this.buttonVMWare);
             this.pnlFormLoader.Controls.Add(this.buttonAWS);
             this.pnlFormLoader.Controls.Add(this.buttonNext1);
-            this.pnlFormLoader.Controls.Add(this.buttonHWiNFO64);
+            this.pnlFormLoader.Controls.Add(this.buttonMyCanal);
             this.pnlFormLoader.Controls.Add(this.buttonOwncloud);
             this.pnlFormLoader.Controls.Add(this.buttonTransmission);
             this.pnlFormLoader.Controls.Add(this.buttonSonarr);
@@ -129,7 +129,7 @@
             // 
             this.buttonAWS.BackgroundImage = global::LauncherForAll.Properties.Resources.AWS;
             this.buttonAWS.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonAWS.Location = new System.Drawing.Point(476, 290);
+            this.buttonAWS.Location = new System.Drawing.Point(566, 290);
             this.buttonAWS.Name = "buttonAWS";
             this.buttonAWS.Size = new System.Drawing.Size(70, 70);
             this.buttonAWS.TabIndex = 130;
@@ -160,22 +160,22 @@
             this.buttonNext1.Text = "➔";
             this.buttonNext1.Click += new System.EventHandler(this.buttonNext1_Click);
             // 
-            // buttonHWiNFO64
+            // buttonMyCanal
             // 
-            this.buttonHWiNFO64.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonHWiNFO64.BackgroundImage")));
-            this.buttonHWiNFO64.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonHWiNFO64.Location = new System.Drawing.Point(185, 290);
-            this.buttonHWiNFO64.Name = "buttonHWiNFO64";
-            this.buttonHWiNFO64.Size = new System.Drawing.Size(70, 70);
-            this.buttonHWiNFO64.TabIndex = 128;
-            this.buttonHWiNFO64.UseVisualStyleBackColor = true;
-            this.buttonHWiNFO64.Click += new System.EventHandler(this.buttonHWiNFO64_Click_1);
+            this.buttonMyCanal.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonMyCanal.BackgroundImage")));
+            this.buttonMyCanal.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonMyCanal.Location = new System.Drawing.Point(283, 290);
+            this.buttonMyCanal.Name = "buttonMyCanal";
+            this.buttonMyCanal.Size = new System.Drawing.Size(70, 70);
+            this.buttonMyCanal.TabIndex = 128;
+            this.buttonMyCanal.UseVisualStyleBackColor = true;
+            this.buttonMyCanal.Click += new System.EventHandler(this.buttonMyCanal_Click);
             // 
             // buttonOwncloud
             // 
             this.buttonOwncloud.BackgroundImage = global::LauncherForAll.Properties.Resources.owncloud;
             this.buttonOwncloud.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonOwncloud.Location = new System.Drawing.Point(288, 290);
+            this.buttonOwncloud.Location = new System.Drawing.Point(468, 290);
             this.buttonOwncloud.Name = "buttonOwncloud";
             this.buttonOwncloud.Size = new System.Drawing.Size(70, 70);
             this.buttonOwncloud.TabIndex = 126;
@@ -230,7 +230,7 @@
             // 
             this.buttonTwitch.BackgroundImage = global::LauncherForAll.Properties.Resources.Twitch;
             this.buttonTwitch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTwitch.Location = new System.Drawing.Point(185, 393);
+            this.buttonTwitch.Location = new System.Drawing.Point(185, 290);
             this.buttonTwitch.Name = "buttonTwitch";
             this.buttonTwitch.Size = new System.Drawing.Size(70, 70);
             this.buttonTwitch.TabIndex = 119;
@@ -242,7 +242,7 @@
             this.buttonYoutube.BackgroundImage = global::LauncherForAll.Properties.Resources.yt;
             this.buttonYoutube.FlatAppearance.BorderSize = 0;
             this.buttonYoutube.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonYoutube.Location = new System.Drawing.Point(95, 393);
+            this.buttonYoutube.Location = new System.Drawing.Point(95, 290);
             this.buttonYoutube.Name = "buttonYoutube";
             this.buttonYoutube.Size = new System.Drawing.Size(70, 70);
             this.buttonYoutube.TabIndex = 118;
@@ -452,7 +452,7 @@
             // 
             this.buttonHWM.BackgroundImage = global::LauncherForAll.Properties.Resources.HW;
             this.buttonHWM.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonHWM.Location = new System.Drawing.Point(95, 290);
+            this.buttonHWM.Location = new System.Drawing.Point(95, 393);
             this.buttonHWM.Name = "buttonHWM";
             this.buttonHWM.Size = new System.Drawing.Size(70, 70);
             this.buttonHWM.TabIndex = 98;
@@ -463,7 +463,7 @@
             // 
             this.buttonSnapchat.BackgroundImage = global::LauncherForAll.Properties.Resources.snapchat;
             this.buttonSnapchat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonSnapchat.Location = new System.Drawing.Point(574, 290);
+            this.buttonSnapchat.Location = new System.Drawing.Point(185, 393);
             this.buttonSnapchat.Name = "buttonSnapchat";
             this.buttonSnapchat.Size = new System.Drawing.Size(70, 70);
             this.buttonSnapchat.TabIndex = 97;
@@ -589,7 +589,7 @@
         private System.Windows.Forms.Button buttonVSCode;
         private System.Windows.Forms.Button buttonDiscord;
         private System.Windows.Forms.Button buttonDashlane;
-        private System.Windows.Forms.Button buttonHWiNFO64;
+        private System.Windows.Forms.Button buttonMyCanal;
         private Siticone.Desktop.UI.WinForms.SiticoneRoundedButton buttonNext1;
         private System.Windows.Forms.Button buttonAWS;
         private System.Windows.Forms.Button buttonVMWare;

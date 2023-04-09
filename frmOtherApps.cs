@@ -107,8 +107,8 @@ namespace LauncherForAll
                 this.buttonWindowsTerminal.FlatAppearance.BorderSize = 0;
                 this.buttonWindowsTerminal.FlatStyle = FlatStyle.Flat;
 
-                this.buttonHWiNFO64.FlatAppearance.BorderSize = 0;
-                this.buttonHWiNFO64.FlatStyle = FlatStyle.Flat;
+                this.buttonMyCanal.FlatAppearance.BorderSize = 0;
+                this.buttonMyCanal.FlatStyle = FlatStyle.Flat;
 
                 this.buttonProxmox.FlatAppearance.BorderSize = 0;
                 this.buttonProxmox.FlatStyle = FlatStyle.Flat;
@@ -218,8 +218,8 @@ namespace LauncherForAll
                 this.buttonWindowsTerminal.FlatAppearance.BorderSize = 1;
                 this.buttonWindowsTerminal.FlatStyle = FlatStyle.Popup;
 
-                this.buttonHWiNFO64.FlatAppearance.BorderSize = 1;
-                this.buttonHWiNFO64.FlatStyle = FlatStyle.Popup;
+                this.buttonMyCanal.FlatAppearance.BorderSize = 1;
+                this.buttonMyCanal.FlatStyle = FlatStyle.Popup;
 
                 this.buttonProxmox.FlatAppearance.BorderSize = 1;
                 this.buttonProxmox.FlatStyle = FlatStyle.Popup;
@@ -857,7 +857,7 @@ namespace LauncherForAll
 
         private void buttonOwncloud_Click(object sender, EventArgs e)
         {
-            Process.Start("http://samsrv2/owncloud/index.php/login");
+            Process.Start("http://192.168.1.23/");
             this.Alert("Owncloud Launched", Form_Alert.enmType.Success);
         }
 
@@ -879,30 +879,17 @@ namespace LauncherForAll
             this.Alert("Proxmox Launched", Form_Alert.enmType.Success);
         }
 
-        private void buttonHWiNFO64_Click_1(object sender, EventArgs e)
+        private void buttonMyCanal_Click(object sender, EventArgs e)
         {
-            if (Process.GetProcessesByName("HWiNFO64").Length == 0)
-            {
-                Process HWiNFO64 = new Process();
+            Process MyCanal = new Process();
 
-                // Preparing to Launch HWiNFO64
-                HWiNFO64.StartInfo.FileName = @"C:\Program Files\HWiNFO64\HWiNFO64.EXE";
+            // Preparing to Launch MyCanal
+            MyCanal.StartInfo.FileName = @"C:\Program Files\Google\Chrome\Application\chrome_proxy.exe";
+            MyCanal.StartInfo.Arguments = @" --profile-directory=Default --app-id=enaibefmjkdnhcbldaccphajjoallbom";
 
-                // Launch HWiNFO64
-                try
-                {
-                    HWiNFO64.Start();
-                    this.Alert("HWiNFO64 Launched", Form_Alert.enmType.Success);
-                }
-                catch
-                {
-                    this.Alert("HWiNFO64 Error Admin Rights Needed ?", Form_Alert.enmType.Error);
-                }
-            }
-            else
-            {
-                this.Alert("HWiNFO64 is already Launched", Form_Alert.enmType.Warning);
-            }
+            // Launch MyCanal
+            MyCanal.Start();
+            this.Alert("MyCanal Launched", Form_Alert.enmType.Success);
         }
 
         private void buttonHotSpot_Click(object sender, EventArgs e)
