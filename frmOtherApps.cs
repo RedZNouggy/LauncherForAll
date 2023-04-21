@@ -857,7 +857,7 @@ namespace LauncherForAll
 
         private void buttonOwncloud_Click(object sender, EventArgs e)
         {
-            Process.Start("http://192.168.1.23/");
+            Process.Start("http://samowncloud.samuelp.fr/");
             this.Alert("Owncloud Launched", Form_Alert.enmType.Success);
         }
 
