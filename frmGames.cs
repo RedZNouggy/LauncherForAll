@@ -330,9 +330,24 @@ namespace LauncherForAll
             }
         }
 
-        private void buttonDiablo3_Click(object sender, EventArgs e)
+        private void buttonDiabloIV_Click(object sender, EventArgs e)
         {
-            this.Alert("DiabloIII Launched", Form_Alert.enmType.Success);
+            // If DiabloIV Is already Running Dont do anithing...
+            if (Process.GetProcessesByName("DiabloIV").Length > 0)
+            {
+                this.Alert("Diablo IV is already running", Form_Alert.enmType.Warning);
+            }
+            else
+            {
+                // Preparing the launch of DiabloIV
+                Process DiabloIV = new Process();
+                DiabloIV.StartInfo.FileName = @"D:\Diablo IV\Diablo IV Launcher.exe";
+                DiabloIV.StartInfo.WorkingDirectory = @"D:\Diablo IV";
+
+                // Launch DiabloIV
+                DiabloIV.Start();
+                this.Alert("DiabloIV Launched", Form_Alert.enmType.Success);
+            }
         }
 
         private void buttonMinecraft_Click(object sender, EventArgs e)
@@ -415,7 +430,7 @@ namespace LauncherForAll
             }
         }
 
-        private void buttonOverwatch_Click(object sender, EventArgs e)
+        private void buttonOverwatch2_Click(object sender, EventArgs e)
         {
             // If Overwatch Is already Running Dont do anithing...
             if (Process.GetProcessesByName("Overwatch").Length > 0)

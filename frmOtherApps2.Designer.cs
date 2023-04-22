@@ -64,15 +64,17 @@
             this.button31 = new System.Windows.Forms.Button();
             this.buttonj = new System.Windows.Forms.Button();
             this.buttonm = new System.Windows.Forms.Button();
-            this.buttonSteel = new System.Windows.Forms.Button();
-            this.buttonPaintNet = new System.Windows.Forms.Button();
-            this.buttonOBSLauncher = new System.Windows.Forms.Button();
+            this.button26 = new System.Windows.Forms.Button();
+            this.button27 = new System.Windows.Forms.Button();
+            this.button28 = new System.Windows.Forms.Button();
             this.pnlFormLoader.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlFormLoader
             // 
-            this.pnlFormLoader.Controls.Add(this.buttonOBSLauncher);
+            this.pnlFormLoader.Controls.Add(this.button28);
+            this.pnlFormLoader.Controls.Add(this.button27);
+            this.pnlFormLoader.Controls.Add(this.button26);
             this.pnlFormLoader.Controls.Add(this.buttonNext1);
             this.pnlFormLoader.Controls.Add(this.button8);
             this.pnlFormLoader.Controls.Add(this.button9);
@@ -107,8 +109,6 @@
             this.pnlFormLoader.Controls.Add(this.button31);
             this.pnlFormLoader.Controls.Add(this.buttonj);
             this.pnlFormLoader.Controls.Add(this.buttonm);
-            this.pnlFormLoader.Controls.Add(this.buttonSteel);
-            this.pnlFormLoader.Controls.Add(this.buttonPaintNet);
             this.pnlFormLoader.Location = new System.Drawing.Point(0, 0);
             this.pnlFormLoader.Name = "pnlFormLoader";
             this.pnlFormLoader.Size = new System.Drawing.Size(1000, 625);
@@ -435,37 +435,32 @@
             this.buttonm.TabIndex = 130;
             this.buttonm.UseVisualStyleBackColor = true;
             // 
-            // buttonSteel
+            // button26
             // 
-            this.buttonSteel.BackgroundImage = global::LauncherForAll.Properties.Resources.SteelSeries;
-            this.buttonSteel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonSteel.Location = new System.Drawing.Point(186, 88);
-            this.buttonSteel.Name = "buttonSteel";
-            this.buttonSteel.Size = new System.Drawing.Size(70, 70);
-            this.buttonSteel.TabIndex = 128;
-            this.buttonSteel.UseVisualStyleBackColor = true;
-            this.buttonSteel.Click += new System.EventHandler(this.buttonSteel_Click);
+            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button26.Location = new System.Drawing.Point(186, 88);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(70, 70);
+            this.button26.TabIndex = 164;
+            this.button26.UseVisualStyleBackColor = true;
             // 
-            // buttonPaintNet
+            // button27
             // 
-            this.buttonPaintNet.BackgroundImage = global::LauncherForAll.Properties.Resources.PaintNET;
-            this.buttonPaintNet.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonPaintNet.Location = new System.Drawing.Point(96, 88);
-            this.buttonPaintNet.Name = "buttonPaintNet";
-            this.buttonPaintNet.Size = new System.Drawing.Size(70, 70);
-            this.buttonPaintNet.TabIndex = 127;
-            this.buttonPaintNet.UseVisualStyleBackColor = true;
-            this.buttonPaintNet.Click += new System.EventHandler(this.buttonPaintNet_Click);
+            this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button27.Location = new System.Drawing.Point(284, 88);
+            this.button27.Name = "button27";
+            this.button27.Size = new System.Drawing.Size(70, 70);
+            this.button27.TabIndex = 165;
+            this.button27.UseVisualStyleBackColor = true;
             // 
-            // buttonOBSLauncher
+            // button28
             // 
-            this.buttonOBSLauncher.BackgroundImage = global::LauncherForAll.Properties.Resources.SL;
-            this.buttonOBSLauncher.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonOBSLauncher.Location = new System.Drawing.Point(284, 88);
-            this.buttonOBSLauncher.Name = "buttonOBSLauncher";
-            this.buttonOBSLauncher.Size = new System.Drawing.Size(70, 70);
-            this.buttonOBSLauncher.TabIndex = 164;
-            this.buttonOBSLauncher.UseVisualStyleBackColor = true;
+            this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button28.Location = new System.Drawing.Point(96, 88);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(70, 70);
+            this.button28.TabIndex = 166;
+            this.button28.UseVisualStyleBackColor = true;
             // 
             // frmOtherApps2
             // 
@@ -519,9 +514,9 @@
         private System.Windows.Forms.Button button31;
         private System.Windows.Forms.Button buttonj;
         private System.Windows.Forms.Button buttonm;
-        private System.Windows.Forms.Button buttonSteel;
-        private System.Windows.Forms.Button buttonPaintNet;
         private Siticone.Desktop.UI.WinForms.SiticoneRoundedButton buttonNext1;
-        private System.Windows.Forms.Button buttonOBSLauncher;
+        private System.Windows.Forms.Button button27;
+        private System.Windows.Forms.Button button26;
+        private System.Windows.Forms.Button button28;
     }
 }

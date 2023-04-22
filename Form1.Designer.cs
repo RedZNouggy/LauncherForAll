@@ -45,6 +45,7 @@ namespace LauncherForAll
             this.toolStripMenuItemExit = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlNav = new System.Windows.Forms.Panel();
+            this.buttonSamEnv = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonSettings = new System.Windows.Forms.Button();
@@ -157,6 +158,7 @@ namespace LauncherForAll
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(37)))), ((int)(((byte)(55)))));
             this.panel1.Controls.Add(this.pnlNav);
+            this.panel1.Controls.Add(this.buttonSamEnv);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.buttonSettings);
@@ -171,10 +173,26 @@ namespace LauncherForAll
             // pnlNav
             // 
             this.pnlNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.pnlNav.Location = new System.Drawing.Point(0, 273);
+            this.pnlNav.Location = new System.Drawing.Point(1, 272);
             this.pnlNav.Name = "pnlNav";
             this.pnlNav.Size = new System.Drawing.Size(3, 250);
-            this.pnlNav.TabIndex = 6;
+            this.pnlNav.TabIndex = 8;
+            // 
+            // buttonSamEnv
+            // 
+            this.buttonSamEnv.FlatAppearance.BorderSize = 0;
+            this.buttonSamEnv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSamEnv.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSamEnv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.buttonSamEnv.Image = global::LauncherForAll.Properties.Resources.Blue_samsrv;
+            this.buttonSamEnv.Location = new System.Drawing.Point(0, 360);
+            this.buttonSamEnv.Name = "buttonSamEnv";
+            this.buttonSamEnv.Size = new System.Drawing.Size(300, 71);
+            this.buttonSamEnv.TabIndex = 7;
+            this.buttonSamEnv.Text = "    Sam Env        ";
+            this.buttonSamEnv.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonSamEnv.UseVisualStyleBackColor = true;
+            this.buttonSamEnv.Click += new System.EventHandler(this.buttonSamEnv_Click);
             // 
             // label2
             // 
@@ -253,7 +271,7 @@ namespace LauncherForAll
             this.buttonWebBrowser.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonWebBrowser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.buttonWebBrowser.Image = global::LauncherForAll.Properties.Resources.webBrowser;
-            this.buttonWebBrowser.Location = new System.Drawing.Point(0, 360);
+            this.buttonWebBrowser.Location = new System.Drawing.Point(0, 437);
             this.buttonWebBrowser.Name = "buttonWebBrowser";
             this.buttonWebBrowser.Size = new System.Drawing.Size(300, 71);
             this.buttonWebBrowser.TabIndex = 1;
@@ -284,7 +302,7 @@ namespace LauncherForAll
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-           // this.ClientSize = new System.Drawing.Size(1300, 795);
+            this.ClientSize = new System.Drawing.Size(1300, 795);
             this.Controls.Add(this.siticonePanel1);
             this.Controls.Add(this.buttonMinimize);
             this.Controls.Add(this.pnlFormLoader);
@@ -293,16 +311,10 @@ namespace LauncherForAll
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            int screenWidth = Screen.PrimaryScreen.Bounds.Width;
-            int screenHeight = Screen.PrimaryScreen.Bounds.Height;
-            this.MaximumSize = new System.Drawing.Size(screenWidth, screenHeight);
+            this.MaximumSize = new System.Drawing.Size(2560, 1440);
             this.MinimumSize = new System.Drawing.Size(1300, 795);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-//            int currentSizeWidth = screenWidth - 640;
-  //          int currentSizeHeight = screenHeight - 360;
-   //         this.Size = new System.Drawing.Size(currentSizeWidth, currentSizeHeight);
-    //        this.ClientSize = new System.Drawing.Size(currentSizeWidth, currentSizeHeight);
             this.Text = "LauncherrForAll";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.contextMenuStrip1.ResumeLayout(false);
@@ -322,7 +334,6 @@ namespace LauncherForAll
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel pnlNav;
         private System.Windows.Forms.Button buttonGames;
         private System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.Button buttonMinimize;
@@ -337,6 +348,8 @@ namespace LauncherForAll
         private System.Windows.Forms.Panel pnlFormLoader;
         public System.Windows.Forms.NotifyIcon notifyIcon2;
         private System.Windows.Forms.Button buttonWebBrowser;
+        private Button buttonSamEnv;
+        private Panel pnlNav;
     }
 }
 

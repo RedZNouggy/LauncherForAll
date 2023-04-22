@@ -196,6 +196,12 @@
     <Compile Include="frmOtherApps2.Designer.cs">
       <DependentUpon>frmOtherApps2.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSamEnv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSamEnv.Designer.cs">
+      <DependentUpon>frmSamEnv.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSettings.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -247,6 +253,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmOtherApps2.resx">
       <DependentUpon>frmOtherApps2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSamEnv.resx">
+      <DependentUpon>frmSamEnv.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSettings.resx">
       <DependentUpon>frmSettings.cs</DependentUpon>
@@ -307,9 +316,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\CSGO.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Diablo3.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Valorant.jpg" />
@@ -392,6 +398,26 @@
   <ItemGroup>
     <Content Include="LauncherForAll.ico" />
     <Content Include="RedMod-Logo.ico" />
+    <None Include="Resources\D4.jpg" />
+    <None Include="Resources\overwatch-2.jpg" />
+    <None Include="Resources\hosts_PT.png" />
+    <None Include="Resources\FileZilla.png" />
+    <None Include="Resources\Parsec.png" />
+    <None Include="Resources\TeamViewer.png" />
+    <None Include="Resources\zoom.png" />
+    <None Include="Resources\HandBrake_Icon.png" />
+    <None Include="Resources\plexamp.png" />
+    <None Include="Resources\ada216e157757c965a766aae6e21423a.png" />
+    <None Include="Resources\angry.png" />
+    <None Include="Resources\Ow2.jpg" />
+    <None Include="Resources\WhatsApp.png" />
+    <None Include="Resources\PPT.png" />
+    <None Include="Resources\Excel.png" />
+    <None Include="Resources\Word.png" />
+    <None Include="Resources\Virtualbox_logo.png" />
+    <None Include="Resources\Blue_samsrv.png" />
+    <None Include="Resources\Red_samsrv.png" />
+    <None Include="Resources\840128.png" />
     <None Include="Resources\proxmox.png" />
     <None Include="Resources\snapchat.png" />
     <None Include="Resources\VMWare.png" />

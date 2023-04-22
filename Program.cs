@@ -19,7 +19,6 @@ namespace LauncherForAll
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-
             string programData = Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData);
             string path = programData + @"\LauncherForAll";
             if (Directory.Exists(path))

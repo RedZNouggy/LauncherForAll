@@ -34,9 +34,9 @@
             this.buttonHMM = new System.Windows.Forms.Button();
             this.buttonAOE3D = new System.Windows.Forms.Button();
             this.buttonMinecraft = new System.Windows.Forms.Button();
-            this.buttonOverwatch = new System.Windows.Forms.Button();
+            this.buttonOverwatch2 = new System.Windows.Forms.Button();
             this.buttonValorant = new System.Windows.Forms.Button();
-            this.buttonDiablo3 = new System.Windows.Forms.Button();
+            this.buttonDiabloIV = new System.Windows.Forms.Button();
             this.buttonCSGO = new System.Windows.Forms.Button();
             this.buttonLeagueOfLegends = new System.Windows.Forms.Button();
             this.buttonRocketLeague = new System.Windows.Forms.Button();
@@ -49,9 +49,9 @@
             this.pnlFormLoader.Controls.Add(this.buttonHMM);
             this.pnlFormLoader.Controls.Add(this.buttonAOE3D);
             this.pnlFormLoader.Controls.Add(this.buttonMinecraft);
-            this.pnlFormLoader.Controls.Add(this.buttonOverwatch);
+            this.pnlFormLoader.Controls.Add(this.buttonOverwatch2);
             this.pnlFormLoader.Controls.Add(this.buttonValorant);
-            this.pnlFormLoader.Controls.Add(this.buttonDiablo3);
+            this.pnlFormLoader.Controls.Add(this.buttonDiabloIV);
             this.pnlFormLoader.Controls.Add(this.buttonCSGO);
             this.pnlFormLoader.Controls.Add(this.buttonLeagueOfLegends);
             this.pnlFormLoader.Controls.Add(this.buttonRocketLeague);
@@ -117,16 +117,16 @@
             this.buttonMinecraft.UseVisualStyleBackColor = true;
             this.buttonMinecraft.Click += new System.EventHandler(this.buttonMinecraft_Click);
             // 
-            // buttonOverwatch
+            // buttonOverwatch2
             // 
-            this.buttonOverwatch.BackgroundImage = global::LauncherForAll.Properties.Resources.Overwatch;
-            this.buttonOverwatch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonOverwatch.Location = new System.Drawing.Point(627, 213);
-            this.buttonOverwatch.Name = "buttonOverwatch";
-            this.buttonOverwatch.Size = new System.Drawing.Size(300, 200);
-            this.buttonOverwatch.TabIndex = 63;
-            this.buttonOverwatch.UseVisualStyleBackColor = true;
-            this.buttonOverwatch.Click += new System.EventHandler(this.buttonOverwatch_Click);
+            this.buttonOverwatch2.BackgroundImage = global::LauncherForAll.Properties.Resources.overwatch_2;
+            this.buttonOverwatch2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonOverwatch2.Location = new System.Drawing.Point(627, 213);
+            this.buttonOverwatch2.Name = "buttonOverwatch2";
+            this.buttonOverwatch2.Size = new System.Drawing.Size(300, 200);
+            this.buttonOverwatch2.TabIndex = 63;
+            this.buttonOverwatch2.UseVisualStyleBackColor = true;
+            this.buttonOverwatch2.Click += new System.EventHandler(this.buttonOverwatch2_Click);
             // 
             // buttonValorant
             // 
@@ -139,16 +139,16 @@
             this.buttonValorant.UseVisualStyleBackColor = true;
             this.buttonValorant.Click += new System.EventHandler(this.buttonValorant_Click);
             // 
-            // buttonDiablo3
+            // buttonDiabloIV
             // 
-            this.buttonDiablo3.BackgroundImage = global::LauncherForAll.Properties.Resources.Diablo3;
-            this.buttonDiablo3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonDiablo3.Location = new System.Drawing.Point(15, 213);
-            this.buttonDiablo3.Name = "buttonDiablo3";
-            this.buttonDiablo3.Size = new System.Drawing.Size(300, 200);
-            this.buttonDiablo3.TabIndex = 61;
-            this.buttonDiablo3.UseVisualStyleBackColor = true;
-            this.buttonDiablo3.Click += new System.EventHandler(this.buttonDiablo3_Click);
+            this.buttonDiabloIV.BackgroundImage = global::LauncherForAll.Properties.Resources.D4;
+            this.buttonDiabloIV.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonDiabloIV.Location = new System.Drawing.Point(15, 213);
+            this.buttonDiabloIV.Name = "buttonDiabloIV";
+            this.buttonDiabloIV.Size = new System.Drawing.Size(300, 200);
+            this.buttonDiabloIV.TabIndex = 61;
+            this.buttonDiabloIV.UseVisualStyleBackColor = true;
+            this.buttonDiabloIV.Click += new System.EventHandler(this.buttonDiabloIV_Click);
             // 
             // buttonCSGO
             // 
@@ -205,9 +205,9 @@
         private System.Windows.Forms.Button buttonHMM;
         private System.Windows.Forms.Button buttonAOE3D;
         private System.Windows.Forms.Button buttonMinecraft;
-        private System.Windows.Forms.Button buttonOverwatch;
+        private System.Windows.Forms.Button buttonOverwatch2;
         private System.Windows.Forms.Button buttonValorant;
-        private System.Windows.Forms.Button buttonDiablo3;
+        private System.Windows.Forms.Button buttonDiabloIV;
         private System.Windows.Forms.Button buttonCSGO;
         private System.Windows.Forms.Button buttonLeagueOfLegends;
         private System.Windows.Forms.Button buttonRocketLeague;

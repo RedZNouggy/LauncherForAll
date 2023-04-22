@@ -62,58 +62,5 @@ namespace LauncherForAll
             this.pnlFormLoader.Controls.Add(frmOtherApps_vrb);
             frmOtherApps_vrb.Show();
         }
-
-        private void buttonPaintNet_Click(object sender, EventArgs e)
-        {
-            Process paintNet = new Process();
-
-            // Preparing to Launch paint.net
-            paintNet.StartInfo.FileName = @"C:\Program Files\paint.net\paintdotnet.exe";
-
-            // Launch Outlook
-            paintNet.Start();
-
-            if (paintNet.Responding == true)
-            {
-                this.Alert("paint.Net Launched", Form_Alert.enmType.Success);
-            }
-            else
-            {
-                this.Alert("paint.Net not Launched", Form_Alert.enmType.Error);
-            }
-        }
-
-        private void buttonSteel_Click(object sender, EventArgs e)
-        {
-            Process SteelS = new Process();
-
-
-            if (Process.GetProcessesByName("SteelSeriesGG").Length == 0)
-            {
-                // Preparing to Launch SteelS
-                SteelS.StartInfo.FileName = @"C:\Program Files\SteelSeries\GG\SteelSeriesGG.exe";
-
-                // Launch SteelS
-                SteelS.StartInfo.Arguments = @" - dataPath = 'C:\ProgramData\SteelSeries\GG' - dbEnv = production";
-                SteelS.Start();
-
-                if (SteelS.Responding == true)
-                {
-                    this.Alert("Steel Series Launched", Form_Alert.enmType.Success);
-                }
-                else
-                {
-                    this.Alert("Steel Series not Launched", Form_Alert.enmType.Error);
-                }
-            }
-            else
-            {
-                // Open window of SteelS if not opened
-                SteelS.StartInfo.FileName = @"C:\Program Files\SteelSeries\GG\SteelSeriesGGClient.exe";
-
-                SteelS.Start();
-                this.Alert("Steel Series already Launched", Form_Alert.enmType.Warning);
-            }
-        }
     }
 }

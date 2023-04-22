@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
@@ -8,8 +9,6 @@ namespace LauncherForAll
 {
     public partial class frmOtherApps : Form
     {
-
-
         // RedMod Colors
         // 255 255 255 White
         private Color WhiteColor = Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -32,6 +31,7 @@ namespace LauncherForAll
         {
             InitializeComponent();
         }
+
         public void Alert(string msg, Form_Alert.enmType type)
         {
             Form_Alert frm = new Form_Alert();
@@ -59,21 +59,25 @@ namespace LauncherForAll
             // ButtonsFlat ?
             if (File.Exists(programData + @"\LauncherForAll\Set_AppsFlat.config"))
             {
-                this.buttonAWS.FlatAppearance.BorderSize = 0;
-                this.buttonAWS.FlatStyle = FlatStyle.Flat;
 
-                this.buttonDashlane.FlatAppearance.BorderSize = 0 ;
+                this.buttonDashlane.FlatAppearance.BorderSize = 0;
                 this.buttonDashlane.FlatStyle = FlatStyle.Flat;
 
                 this.buttonDiscord.FlatAppearance.BorderSize = 0;
                 this.buttonDiscord.FlatStyle = FlatStyle.Flat;
 
-                this.buttonVSCode.FlatAppearance.BorderSize = 0;
-                this.buttonVSCode.FlatStyle = FlatStyle.Flat;
+                this.buttonWord.FlatAppearance.BorderSize = 0;
+                this.buttonWord.FlatStyle = FlatStyle.Flat;
 
-                this.buttonVS.FlatAppearance.BorderSize = 0;
-                this.buttonVS.FlatStyle = FlatStyle.Flat;
-                
+                this.buttonPowerPoint.FlatAppearance.BorderSize = 0;
+                this.buttonPowerPoint.FlatStyle = FlatStyle.Flat;
+
+                this.buttonExcel.FlatAppearance.BorderSize = 0;
+                this.buttonExcel.FlatStyle = FlatStyle.Flat;
+
+                this.buttonWhatsApp.FlatAppearance.BorderSize = 0;
+                this.buttonWhatsApp.FlatStyle = FlatStyle.Flat;
+
                 this.buttonOutlook.FlatAppearance.BorderSize = 0;
                 this.buttonOutlook.FlatStyle = FlatStyle.Flat;
 
@@ -92,29 +96,14 @@ namespace LauncherForAll
                 this.buttonChrome.FlatAppearance.BorderSize = 0;
                 this.buttonChrome.FlatStyle = FlatStyle.Flat;
 
-                this.buttonAWS.FlatAppearance.BorderSize = 0;
-                this.buttonAWS.FlatStyle = FlatStyle.Flat;
-
-                this.buttonHWM.FlatAppearance.BorderSize = 0;
-                this.buttonHWM.FlatStyle = FlatStyle.Flat;
-
                 this.buttonLivelyWP.FlatAppearance.BorderSize = 0;
                 this.buttonLivelyWP.FlatStyle = FlatStyle.Flat;
 
                 this.buttonDS4.FlatAppearance.BorderSize = 0;
                 this.buttonDS4.FlatStyle = FlatStyle.Flat;
 
-                this.buttonWindowsTerminal.FlatAppearance.BorderSize = 0;
-                this.buttonWindowsTerminal.FlatStyle = FlatStyle.Flat;
-
                 this.buttonMyCanal.FlatAppearance.BorderSize = 0;
                 this.buttonMyCanal.FlatStyle = FlatStyle.Flat;
-
-                this.buttonProxmox.FlatAppearance.BorderSize = 0;
-                this.buttonProxmox.FlatStyle = FlatStyle.Flat;
-
-                this.buttonHotSpot.FlatAppearance.BorderSize = 0;
-                this.buttonHotSpot.FlatStyle = FlatStyle.Flat;
 
                 this.buttonSpotify.FlatAppearance.BorderSize = 0;
                 this.buttonSpotify.FlatStyle = FlatStyle.Flat;
@@ -134,56 +123,55 @@ namespace LauncherForAll
                 this.buttonEpicGames.FlatAppearance.BorderSize = 0;
                 this.buttonEpicGames.FlatStyle = FlatStyle.Flat;
 
-                this.buttonTautulli.FlatAppearance.BorderSize = 0;
-                this.buttonTautulli.FlatStyle = FlatStyle.Flat;
-
-                this.buttonOpenVPN.FlatAppearance.BorderSize = 0;
-                this.buttonOpenVPN.FlatStyle = FlatStyle.Flat;
-
-                this.buttonWireguard.FlatAppearance.BorderSize = 0;
-                this.buttonWireguard.FlatStyle = FlatStyle.Flat;
-
                 this.buttonYoutube.FlatAppearance.BorderSize = 0;
                 this.buttonYoutube.FlatStyle = FlatStyle.Flat;
 
                 this.buttonTwitch.FlatAppearance.BorderSize = 0;
                 this.buttonTwitch.FlatStyle = FlatStyle.Flat;
 
-                this.buttonVMWare.FlatAppearance.BorderSize = 0;
-                this.buttonVMWare.FlatStyle = FlatStyle.Flat;
+                this.buttonOBSLauncher.FlatAppearance.BorderSize = 0;
+                this.buttonOBSLauncher.FlatStyle = FlatStyle.Flat;
 
-                this.buttonPlex.FlatAppearance.BorderSize = 0;
-                this.buttonPlex.FlatStyle = FlatStyle.Flat;
+                this.buttonSteel.FlatAppearance.BorderSize = 0;
+                this.buttonSteel.FlatStyle = FlatStyle.Flat;
 
-                this.buttonRadarr.FlatAppearance.BorderSize = 0;
-                this.buttonRadarr.FlatStyle = FlatStyle.Flat;
+                this.buttonRiotGames.FlatAppearance.BorderSize = 0;
+                this.buttonRiotGames.FlatStyle = FlatStyle.Flat;
 
-                this.buttonSonarr.FlatAppearance.BorderSize = 0;
-                this.buttonSonarr.FlatStyle = FlatStyle.Flat;
+                this.buttonFileZilla.FlatAppearance.BorderSize = 0;
+                this.buttonFileZilla.FlatStyle = FlatStyle.Flat;
 
-                this.buttonTransmission.FlatAppearance.BorderSize = 0;
-                this.buttonTransmission.FlatStyle = FlatStyle.Flat;
+                this.buttonTeamViewer.FlatAppearance.BorderSize = 0;
+                this.buttonTeamViewer.FlatStyle = FlatStyle.Flat;
 
-                this.buttonOwncloud.FlatAppearance.BorderSize = 0;
-                this.buttonOwncloud.FlatStyle = FlatStyle.Flat;
+                this.buttonParsec.FlatAppearance.BorderSize = 0;
+                this.buttonParsec.FlatStyle = FlatStyle.Flat;
 
+                this.buttonZoom.FlatAppearance.BorderSize = 0;
+                this.buttonZoom.FlatStyle = FlatStyle.Flat;
             }
             else
             {
-                this.buttonAWS.FlatAppearance.BorderSize = 1;
-                this.buttonAWS.FlatStyle = FlatStyle.Popup;
-
                 this.buttonDashlane.FlatAppearance.BorderSize = 1;
                 this.buttonDashlane.FlatStyle = FlatStyle.Popup;
+
+                this.buttonZoom.FlatAppearance.BorderSize = 1;
+                this.buttonZoom.FlatStyle = FlatStyle.Popup;
 
                 this.buttonDiscord.FlatAppearance.BorderSize = 1;
                 this.buttonDiscord.FlatStyle = FlatStyle.Popup;
 
-                this.buttonVSCode.FlatAppearance.BorderSize = 1;
-                this.buttonVSCode.FlatStyle = FlatStyle.Popup;
+                this.buttonWord.FlatAppearance.BorderSize = 1;
+                this.buttonWord.FlatStyle = FlatStyle.Popup;
 
-                this.buttonVS.FlatAppearance.BorderSize = 1;
-                this.buttonVS.FlatStyle = FlatStyle.Popup;
+                this.buttonPowerPoint.FlatAppearance.BorderSize = 1;
+                this.buttonPowerPoint.FlatStyle = FlatStyle.Popup;
+
+                this.buttonExcel.FlatAppearance.BorderSize = 1;
+                this.buttonExcel.FlatStyle = FlatStyle.Popup;
+
+                this.buttonWhatsApp.FlatAppearance.BorderSize = 1;
+                this.buttonWhatsApp.FlatStyle = FlatStyle.Popup;
 
                 this.buttonOutlook.FlatAppearance.BorderSize = 1;
                 this.buttonOutlook.FlatStyle = FlatStyle.Popup;
@@ -203,29 +191,14 @@ namespace LauncherForAll
                 this.buttonChrome.FlatAppearance.BorderSize = 1;
                 this.buttonChrome.FlatStyle = FlatStyle.Popup;
 
-                this.buttonAWS.FlatAppearance.BorderSize = 1;
-                this.buttonAWS.FlatStyle = FlatStyle.Popup;
-
-                this.buttonHWM.FlatAppearance.BorderSize = 1;
-                this.buttonHWM.FlatStyle = FlatStyle.Popup;
-
                 this.buttonLivelyWP.FlatAppearance.BorderSize = 1;
                 this.buttonLivelyWP.FlatStyle = FlatStyle.Popup;
 
                 this.buttonDS4.FlatAppearance.BorderSize = 1;
                 this.buttonDS4.FlatStyle = FlatStyle.Popup;
 
-                this.buttonWindowsTerminal.FlatAppearance.BorderSize = 1;
-                this.buttonWindowsTerminal.FlatStyle = FlatStyle.Popup;
-
                 this.buttonMyCanal.FlatAppearance.BorderSize = 1;
                 this.buttonMyCanal.FlatStyle = FlatStyle.Popup;
-
-                this.buttonProxmox.FlatAppearance.BorderSize = 1;
-                this.buttonProxmox.FlatStyle = FlatStyle.Popup;
-
-                this.buttonHotSpot.FlatAppearance.BorderSize = 1;
-                this.buttonHotSpot.FlatStyle = FlatStyle.Popup;
 
                 this.buttonSpotify.FlatAppearance.BorderSize = 1;
                 this.buttonSpotify.FlatStyle = FlatStyle.Popup;
@@ -245,38 +218,30 @@ namespace LauncherForAll
                 this.buttonEpicGames.FlatAppearance.BorderSize = 1;
                 this.buttonEpicGames.FlatStyle = FlatStyle.Popup;
 
-                this.buttonTautulli.FlatAppearance.BorderSize = 1;
-                this.buttonTautulli.FlatStyle = FlatStyle.Popup;
-
-                this.buttonOpenVPN.FlatAppearance.BorderSize = 1;
-                this.buttonOpenVPN.FlatStyle = FlatStyle.Popup;
-
-                this.buttonWireguard.FlatAppearance.BorderSize = 1;
-                this.buttonWireguard.FlatStyle = FlatStyle.Popup;
-
                 this.buttonYoutube.FlatAppearance.BorderSize = 1;
                 this.buttonYoutube.FlatStyle = FlatStyle.Popup;
 
                 this.buttonTwitch.FlatAppearance.BorderSize = 1;
                 this.buttonTwitch.FlatStyle = FlatStyle.Popup;
 
-                this.buttonVMWare.FlatAppearance.BorderSize = 1;
-                this.buttonVMWare.FlatStyle = FlatStyle.Popup;
+                this.buttonOBSLauncher.FlatAppearance.BorderSize = 1;
+                this.buttonOBSLauncher.FlatStyle = FlatStyle.Popup;
 
-                this.buttonPlex.FlatAppearance.BorderSize = 1;
-                this.buttonPlex.FlatStyle = FlatStyle.Popup;
+                this.buttonSteel.FlatAppearance.BorderSize = 1;
+                this.buttonSteel.FlatStyle = FlatStyle.Popup;
 
-                this.buttonRadarr.FlatAppearance.BorderSize = 1;
-                this.buttonRadarr.FlatStyle = FlatStyle.Popup;
+                this.buttonRiotGames.FlatAppearance.BorderSize = 1;
+                this.buttonRiotGames.FlatStyle = FlatStyle.Popup;
 
-                this.buttonSonarr.FlatAppearance.BorderSize = 1;
-                this.buttonSonarr.FlatStyle = FlatStyle.Popup;
+                this.buttonFileZilla.FlatAppearance.BorderSize = 1;
+                this.buttonFileZilla.FlatStyle = FlatStyle.Popup;
 
-                this.buttonTransmission.FlatAppearance.BorderSize = 1;
-                this.buttonTransmission.FlatStyle = FlatStyle.Popup;
+                this.buttonTeamViewer.FlatAppearance.BorderSize = 1;
+                this.buttonTeamViewer.FlatStyle = FlatStyle.Popup;
 
-                this.buttonOwncloud.FlatAppearance.BorderSize = 1;
-                this.buttonOwncloud.FlatStyle = FlatStyle.Popup;
+                this.buttonParsec.FlatAppearance.BorderSize = 1;
+                this.buttonParsec.FlatStyle = FlatStyle.Popup;
+
             }
         }
 
@@ -385,72 +350,6 @@ namespace LauncherForAll
             // Launch Signal
             Snapchat.Start();
             this.Alert("Snapchat Launched", Form_Alert.enmType.Success);
-        }
-
-        private void buttonHWM_Click(object sender, EventArgs e)
-        {
-            /*/ TestConnection
-            if (frmGames.CheckForInternetConnection() == false)
-            {
-                this.Alert("Check For your Internet connection...", Form_Alert.enmType.Error);
-            }
-            */
-            if (Process.GetProcessesByName("HWMonitor").Length == 0)
-            {
-                Process HWMonitor = new Process();
-
-                // Preparing to Launch HWMonitor
-                HWMonitor.StartInfo.FileName = @"C:\Program Files\CPUID\HWMonitor\HWMonitor.exe";
-
-                // Launch HWMonitor
-                HWMonitor.Start();
-
-                if (HWMonitor.Responding == true)
-                {
-                    this.Alert("HWMonitor Launched", Form_Alert.enmType.Success);
-                }
-                else
-                {
-                    this.Alert("HWMonitor not Launched", Form_Alert.enmType.Error);
-                }
-            }
-            else
-            {
-                this.Alert("HWMonitor is already Launched", Form_Alert.enmType.Warning);
-            }
-        }
-
-        private void buttonVSCode_Click(object sender, EventArgs e)
-        {
-            /*/ TestConnection
-            if (frmGames.CheckForInternetConnection() == false)
-            {
-                this.Alert("Check For your Internet connection...", Form_Alert.enmType.Error);
-            }
-            */
-            if (Process.GetProcessesByName("Code").Length == 0)
-            {
-                Process Code = new Process();
-
-                // Preparing to Launch VSCode
-                Code.StartInfo.FileName = @"D:\Microsoft VS Code\Code.exe";
-
-                // Launch VSCode
-                Code.Start();
-
-                if (Code.Responding == true)
-                {
-                    this.Alert("VSCode Launched", Form_Alert.enmType.Success);
-                }
-                else
-                {
-                    this.Alert("VSCode not Launched", Form_Alert.enmType.Error);
-                }
-            }
-            else
-            {
-                this.Alert("VSCode is already Launched", Form_Alert.enmType.Warning);
-            }
         }
 
         private void buttonSpotify_Click(object sender, EventArgs e)
@@ -714,39 +613,6 @@ namespace LauncherForAll
             }
         }
 
-        private void buttonVS_Click(object sender, EventArgs e)
-        {
-            /*/ TestConnection
-            if (frmGames.CheckForInternetConnection() == false)
-            {
-                this.Alert("Check For your Internet connection...", Form_Alert.enmType.Error);
-            }
-            */
-            if (Process.GetProcessesByName("devenv").Length == 0)
-            {
-                Process VS = new Process();
-
-                // Preparing to Launch VS
-                VS.StartInfo.FileName = @"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\devenv.exe";
-
-                // Launch VS
-                VS.Start();
-
-                if (VS.Responding == true)
-                {
-                    this.Alert("Visual Studio Launched", Form_Alert.enmType.Success);
-                }
-                else
-                {
-                    this.Alert("Visual Studio not Launched", Form_Alert.enmType.Error);
-                }
-            }
-            else
-            {
-                this.Alert("Visual Studio is already Launched", Form_Alert.enmType.Warning);
-            }
-        }
-
         private void buttonLivelyWP_Click(object sender, EventArgs e)
         {
             /*/ TestConnection
@@ -818,67 +684,6 @@ namespace LauncherForAll
             this.Alert("Office Launched", Form_Alert.enmType.Success);
         }
 
-        private void buttonPlex_Click(object sender, EventArgs e)
-        {
-            Process.Start(@"C:\Program Files\Plex\Plex\Plex.exe");
-            this.Alert("Plex Launched", Form_Alert.enmType.Success);
-        }
-
-        private void buttonRadarr_Click(object sender, EventArgs e)
-        {
-            Process.Start("http://samsrv:7878");
-            this.Alert("Radarr Launched", Form_Alert.enmType.Success);
-        }
-
-        private void buttonSonarr_Click(object sender, EventArgs e)
-        {
-            Process.Start("http://samsrv:8989");
-            this.Alert("Sonarr Launched", Form_Alert.enmType.Success);
-        }
-
-        private void buttonTransmission_Click(object sender, EventArgs e)
-        {
-            Process.Start("http://samsrv:9091/transmission/web/");
-            this.Alert("Transmission Launched", Form_Alert.enmType.Success);
-        }
-
-        private void buttonWindowsTerminal_Click(object sender, EventArgs e)
-        {
-            // Launch WindowsTerminal
-            Process.Start("wt");
-            this.Alert("Windows Terminal Launched", Form_Alert.enmType.Success);
-        }
-
-        private void buttonTautulli_Click(object sender, EventArgs e)
-        {
-            Process.Start("http://samtautulli:8181/home");
-            this.Alert("Tautulli Launched", Form_Alert.enmType.Success);
-        }
-
-        private void buttonOwncloud_Click(object sender, EventArgs e)
-        {
-            Process.Start("http://samowncloud.samuelp.fr/");
-            this.Alert("Owncloud Launched", Form_Alert.enmType.Success);
-        }
-
-        private void buttonAWS_Click(object sender, EventArgs e)
-        {
-            Process.Start("https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fus-east-1.console.aws.amazon.com%2Fconsole%2Fhome%3FhashArgs%3D%2523%26isauthcode%3Dtrue%26nc2%3Dh_ct%26region%3Dus-east-1%26skipRegion%3Dtrue%26src%3Dheader-signin%26state%3DhashArgsFromTB_us-east-1_d1ff62bdc895fc29&client_id=arn%3Aaws%3Asignin%3A%3A%3Aconsole%2Fcanvas&forceMobileApp=0&code_challenge=-Yh_03EoTGCpRiR-TxhBRtVY4Xu3N8R-qhu02xe1rzM&code_challenge_method=SHA-256");
-            this.Alert("AWS Launched", Form_Alert.enmType.Success);
-        }
-
-        private void buttonProxmox_Click(object sender, EventArgs e)
-        {
-            Process Proxmox = new Process();
-
-            // Preparing to Launch Proxmox
-            Proxmox.StartInfo.FileName = @"https://samproxmox:8006/#v1:0:18:4:::::8::";
-
-            // Launch Proxmox
-            Proxmox.Start();
-            this.Alert("Proxmox Launched", Form_Alert.enmType.Success);
-        }
-
         private void buttonMyCanal_Click(object sender, EventArgs e)
         {
             Process MyCanal = new Process();
@@ -890,60 +695,6 @@ namespace LauncherForAll
             // Launch MyCanal
             MyCanal.Start();
             this.Alert("MyCanal Launched", Form_Alert.enmType.Success);
-        }
-
-        private void buttonHotSpot_Click(object sender, EventArgs e)
-        {
-            if (Process.GetProcessesByName("hydra").Length == 0)
-            {
-                Process HotSpot = new Process();
-
-                // Preparing to Launch HotSpotShield
-                HotSpot.StartInfo.FileName = @"C:\Program Files(x86)\Hotspot Shield\11.0.0\bin\hsscp.exe";
-                HotSpot.StartInfo.WorkingDirectory = @"C:\Program Files(x86)\Hotspot Shield\11.0.0\bin\";
-
-                // Launch HotSpotShield
-                try
-                {
-                    HotSpot.Start();
-                    this.Alert("HotSpotShield Launched", Form_Alert.enmType.Success);
-                }
-                catch
-                {
-                    this.Alert("HotSpotShield Error Admin Rights Needed ?", Form_Alert.enmType.Error);
-                }
-            }
-            else
-            {
-                this.Alert("HotSpotShield is already Launched", Form_Alert.enmType.Warning);
-            }
-        }
-
-        private void buttonWireguard_Click(object sender, EventArgs e)
-        {
-            if (Process.GetProcessesByName("wireguard").Length == 0)
-            {
-                Process Wireguard = new Process();
-
-                // Preparing to Launch HWiNFO64
-                Wireguard.StartInfo.FileName = @"C:\Program Files\WireGuard\wireguard.exe";
-                Wireguard.StartInfo.WorkingDirectory = @"C:\Program Files\WireGuard\";
-
-                // Launch HWiNFO64
-                try
-                {
-                    Wireguard.Start();
-                    this.Alert("Wireguard Launched", Form_Alert.enmType.Success);
-                }
-                catch
-                {
-                    this.Alert("Wireguard Error Admin Rights Needed ?", Form_Alert.enmType.Error);
-                }
-            }
-            else
-            {
-                this.Alert("Wireguard is already Launched", Form_Alert.enmType.Warning);
-            }
         }
 
         private void buttonTeams_Click(object sender, EventArgs e)
@@ -999,32 +750,6 @@ namespace LauncherForAll
             }
         }
 
-        private void buttonOpenVPN_Click(object sender, EventArgs e)
-        {
-            if (Process.GetProcessesByName("OpenVPNConnect").Length == 0)
-            {
-                Process OpenVPNConnect = new Process();
-
-                // Preparing to Launch OpenVPNConnect
-                OpenVPNConnect.StartInfo.FileName = @"C:\Program Files\OpenVPN Connect\OpenVPNConnect.exe";
-
-                // Launch OpenVPNConnect
-                try
-                {
-                    OpenVPNConnect.Start();
-                    this.Alert("OpenVPNConnect Launched", Form_Alert.enmType.Success);
-                }
-                catch
-                {
-                    this.Alert("OpenVPNConnect Error Admin Rights Needed ?", Form_Alert.enmType.Error);
-                }
-            }
-            else
-            {
-                this.Alert("OpenVPNConnect is already Launched", Form_Alert.enmType.Warning);
-            }
-        }
-
         private void buttonDS4_Click(object sender, EventArgs e)
         {
             Process DS4 = new Process();
@@ -1053,31 +778,301 @@ namespace LauncherForAll
             }
         }
 
-        private void buttonVMWare_Click(object sender, EventArgs e)
+        private void buttonPaintNet_Click(object sender, EventArgs e)
         {
-            Process VMWarePro = new Process();
+            Process paintNet = new Process();
 
+            // Preparing to Launch paint.net
+            paintNet.StartInfo.FileName = @"C:\Program Files\paint.net\paintdotnet.exe";
 
-            if (Process.GetProcessesByName("vmware").Length == 0)
+            // Launch Outlook
+            paintNet.Start();
+
+            if (paintNet.Responding == true)
             {
-                // Preparing to Launch VMWare Pro
-                VMWarePro.StartInfo.FileName = @"D:\VMWare\vmware.exe";
+                this.Alert("paint.Net Launched", Form_Alert.enmType.Success);
+            }
+            else
+            {
+                this.Alert("paint.Net not Launched", Form_Alert.enmType.Error);
+            }
+        }
 
-                // Launch VMWare Pro
-                VMWarePro.Start();
+        private void buttonSteel_Click(object sender, EventArgs e)
+        {
+            Process SteelS = new Process();
 
-                if (VMWarePro.Responding == true)
+
+            if (Process.GetProcessesByName("SteelSeriesGG").Length == 0)
+            {
+                // Preparing to Launch SteelS
+                SteelS.StartInfo.FileName = @"C:\Program Files\SteelSeries\GG\SteelSeriesGG.exe";
+
+                // Launch SteelS
+                SteelS.StartInfo.Arguments = @" - dataPath = 'C:\ProgramData\SteelSeries\GG' - dbEnv = production";
+                SteelS.Start();
+
+                if (SteelS.Responding == true)
                 {
-                    this.Alert("VMWare Launched", Form_Alert.enmType.Success);
+                    this.Alert("Steel Series Launched", Form_Alert.enmType.Success);
                 }
                 else
                 {
-                    this.Alert("VMWare not Launched", Form_Alert.enmType.Error);
+                    this.Alert("Steel Series not Launched", Form_Alert.enmType.Error);
                 }
             }
             else
             {
-                this.Alert("VMWare already Launched", Form_Alert.enmType.Warning);
+                // Open window of SteelS if not opened
+                SteelS.StartInfo.FileName = @"C:\Program Files\SteelSeries\GG\SteelSeriesGGClient.exe";
+
+                SteelS.Start();
+                this.Alert("Steel Series already Launched", Form_Alert.enmType.Warning);
+            }
+        }
+
+        private void buttonPowerPoint_Click(object sender, EventArgs e)
+        {
+            if (Process.GetProcessesByName("POWERPNT").Length == 0)
+            {
+                Process PowerPoint = new Process();
+
+                // Preparing to Launch PowerPoint
+                PowerPoint.StartInfo.FileName = @"C:\Program Files\Microsoft Office\root\Office16\POWERPNT.EXE";
+
+                // Launch PowerPoint
+                try
+                {
+                    PowerPoint.Start();
+                    this.Alert("PowerPoint Launched", Form_Alert.enmType.Success);
+                }
+                catch
+                {
+                    this.Alert("PowerPoint can't be launch", Form_Alert.enmType.Error);
+                }
+            }
+            else
+            {
+                this.Alert("PowerPoint is already Launched", Form_Alert.enmType.Warning);
+            }
+        }
+
+        private void buttonWord_Click(object sender, EventArgs e)
+        {
+            if (Process.GetProcessesByName("WINWORD").Length == 0)
+            {
+                Process WORD = new Process();
+
+                // Preparing to Launch WORD
+                WORD.StartInfo.FileName = @"C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE";
+
+                // Launch WORD
+                try
+                {
+                    WORD.Start();
+                    this.Alert("WORD Launched", Form_Alert.enmType.Success);
+                }
+                catch
+                {
+                    this.Alert("WORD can't be launch", Form_Alert.enmType.Error);
+                }
+            }
+            else
+            {
+                this.Alert("WORD is already Launched", Form_Alert.enmType.Warning);
+            }
+        }
+
+        private void buttonExcel_Click(object sender, EventArgs e)
+        {
+            if (Process.GetProcessesByName("EXCEL").Length == 0)
+            {
+                Process EXCEL = new Process();
+
+                // Preparing to Launch EXCEL
+                EXCEL.StartInfo.FileName = @"C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE";
+
+                // Launch EXCEL
+                try
+                {
+                    EXCEL.Start();
+                    this.Alert("EXCEL Launched", Form_Alert.enmType.Success);
+                }
+                catch
+                {
+                    this.Alert("EXCEL can't be launch", Form_Alert.enmType.Error);
+                }
+            }
+            else
+            {
+                this.Alert("EXCEL is already Launched", Form_Alert.enmType.Warning);
+            }
+        }
+
+        private void buttonWhatsApp_Click(object sender, EventArgs e)
+        {
+            Process WhatsApp = new Process();
+            // Preparing to Launch WhatsApp
+            WhatsApp.StartInfo.FileName = @"C:\Program Files\WindowsApps\5319275A.WhatsAppDesktop_2.2322.2.0_x64__cv1g1gvanyjgm\WhatsApp.exe";
+
+            if (Process.GetProcessesByName("WhatsApp").Length == 0)
+            {
+                // Launch WhatsApp
+                try
+                {
+                    WhatsApp.Start();
+                    this.Alert("WhatsApp Launched", Form_Alert.enmType.Success);
+                }
+                catch
+                {
+                    this.Alert("WhatsApp can't be launch", Form_Alert.enmType.Error);
+                }
+            }
+            else
+            {
+                this.Alert("WhatsApp is already Launched", Form_Alert.enmType.Warning);
+            }
+        }
+
+        private void buttonZoom_Click(object sender, EventArgs e)
+        {
+            Process Zoom = new Process();
+            // Preparing to Launch Zoom
+            Zoom.StartInfo.FileName = @"C:\Users\samen\AppData\Roaming\Zoom\bin\Zoom.exe";
+
+            if (Process.GetProcessesByName("Zoom").Length == 0)
+            {
+                // Launch Zoom
+                try
+                {
+                    Zoom.Start();
+                    this.Alert("Zoom Launched", Form_Alert.enmType.Success);
+                }
+                catch
+                {
+                    this.Alert("Zoom can't be launch", Form_Alert.enmType.Error);
+                }
+            }
+            else
+            {
+                this.Alert("Zoom is already Launched", Form_Alert.enmType.Warning);
+            }
+        }
+
+        private void buttonTeamViewer_Click(object sender, EventArgs e)
+        {
+            Process TeamViewer = new Process();
+            // Preparing to Launch TeamViewer
+            TeamViewer.StartInfo.FileName = @"C:\Program Files\TeamViewer\TeamViewer.exe";
+            TeamViewer.StartInfo.WorkingDirectory = @"C:\Program Files\TeamViewer";
+
+            if (Process.GetProcessesByName("TeamViewer").Length == 0)
+            {
+                // Launch TeamViewer
+                try
+                {
+                    TeamViewer.Start();
+                    this.Alert("TeamViewer Launched", Form_Alert.enmType.Success);
+                }
+                catch
+                {
+                    this.Alert("TeamViewer can't be launch", Form_Alert.enmType.Error);
+                }
+            }
+            else
+            {
+                this.Alert("TeamViewer is already Launched", Form_Alert.enmType.Warning);
+            }
+        }
+
+        private void buttonParsec_Click(object sender, EventArgs e)
+        {
+            Process Parsec = new Process();
+            // Preparing to Launch Parsec
+            Parsec.StartInfo.FileName = @"C:\Program Files\Parsec\parsecd.exe";
+
+            if (Process.GetProcessesByName("Parsec").Length == 0)
+            {
+                // Launch Parsec
+                try
+                {
+                    Parsec.Start();
+                    this.Alert("Parsec Launched", Form_Alert.enmType.Success);
+                }
+                catch
+                {
+                    this.Alert("Parsec can't be launch", Form_Alert.enmType.Error);
+                }
+            }
+            else
+            {
+                this.Alert("Parsec is already Launched", Form_Alert.enmType.Warning);
+            }
+        }
+
+        private void buttonFileZilla_Click(object sender, EventArgs e)
+        {
+            Process FilzZilla = new Process();
+            // Preparing to FilzZilla FilzZilla
+            FilzZilla.StartInfo.FileName = @"D:\FileZilla\FileZilla FTP Client\filezilla.exe";
+            FilzZilla.StartInfo.WorkingDirectory = @"D:\FileZilla\FileZilla FTP Client";
+
+            if (Process.GetProcessesByName("FilzZilla").Length == 0)
+            {
+                // Launch FilzZilla
+                try
+                {
+                    FilzZilla.Start();
+                    this.Alert("FilzZilla Launched", Form_Alert.enmType.Success);
+                }
+                catch
+                {
+                    this.Alert("FilzZilla can't be launch", Form_Alert.enmType.Error);
+                }
+            }
+            else
+            {
+                this.Alert("FilzZilla is already Launched", Form_Alert.enmType.Warning);
+            }
+        }
+
+        private void buttonRiotGames_Click(object sender, EventArgs e)
+        {
+
+            /*/ TestConnection
+            if (frmGames.CheckForInternetConnection() == false)
+            {
+                this.Alert("Check For your Internet connection...", Form_Alert.enmType.Error);
+            }
+            */
+            if (Process.GetProcessesByName("RiotGames").Length == 0)
+            {
+                Process RiotGames = new Process();
+
+                // Preparing to Launch Riot Games
+                RiotGames.StartInfo.FileName = @"S:\Riot Games\Riot Client\RiotClientServices.exe";
+                RiotGames.StartInfo.WorkingDirectory = @"S:\Riot Games\Riot Client";
+                RiotGames.StartInfo.Verb = "runas"; // Ask admin rights
+
+                // Launch Riot Games
+                try
+                {
+                    RiotGames.Start();
+                    this.Alert("Riot Games Launched", Form_Alert.enmType.Success);
+                }
+                catch (Win32Exception ex)
+                {
+                    if (ex.NativeErrorCode == 1223)
+                    {
+                        // admins rights canceled
+                        this.Alert("Riot Games Error Admin Rights Needed", Form_Alert.enmType.Error);
+                    }
+                    else
+                    {
+                        // Unespected Error
+                        this.Alert("Unespected error" + ex.Message, Form_Alert.enmType.Error);
+                    }
+                }
             }
         }
     }

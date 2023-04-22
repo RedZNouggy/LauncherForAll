@@ -108,6 +108,10 @@ namespace LauncherForAll
                 this.buttonOtherApps.ForeColor = WhiteColor;
                 this.buttonOtherApps.Image = Properties.Resources.RedMod_Apps;
 
+                this.buttonSamEnv.BackgroundImage = Properties.Resources.Background_Buttons1;
+                this.buttonSamEnv.ForeColor = WhiteColor;
+                this.buttonSamEnv.Image = Properties.Resources.Red_samsrv;
+
                 this.buttonSettings.BackgroundImage = Properties.Resources.Background_Buttons1;
                 this.buttonSettings.Image = Properties.Resources.RedMod_settings;
                 this.buttonSettings.ForeColor = WhiteColor;
@@ -145,6 +149,10 @@ namespace LauncherForAll
                 this.buttonOtherApps.BackgroundImage = Properties.Resources.Background_Buttons;
                 this.buttonOtherApps.ForeColor = BlueColor;
                 this.buttonOtherApps.Image = Properties.Resources.BlueMod_Apps;
+
+                this.buttonSamEnv.BackgroundImage = Properties.Resources.Background_Buttons;
+                this.buttonSamEnv.ForeColor = BlueColor;
+                this.buttonSamEnv.Image = Properties.Resources.Blue_samsrv;
 
                 this.buttonSettings.BackgroundImage = Properties.Resources.Background_Buttons;
                 this.buttonSettings.Image = Properties.Resources.settings;
@@ -211,6 +219,19 @@ namespace LauncherForAll
             WebBrowser_vrb.FormBorderStyle = FormBorderStyle.None;
             this.pnlFormLoader.Controls.Add(WebBrowser_vrb);
             WebBrowser_vrb.Show();
+        }
+
+        private void buttonSamEnv_Click(object sender, EventArgs e)
+        {
+            pnlNav.Height = buttonSamEnv.Height;
+            pnlNav.Top = buttonSamEnv.Top;
+            pnlNav.Left = buttonSamEnv.Left;
+
+            this.pnlFormLoader.Controls.Clear();
+            frmSamEnv SamEnv_vrb = new frmSamEnv() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            SamEnv_vrb.FormBorderStyle = FormBorderStyle.None;
+            this.pnlFormLoader.Controls.Add(SamEnv_vrb);
+            SamEnv_vrb.Show();
         }
 
         private void buttonExit_Click(object sender, EventArgs e)
