@@ -75,6 +75,9 @@ namespace LauncherForAll
                 this.buttonExcel.FlatAppearance.BorderSize = 0;
                 this.buttonExcel.FlatStyle = FlatStyle.Flat;
 
+                this.buttonFirefox.FlatAppearance.BorderSize = 0;
+                this.buttonFirefox.FlatStyle = FlatStyle.Flat;
+
                 this.buttonWhatsApp.FlatAppearance.BorderSize = 0;
                 this.buttonWhatsApp.FlatStyle = FlatStyle.Flat;
 
@@ -187,6 +190,9 @@ namespace LauncherForAll
 
                 this.buttonMsstore.FlatAppearance.BorderSize = 1;
                 this.buttonMsstore.FlatStyle = FlatStyle.Popup;
+
+                this.buttonFirefox.FlatAppearance.BorderSize = 1;
+                this.buttonFirefox.FlatStyle = FlatStyle.Popup;
 
                 this.buttonChrome.FlatAppearance.BorderSize = 1;
                 this.buttonChrome.FlatStyle = FlatStyle.Popup;
@@ -1073,6 +1079,40 @@ namespace LauncherForAll
                         this.Alert("Unespected error" + ex.Message, Form_Alert.enmType.Error);
                     }
                 }
+            }
+        }
+
+        private void buttonFirefox_Click(object sender, EventArgs e)
+        {
+            /*/ TestConnection
+            if (frmGames.CheckForInternetConnection() == false)
+            {
+                this.Alert("Check For your Internet connection...", Form_Alert.enmType.Error);
+            }
+            */
+            if (Process.GetProcessesByName("Firefox").Length == 0)
+            {
+                Process Firefox = new Process();
+
+                // Preparing to Launch Firefox
+                Firefox.StartInfo.FileName = @"C:\Program Files\Mozilla Firefox\firefox.exe";
+                Firefox.StartInfo.WorkingDirectory = @"C:\Program Files\Mozilla Firefox";
+
+                //Launch Firefox
+                Firefox.Start();
+
+                if (Firefox.Responding == true)
+                {
+                    this.Alert("Firefox Launched", Form_Alert.enmType.Success);
+                }
+                else
+                {
+                    this.Alert("Firefox not Launched", Form_Alert.enmType.Error);
+                }
+            }
+            else
+            {
+                this.Alert("Firefox is already Launched", Form_Alert.enmType.Warning);
             }
         }
     }

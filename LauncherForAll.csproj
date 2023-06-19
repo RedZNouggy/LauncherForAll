@@ -398,6 +398,7 @@
   <ItemGroup>
     <Content Include="LauncherForAll.ico" />
     <Content Include="RedMod-Logo.ico" />
+    <None Include="Resources\Firefox.png" />
     <None Include="Resources\D4.jpg" />
     <None Include="Resources\overwatch-2.jpg" />
     <None Include="Resources\hosts_PT.png" />

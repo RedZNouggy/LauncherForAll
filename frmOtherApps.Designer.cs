@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmOtherApps));
             this.pnlFormLoader = new System.Windows.Forms.Panel();
+            this.buttonFirefox = new System.Windows.Forms.Button();
             this.buttonFileZilla = new System.Windows.Forms.Button();
             this.buttonParsec = new System.Windows.Forms.Button();
             this.buttonTeamViewer = new System.Windows.Forms.Button();
@@ -68,6 +69,7 @@
             // 
             // pnlFormLoader
             // 
+            this.pnlFormLoader.Controls.Add(this.buttonFirefox);
             this.pnlFormLoader.Controls.Add(this.buttonFileZilla);
             this.pnlFormLoader.Controls.Add(this.buttonParsec);
             this.pnlFormLoader.Controls.Add(this.buttonTeamViewer);
@@ -105,6 +107,17 @@
             this.pnlFormLoader.Name = "pnlFormLoader";
             this.pnlFormLoader.Size = new System.Drawing.Size(1000, 625);
             this.pnlFormLoader.TabIndex = 0;
+            // 
+            // buttonFirefox
+            // 
+            this.buttonFirefox.BackgroundImage = global::LauncherForAll.Properties.Resources.Firefox;
+            this.buttonFirefox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonFirefox.Location = new System.Drawing.Point(185, 189);
+            this.buttonFirefox.Name = "buttonFirefox";
+            this.buttonFirefox.Size = new System.Drawing.Size(70, 70);
+            this.buttonFirefox.TabIndex = 177;
+            this.buttonFirefox.UseVisualStyleBackColor = true;
+            this.buttonFirefox.Click += new System.EventHandler(this.buttonFirefox_Click);
             // 
             // buttonFileZilla
             // 
@@ -209,7 +222,7 @@
             // 
             this.buttonOBSLauncher.BackgroundImage = global::LauncherForAll.Properties.Resources.SL;
             this.buttonOBSLauncher.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonOBSLauncher.Location = new System.Drawing.Point(566, 189);
+            this.buttonOBSLauncher.Location = new System.Drawing.Point(664, 189);
             this.buttonOBSLauncher.Name = "buttonOBSLauncher";
             this.buttonOBSLauncher.Size = new System.Drawing.Size(70, 70);
             this.buttonOBSLauncher.TabIndex = 167;
@@ -229,7 +242,7 @@
             // 
             this.buttonPaintNet.BackgroundImage = global::LauncherForAll.Properties.Resources.PaintNET;
             this.buttonPaintNet.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonPaintNet.Location = new System.Drawing.Point(664, 189);
+            this.buttonPaintNet.Location = new System.Drawing.Point(762, 189);
             this.buttonPaintNet.Name = "buttonPaintNet";
             this.buttonPaintNet.Size = new System.Drawing.Size(70, 70);
             this.buttonPaintNet.TabIndex = 165;
@@ -263,7 +276,7 @@
             // 
             this.buttonMyCanal.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonMyCanal.BackgroundImage")));
             this.buttonMyCanal.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonMyCanal.Location = new System.Drawing.Point(185, 189);
+            this.buttonMyCanal.Location = new System.Drawing.Point(283, 189);
             this.buttonMyCanal.Name = "buttonMyCanal";
             this.buttonMyCanal.Size = new System.Drawing.Size(70, 70);
             this.buttonMyCanal.TabIndex = 128;
@@ -274,7 +287,7 @@
             // 
             this.buttonTwitch.BackgroundImage = global::LauncherForAll.Properties.Resources.Twitch;
             this.buttonTwitch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTwitch.Location = new System.Drawing.Point(468, 189);
+            this.buttonTwitch.Location = new System.Drawing.Point(566, 189);
             this.buttonTwitch.Name = "buttonTwitch";
             this.buttonTwitch.Size = new System.Drawing.Size(70, 70);
             this.buttonTwitch.TabIndex = 119;
@@ -286,7 +299,7 @@
             this.buttonYoutube.BackgroundImage = global::LauncherForAll.Properties.Resources.yt;
             this.buttonYoutube.FlatAppearance.BorderSize = 0;
             this.buttonYoutube.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonYoutube.Location = new System.Drawing.Point(378, 189);
+            this.buttonYoutube.Location = new System.Drawing.Point(476, 189);
             this.buttonYoutube.Name = "buttonYoutube";
             this.buttonYoutube.Size = new System.Drawing.Size(70, 70);
             this.buttonYoutube.TabIndex = 118;
@@ -429,7 +442,7 @@
             // 
             this.buttonSnapchat.BackgroundImage = global::LauncherForAll.Properties.Resources.snapchat;
             this.buttonSnapchat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonSnapchat.Location = new System.Drawing.Point(283, 189);
+            this.buttonSnapchat.Location = new System.Drawing.Point(381, 189);
             this.buttonSnapchat.Name = "buttonSnapchat";
             this.buttonSnapchat.Size = new System.Drawing.Size(70, 70);
             this.buttonSnapchat.TabIndex = 97;
@@ -533,5 +546,6 @@
         private System.Windows.Forms.Button buttonTeamViewer;
         private System.Windows.Forms.Button buttonParsec;
         private System.Windows.Forms.Button buttonFileZilla;
+        private System.Windows.Forms.Button buttonFirefox;
     }
 }
