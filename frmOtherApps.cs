@@ -1115,5 +1115,33 @@ namespace LauncherForAll
                 this.Alert("Firefox is already Launched", Form_Alert.enmType.Warning);
             }
         }
+
+        private void buttonSignal_Click(object sender, EventArgs e)
+        {
+            if (Process.GetProcessesByName("Signal").Length == 0)
+            {
+                Process Signal = new Process();
+
+                // Preparing to Launch Signal
+                Signal.StartInfo.FileName = @"C:\Users\samen\AppData\Local\Programs\signal-desktop\Signal.exe";
+                Signal.StartInfo.WorkingDirectory = @"C:\Users\samen\AppData\Local\Programs\signal-desktop";
+
+                //Launch Signal
+                Signal.Start();
+
+                if (Signal.Responding == true)
+                {
+                    this.Alert("Signal Launched", Form_Alert.enmType.Success);
+                }
+                else
+                {
+                    this.Alert("Signal not Launched", Form_Alert.enmType.Error);
+                }
+            }
+            else
+            {
+                this.Alert("Signal is already Launched", Form_Alert.enmType.Warning);
+            }
+        }
     }
 }
