@@ -398,6 +398,13 @@
   <ItemGroup>
     <Content Include="LauncherForAll.ico" />
     <Content Include="RedMod-Logo.ico" />
+    <None Include="Resources\heimdall.png" />
+    <None Include="Resources\duckdns.png" />
+    <None Include="Resources\opensense.png" />
+    <None Include="Resources\adguard.png" />
+    <None Include="Resources\pihole.png" />
+    <None Include="Resources\Tplink.png" />
+    <None Include="Resources\Portainer1.png" />
     <None Include="Resources\Firefox.png" />
     <None Include="Resources\D4.jpg" />
     <None Include="Resources\overwatch-2.jpg" />

@@ -108,6 +108,30 @@ namespace LauncherForAll
 
                 this.buttonPowerToys.FlatAppearance.BorderSize = 0;
                 this.buttonPowerToys.FlatStyle = FlatStyle.Flat;
+
+                this.buttonAdguard.FlatAppearance.BorderSize = 0;
+                this.buttonAdguard.FlatStyle = FlatStyle.Flat;
+
+                this.buttonDuckdns.FlatAppearance.BorderSize = 0;
+                this.buttonDuckdns.FlatStyle = FlatStyle.Flat;
+
+                this.buttonPihole.FlatAppearance.BorderSize = 0;
+                this.buttonPihole.FlatStyle = FlatStyle.Flat;
+
+                this.buttonOpensense.FlatAppearance.BorderSize = 0;
+                this.buttonOpensense.FlatStyle = FlatStyle.Flat;
+
+                this.buttonHeimdall.FlatAppearance.BorderSize = 0;
+                this.buttonHeimdall.FlatStyle = FlatStyle.Flat;
+
+                this.buttonPortainer.FlatAppearance.BorderSize = 0;
+                this.buttonPortainer.FlatStyle = FlatStyle.Flat;
+
+                this.buttonProxmox2.FlatAppearance.BorderSize = 0;
+                this.buttonProxmox2.FlatStyle = FlatStyle.Flat;
+
+                this.buttonTpLink.FlatAppearance.BorderSize = 0;
+                this.buttonTpLink.FlatStyle = FlatStyle.Flat;
             }
             else
             {
@@ -174,6 +198,29 @@ namespace LauncherForAll
                 this.buttonPowerToys.FlatAppearance.BorderSize = 1;
                 this.buttonPowerToys.FlatStyle = FlatStyle.Popup;
 
+                this.buttonAdguard.FlatAppearance.BorderSize = 1;
+                this.buttonAdguard.FlatStyle = FlatStyle.Popup;
+
+                this.buttonDuckdns.FlatAppearance.BorderSize = 1;
+                this.buttonDuckdns.FlatStyle = FlatStyle.Popup;
+
+                this.buttonPihole.FlatAppearance.BorderSize = 1;
+                this.buttonPihole.FlatStyle = FlatStyle.Popup;
+
+                this.buttonOpensense.FlatAppearance.BorderSize = 1;
+                this.buttonOpensense.FlatStyle = FlatStyle.Popup;
+
+                this.buttonHeimdall.FlatAppearance.BorderSize = 1;
+                this.buttonHeimdall.FlatStyle = FlatStyle.Popup;
+
+                this.buttonPortainer.FlatAppearance.BorderSize = 1;
+                this.buttonPortainer.FlatStyle = FlatStyle.Popup;
+
+                this.buttonProxmox2.FlatAppearance.BorderSize = 1;
+                this.buttonProxmox2.FlatStyle = FlatStyle.Popup;
+
+                this.buttonTpLink.FlatAppearance.BorderSize = 1;
+                this.buttonTpLink.FlatStyle = FlatStyle.Popup;
             }
         }
 
@@ -245,24 +292,6 @@ namespace LauncherForAll
             }
         }
 
-        private void buttonProxmox_Click(object sender, EventArgs e)
-        {
-            Process Proxmox = new Process();
-
-            // Preparing to Launch Proxmox
-            Proxmox.StartInfo.FileName = @"https://samproxmox:8006/#v1:0:18:4:::::8::";
-
-            // Launch Proxmox
-            Proxmox.Start();
-            this.Alert("Proxmox Launched", Form_Alert.enmType.Success);
-        }
-
-        private void buttonOwncloud_Click(object sender, EventArgs e)
-        {
-            Process.Start("http://samowncloud.samuelp.fr/");
-            this.Alert("Owncloud Launched", Form_Alert.enmType.Success);
-        }
-
         private void buttonWireguard_Click(object sender, EventArgs e)
         {
             Process Wireguard = new Process();
@@ -289,30 +318,6 @@ namespace LauncherForAll
             {
                 this.Alert("Wireguard already Launched", Form_Alert.enmType.Warning);
             }
-        }
-
-        private void buttonTautulli_Click(object sender, EventArgs e)
-        {
-            Process.Start("http://samtautulli:8181/home");
-            this.Alert("Tautulli Launched", Form_Alert.enmType.Success);
-        }
-
-        private void buttonTransmission_Click(object sender, EventArgs e)
-        {
-            Process.Start("http://samsrv:9091/transmission/web/");
-            this.Alert("Transmission Launched", Form_Alert.enmType.Success);
-        }
-
-        private void buttonSonarr_Click(object sender, EventArgs e)
-        {
-            Process.Start("http://samsrv:8989");
-            this.Alert("Sonarr Launched", Form_Alert.enmType.Success);
-        }
-
-        private void buttonRadarr_Click(object sender, EventArgs e)
-        {
-            Process.Start("http://samsrv:7878");
-            this.Alert("Radarr Launched", Form_Alert.enmType.Success);
         }
 
         private void buttonPlex_Click(object sender, EventArgs e)
@@ -624,6 +629,89 @@ namespace LauncherForAll
             {
                 this.Alert("PowerToysHosts is already Launched", Form_Alert.enmType.Warning);
             }
+        }
+
+        private void buttonTautulli_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://samtautulli:8181/home");
+            this.Alert("Tautulli Launched", Form_Alert.enmType.Success);
+        }
+
+        private void buttonTransmission_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://samsrv:9091/transmission/web/");
+            this.Alert("Transmission Launched", Form_Alert.enmType.Success);
+        }
+
+        private void buttonSonarr_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://samsrv:8989");
+            this.Alert("Sonarr Launched", Form_Alert.enmType.Success);
+        }
+
+        private void buttonRadarr_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://samsrv:7878");
+            this.Alert("Radarr Launched", Form_Alert.enmType.Success);
+        }
+
+        private void buttonProxmox_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://samproxmox:8006");
+            this.Alert("Portainer Launched", Form_Alert.enmType.Success);
+        }
+        private void buttonPortainer_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://samdocker:9443");
+            this.Alert("Portainer Launched", Form_Alert.enmType.Success);
+        }
+
+        private void buttonHeimdall_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://samdocker:5080");
+            this.Alert("Heimdall Launched", Form_Alert.enmType.Success);
+        }
+
+        private void buttonTpLink_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://192.168.1.3/webpages/login.html?t=1476264749915");
+            this.Alert("AdminTpLink Launched", Form_Alert.enmType.Success);
+        }
+
+        private void buttonPihole_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://pihole/admin");
+            this.Alert("Pihole Launched", Form_Alert.enmType.Success);
+        }
+
+        private void buttonAdguard_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://samadguard");
+            this.Alert("Adguard Launched", Form_Alert.enmType.Success);
+        }
+
+        private void buttonOpensense_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://192.168.1.254");
+            this.Alert("Opensense Launched", Form_Alert.enmType.Success);
+        }
+
+        private void buttonDuckdns_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://www.duckdns.org/domains");
+            this.Alert("DuckDns Launched", Form_Alert.enmType.Success);
+        }
+
+        private void buttonProxmox2_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://samproxmox2:8006");
+            this.Alert("Samproxmox2 Launched", Form_Alert.enmType.Success);
+        }
+
+        private void buttonOwncloud_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://samowncloud");
+            this.Alert("Owncloud Launched", Form_Alert.enmType.Success);
         }
     }
 }

@@ -30,6 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSamEnv));
             this.pnlFormLoader = new System.Windows.Forms.Panel();
+            this.buttonHeimdall = new System.Windows.Forms.Button();
+            this.buttonDuckdns = new System.Windows.Forms.Button();
+            this.buttonOpensense = new System.Windows.Forms.Button();
+            this.buttonAdguard = new System.Windows.Forms.Button();
+            this.buttonPihole = new System.Windows.Forms.Button();
+            this.buttonTpLink = new System.Windows.Forms.Button();
+            this.buttonPortainer = new System.Windows.Forms.Button();
             this.buttonPowerToys = new System.Windows.Forms.Button();
             this.buttonOpenVPN = new System.Windows.Forms.Button();
             this.buttonHotSpot = new System.Windows.Forms.Button();
@@ -51,11 +58,20 @@
             this.buttonWireguard = new System.Windows.Forms.Button();
             this.buttonTautulli = new System.Windows.Forms.Button();
             this.buttonProxmox = new System.Windows.Forms.Button();
+            this.buttonProxmox2 = new System.Windows.Forms.Button();
             this.pnlFormLoader.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlFormLoader
             // 
+            this.pnlFormLoader.Controls.Add(this.buttonProxmox2);
+            this.pnlFormLoader.Controls.Add(this.buttonHeimdall);
+            this.pnlFormLoader.Controls.Add(this.buttonDuckdns);
+            this.pnlFormLoader.Controls.Add(this.buttonOpensense);
+            this.pnlFormLoader.Controls.Add(this.buttonAdguard);
+            this.pnlFormLoader.Controls.Add(this.buttonPihole);
+            this.pnlFormLoader.Controls.Add(this.buttonTpLink);
+            this.pnlFormLoader.Controls.Add(this.buttonPortainer);
             this.pnlFormLoader.Controls.Add(this.buttonPowerToys);
             this.pnlFormLoader.Controls.Add(this.buttonOpenVPN);
             this.pnlFormLoader.Controls.Add(this.buttonHotSpot);
@@ -82,6 +98,83 @@
             this.pnlFormLoader.Size = new System.Drawing.Size(1000, 625);
             this.pnlFormLoader.TabIndex = 0;
             // 
+            // buttonHeimdall
+            // 
+            this.buttonHeimdall.BackgroundImage = global::LauncherForAll.Properties.Resources.heimdall;
+            this.buttonHeimdall.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonHeimdall.Location = new System.Drawing.Point(471, 295);
+            this.buttonHeimdall.Name = "buttonHeimdall";
+            this.buttonHeimdall.Size = new System.Drawing.Size(70, 70);
+            this.buttonHeimdall.TabIndex = 188;
+            this.buttonHeimdall.UseVisualStyleBackColor = true;
+            this.buttonHeimdall.Click += new System.EventHandler(this.buttonHeimdall_Click);
+            // 
+            // buttonDuckdns
+            // 
+            this.buttonDuckdns.BackgroundImage = global::LauncherForAll.Properties.Resources.duckdns;
+            this.buttonDuckdns.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonDuckdns.Location = new System.Drawing.Point(651, 295);
+            this.buttonDuckdns.Name = "buttonDuckdns";
+            this.buttonDuckdns.Size = new System.Drawing.Size(70, 70);
+            this.buttonDuckdns.TabIndex = 187;
+            this.buttonDuckdns.UseVisualStyleBackColor = true;
+            this.buttonDuckdns.Click += new System.EventHandler(this.buttonDuckdns_Click);
+            // 
+            // buttonOpensense
+            // 
+            this.buttonOpensense.BackgroundImage = global::LauncherForAll.Properties.Resources.opensense;
+            this.buttonOpensense.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonOpensense.Location = new System.Drawing.Point(373, 395);
+            this.buttonOpensense.Name = "buttonOpensense";
+            this.buttonOpensense.Size = new System.Drawing.Size(70, 70);
+            this.buttonOpensense.TabIndex = 186;
+            this.buttonOpensense.UseVisualStyleBackColor = true;
+            this.buttonOpensense.Click += new System.EventHandler(this.buttonOpensense_Click);
+            // 
+            // buttonAdguard
+            // 
+            this.buttonAdguard.BackgroundImage = global::LauncherForAll.Properties.Resources.adguard;
+            this.buttonAdguard.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonAdguard.Location = new System.Drawing.Point(280, 395);
+            this.buttonAdguard.Name = "buttonAdguard";
+            this.buttonAdguard.Size = new System.Drawing.Size(70, 70);
+            this.buttonAdguard.TabIndex = 185;
+            this.buttonAdguard.UseVisualStyleBackColor = true;
+            this.buttonAdguard.Click += new System.EventHandler(this.buttonAdguard_Click);
+            // 
+            // buttonPihole
+            // 
+            this.buttonPihole.BackgroundImage = global::LauncherForAll.Properties.Resources.pihole;
+            this.buttonPihole.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonPihole.Location = new System.Drawing.Point(190, 395);
+            this.buttonPihole.Name = "buttonPihole";
+            this.buttonPihole.Size = new System.Drawing.Size(70, 70);
+            this.buttonPihole.TabIndex = 184;
+            this.buttonPihole.UseVisualStyleBackColor = true;
+            this.buttonPihole.Click += new System.EventHandler(this.buttonPihole_Click);
+            // 
+            // buttonTpLink
+            // 
+            this.buttonTpLink.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonTpLink.BackgroundImage")));
+            this.buttonTpLink.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTpLink.Location = new System.Drawing.Point(561, 295);
+            this.buttonTpLink.Name = "buttonTpLink";
+            this.buttonTpLink.Size = new System.Drawing.Size(70, 70);
+            this.buttonTpLink.TabIndex = 183;
+            this.buttonTpLink.UseVisualStyleBackColor = true;
+            this.buttonTpLink.Click += new System.EventHandler(this.buttonTpLink_Click);
+            // 
+            // buttonPortainer
+            // 
+            this.buttonPortainer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonPortainer.BackgroundImage")));
+            this.buttonPortainer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonPortainer.Location = new System.Drawing.Point(373, 295);
+            this.buttonPortainer.Name = "buttonPortainer";
+            this.buttonPortainer.Size = new System.Drawing.Size(70, 70);
+            this.buttonPortainer.TabIndex = 182;
+            this.buttonPortainer.UseVisualStyleBackColor = true;
+            this.buttonPortainer.Click += new System.EventHandler(this.buttonPortainer_Click);
+            // 
             // buttonPowerToys
             // 
             this.buttonPowerToys.BackgroundImage = global::LauncherForAll.Properties.Resources.hosts_PT;
@@ -97,7 +190,7 @@
             // 
             this.buttonOpenVPN.BackgroundImage = global::LauncherForAll.Properties.Resources.OpenVPN;
             this.buttonOpenVPN.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonOpenVPN.Location = new System.Drawing.Point(476, 95);
+            this.buttonOpenVPN.Location = new System.Drawing.Point(471, 95);
             this.buttonOpenVPN.Name = "buttonOpenVPN";
             this.buttonOpenVPN.Size = new System.Drawing.Size(70, 70);
             this.buttonOpenVPN.TabIndex = 180;
@@ -108,7 +201,7 @@
             // 
             this.buttonHotSpot.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonHotSpot.BackgroundImage")));
             this.buttonHotSpot.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonHotSpot.Location = new System.Drawing.Point(566, 95);
+            this.buttonHotSpot.Location = new System.Drawing.Point(561, 95);
             this.buttonHotSpot.Name = "buttonHotSpot";
             this.buttonHotSpot.Size = new System.Drawing.Size(70, 70);
             this.buttonHotSpot.TabIndex = 179;
@@ -119,7 +212,7 @@
             // 
             this.buttonWindowsTerminal.BackgroundImage = global::LauncherForAll.Properties.Resources.WindowsTerminal;
             this.buttonWindowsTerminal.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonWindowsTerminal.Location = new System.Drawing.Point(378, 95);
+            this.buttonWindowsTerminal.Location = new System.Drawing.Point(373, 95);
             this.buttonWindowsTerminal.Name = "buttonWindowsTerminal";
             this.buttonWindowsTerminal.Size = new System.Drawing.Size(70, 70);
             this.buttonWindowsTerminal.TabIndex = 178;
@@ -130,7 +223,7 @@
             // 
             this.buttonHWM.BackgroundImage = global::LauncherForAll.Properties.Resources.HW;
             this.buttonHWM.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonHWM.Location = new System.Drawing.Point(662, 95);
+            this.buttonHWM.Location = new System.Drawing.Point(651, 95);
             this.buttonHWM.Name = "buttonHWM";
             this.buttonHWM.Size = new System.Drawing.Size(70, 70);
             this.buttonHWM.TabIndex = 177;
@@ -163,7 +256,7 @@
             // 
             this.buttonHandbrake.BackgroundImage = global::LauncherForAll.Properties.Resources.HandBrake_Icon;
             this.buttonHandbrake.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonHandbrake.Location = new System.Drawing.Point(95, 395);
+            this.buttonHandbrake.Location = new System.Drawing.Point(651, 395);
             this.buttonHandbrake.Name = "buttonHandbrake";
             this.buttonHandbrake.Size = new System.Drawing.Size(70, 70);
             this.buttonHandbrake.TabIndex = 174;
@@ -185,7 +278,7 @@
             // 
             this.buttonAngryIP.BackgroundImage = global::LauncherForAll.Properties.Resources.angry;
             this.buttonAngryIP.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonAngryIP.Location = new System.Drawing.Point(566, 295);
+            this.buttonAngryIP.Location = new System.Drawing.Point(741, 95);
             this.buttonAngryIP.Name = "buttonAngryIP";
             this.buttonAngryIP.Size = new System.Drawing.Size(70, 70);
             this.buttonAngryIP.TabIndex = 172;
@@ -196,7 +289,7 @@
             // 
             this.buttonAWS.BackgroundImage = global::LauncherForAll.Properties.Resources.AWS;
             this.buttonAWS.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonAWS.Location = new System.Drawing.Point(662, 295);
+            this.buttonAWS.Location = new System.Drawing.Point(651, 195);
             this.buttonAWS.Name = "buttonAWS";
             this.buttonAWS.Size = new System.Drawing.Size(70, 70);
             this.buttonAWS.TabIndex = 171;
@@ -207,7 +300,7 @@
             // 
             this.buttonVirtualBox.BackgroundImage = global::LauncherForAll.Properties.Resources.Virtualbox_logo;
             this.buttonVirtualBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonVirtualBox.Location = new System.Drawing.Point(476, 295);
+            this.buttonVirtualBox.Location = new System.Drawing.Point(561, 395);
             this.buttonVirtualBox.Name = "buttonVirtualBox";
             this.buttonVirtualBox.Size = new System.Drawing.Size(70, 70);
             this.buttonVirtualBox.TabIndex = 170;
@@ -218,7 +311,7 @@
             // 
             this.buttonVMWare.BackgroundImage = global::LauncherForAll.Properties.Resources.VMWare;
             this.buttonVMWare.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonVMWare.Location = new System.Drawing.Point(378, 295);
+            this.buttonVMWare.Location = new System.Drawing.Point(471, 395);
             this.buttonVMWare.Name = "buttonVMWare";
             this.buttonVMWare.Size = new System.Drawing.Size(70, 70);
             this.buttonVMWare.TabIndex = 169;
@@ -240,7 +333,7 @@
             // 
             this.buttonTransmission.BackgroundImage = global::LauncherForAll.Properties.Resources.Transmission;
             this.buttonTransmission.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTransmission.Location = new System.Drawing.Point(566, 195);
+            this.buttonTransmission.Location = new System.Drawing.Point(561, 195);
             this.buttonTransmission.Name = "buttonTransmission";
             this.buttonTransmission.Size = new System.Drawing.Size(70, 70);
             this.buttonTransmission.TabIndex = 133;
@@ -251,7 +344,7 @@
             // 
             this.buttonSonarr.BackgroundImage = global::LauncherForAll.Properties.Resources.Sonarr;
             this.buttonSonarr.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonSonarr.Location = new System.Drawing.Point(476, 195);
+            this.buttonSonarr.Location = new System.Drawing.Point(471, 195);
             this.buttonSonarr.Name = "buttonSonarr";
             this.buttonSonarr.Size = new System.Drawing.Size(70, 70);
             this.buttonSonarr.TabIndex = 132;
@@ -262,7 +355,7 @@
             // 
             this.buttonRadarr.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonRadarr.BackgroundImage")));
             this.buttonRadarr.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonRadarr.Location = new System.Drawing.Point(378, 195);
+            this.buttonRadarr.Location = new System.Drawing.Point(373, 195);
             this.buttonRadarr.Name = "buttonRadarr";
             this.buttonRadarr.Size = new System.Drawing.Size(70, 70);
             this.buttonRadarr.TabIndex = 131;
@@ -314,6 +407,18 @@
             this.buttonProxmox.UseVisualStyleBackColor = true;
             this.buttonProxmox.Click += new System.EventHandler(this.buttonProxmox_Click);
             // 
+            // buttonProxmox2
+            // 
+            this.buttonProxmox2.BackgroundImage = global::LauncherForAll.Properties.Resources.proxmox;
+            this.buttonProxmox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonProxmox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonProxmox2.Location = new System.Drawing.Point(95, 395);
+            this.buttonProxmox2.Name = "buttonProxmox2";
+            this.buttonProxmox2.Size = new System.Drawing.Size(70, 70);
+            this.buttonProxmox2.TabIndex = 189;
+            this.buttonProxmox2.UseVisualStyleBackColor = true;
+            this.buttonProxmox2.Click += new System.EventHandler(this.buttonProxmox2_Click);
+            // 
             // frmSamEnv
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -354,5 +459,13 @@
         private System.Windows.Forms.Button buttonVS;
         private System.Windows.Forms.Button buttonVSCode;
         private System.Windows.Forms.Button buttonPowerToys;
+        private System.Windows.Forms.Button buttonPortainer;
+        private System.Windows.Forms.Button buttonTpLink;
+        private System.Windows.Forms.Button buttonPihole;
+        private System.Windows.Forms.Button buttonAdguard;
+        private System.Windows.Forms.Button buttonOpensense;
+        private System.Windows.Forms.Button buttonDuckdns;
+        private System.Windows.Forms.Button buttonHeimdall;
+        private System.Windows.Forms.Button buttonProxmox2;
     }
 }
