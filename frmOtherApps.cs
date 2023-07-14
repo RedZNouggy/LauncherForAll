@@ -919,7 +919,7 @@ namespace LauncherForAll
         {
             Process WhatsApp = new Process();
             // Preparing to Launch WhatsApp
-            WhatsApp.StartInfo.FileName = @"C:\Program Files\WindowsApps\5319275A.WhatsAppDesktop_2.2322.2.0_x64__cv1g1gvanyjgm\WhatsApp.exe";
+            WhatsApp.StartInfo.FileName = @"C:\Program Files\WindowsApps\5319275A.WhatsAppDesktop_2.2327.6.0_x64__cv1g1gvanyjgm\WhatsApp.exe";
 
             if (Process.GetProcessesByName("WhatsApp").Length == 0)
             {
