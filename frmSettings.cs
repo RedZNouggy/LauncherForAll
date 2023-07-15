@@ -1,14 +1,47 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Security.AccessControl;
+using System.Security.Principal;
 using System.Windows.Forms;
 
 namespace LauncherForAll
 {
     public partial class frmSettings : Form
     {
+        private Image GetUserProfileImage()
+        {
+            try
+            {
+                // Open The Key
+                using (RegistryKey userKey = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\AccountPicture\Users\"))
+                {
+                    // Get SID (Security Identifier) of Current User
+                    string currentUserSID = WindowsIdentity.GetCurrent().User.Value;
+
+                    // Open subkey
+                    using (RegistryKey currentUserKey = userKey.OpenSubKey(currentUserSID))
+                    {
+                        // Read Access Path to Image
+                        string userProfileImagePath = (string)currentUserKey.GetValue("Image64");
+
+                        // Get data
+                        if (!string.IsNullOrEmpty(userProfileImagePath) && File.Exists(userProfileImagePath))
+                        {
+                            return Image.FromFile(userProfileImagePath);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return null;
+        }
+
         // RedMod Colors
         // 255 255 255 White
         private Color WhiteColor = Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -36,11 +69,13 @@ namespace LauncherForAll
                 this.buttonSettingsWifi.Image = Properties.Resources.RedMod_Ethernet;
                 this.pictureBox3.BackgroundImage = Properties.Resources.RedMod_NoBorder;
                 this.pictureBox4.BackgroundImage = Properties.Resources.RedMod_Apps_Icon;
+                this.pictureBox5.BackgroundImage = Properties.Resources.defaut_use_white;
 
                 this.label1.ForeColor = WhiteColor;
                 this.label2.ForeColor = WhiteColor;
                 this.label3.ForeColor = WhiteColor;
                 this.label4.ForeColor = WhiteColor;
+                this.label5.ForeColor = WhiteColor;
 
                 this.buttonSettingsWifi.FlatAppearance.BorderColor = WhiteColor;
 
@@ -62,15 +97,16 @@ namespace LauncherForAll
                 this.buttonSettingsWifi.Image = Properties.Resources.Ethernet;
                 this.pictureBox3.BackgroundImage = Properties.Resources.NoBorder;
                 this.pictureBox4.BackgroundImage = Properties.Resources.Apps_Icon;
+                this.pictureBox5.BackgroundImage = Properties.Resources.defaut_user;
 
                 this.label1.ForeColor = Color.Black;
                 this.label2.ForeColor = Color.Black;
                 this.label3.ForeColor = Color.Black;
                 this.label4.ForeColor = Color.Black;
+                this.label5.ForeColor = Color.Black;
 
                 this.buttonSettingsWifi.ForeColor = Color.Black;
                 this.buttonSettingsWifi.FlatAppearance.BorderColor = Color.Black;
-                //this.buttonSettingsWifi.Image = 
 
                 this.button1.ForeColor = Color.Black;
                 this.button1.FlatAppearance.BorderColor = Color.Black;
@@ -107,6 +143,17 @@ namespace LauncherForAll
                 this.rjToggleButton4.CheckState = CheckState.Unchecked;
             }
 
+            // ProfilePicture ?
+            if (File.Exists(programData + @"\LauncherForAll\Set_ProfilePict.temp"))
+            {
+                this.rjToggleButton5.CheckState = CheckState.Checked;
+
+            }
+            else
+            {
+                this.rjToggleButton5.CheckState = CheckState.Unchecked;
+            }
+
         }
 
         public void Alert(string msg, Form_Alert.enmType type)
@@ -131,16 +178,8 @@ namespace LauncherForAll
 
             if (this.rjToggleButton1.Checked)
             {
-                if (File.Exists(programData + @"\LauncherForAll\Set_StartNotification.config"))
+                if (!File.Exists(programData + @"\LauncherForAll\Set_StartNotification.config"))
                 {
-                    // Nothing
-                }
-                else
-                {
-                    // DirectorySecurity ds = Directory.GetAccessControl(programData + @"\LauncherForAll");
-                    // ds.AddAccessRule(new FileSystemAccessRule("Everyone", FileSystemRights.FullControl, AccessControlType.Allow));
-                    // Directory.SetAccessControl(programData + @"\LauncherForAll", ds);
-
                     File.WriteAllText(programData + @"\LauncherForAll\Set_StartNotification.config", "1");
                 }
             }
@@ -149,19 +188,10 @@ namespace LauncherForAll
                 // Not redMod
                 if (File.Exists(programData + @"\LauncherForAll\Set_StartNotification.config"))
                 {
-                    // DirectorySecurity ds = Directory.GetAccessControl(programData + @"\LauncherForAll");
-                    // ds.AddAccessRule(new FileSystemAccessRule("Everyone", FileSystemRights.FullControl, AccessControlType.Allow));
-                    // Directory.SetAccessControl(programData + @"\LauncherForAll", ds);
-
                     File.Delete(programData + @"\LauncherForAll\Set_StartNotification.config");
                 }
                 else
                 {
-                    // redMod
-                    // DirectorySecurity ds = Directory.GetAccessControl(programData + @"\LauncherForAll");
-                    // ds.AddAccessRule(new FileSystemAccessRule("Everyone", FileSystemRights.FullControl, AccessControlType.Allow));
-                    // Directory.SetAccessControl(programData + @"\LauncherForAll", ds);
-
                     try
                     {
                         File.Delete(programData + @"\LauncherForAll\Set_StartNotification.config");
@@ -181,16 +211,8 @@ namespace LauncherForAll
 
             if (this.rjToggleButton2.Checked)
             {
-                if (File.Exists(programData + @"\LauncherForAll\Set_redMod.config"))
+                if (!File.Exists(programData + @"\LauncherForAll\Set_redMod.config"))
                 {
-                    // Nothing
-                }
-                else
-                {
-                    // DirectorySecurity ds = Directory.GetAccessControl(programData + @"\LauncherForAll");
-                    // ds.AddAccessRule(new FileSystemAccessRule("Everyone", FileSystemRights.FullControl, AccessControlType.Allow));
-                    // Directory.SetAccessControl(programData + @"\LauncherForAll", ds);
-
                     File.WriteAllText(programData + @"\LauncherForAll\Set_redMod.config", "1");
                     Application.Restart();
                 }
@@ -200,21 +222,12 @@ namespace LauncherForAll
                 // Not redMod
                 if (File.Exists(programData + @"\LauncherForAll\Set_redMod.config"))
                 {
-                    // DirectorySecurity ds = Directory.GetAccessControl(programData + @"\LauncherForAll");
-                    // ds.AddAccessRule(new FileSystemAccessRule("Everyone", FileSystemRights.FullControl, AccessControlType.Allow));
-                    // Directory.SetAccessControl(programData + @"\LauncherForAll", ds);
-
                     File.Delete(programData + @"\LauncherForAll\Set_redMod.config");
 
                     Application.Restart();
                 }
                 else
                 {
-                    // redMod
-                    // DirectorySecurity ds = Directory.GetAccessControl(programData + @"\LauncherForAll");
-                    // ds.AddAccessRule(new FileSystemAccessRule("Everyone", FileSystemRights.FullControl, AccessControlType.Allow));
-                    // Directory.SetAccessControl(programData + @"\LauncherForAll", ds);
-
                     try
                     {
                         File.Delete(programData + @"\LauncherForAll\Set_redMod.config");
@@ -234,38 +247,19 @@ namespace LauncherForAll
 
             if (this.rjToggleButton3.Checked)
             {
-                if (File.Exists(programData + @"\LauncherForAll\Set_AppsFlat.config"))
+                if (!File.Exists(programData + @"\LauncherForAll\Set_AppsFlat.config"))
                 {
-                    // Nothing
-                }
-                else
-                {
-                    // DirectorySecurity ds = Directory.GetAccessControl(programData + @"\LauncherForAll");
-                    // ds.AddAccessRule(new FileSystemAccessRule("Everyone", FileSystemRights.FullControl, AccessControlType.Allow));
-                    // Directory.SetAccessControl(programData + @"\LauncherForAll", ds);
-
                     File.WriteAllText(programData + @"\LauncherForAll\Set_AppsFlat.config", "1");
                 }
             }
             else
             {
-                // Not    
                 if (File.Exists(programData + @"\LauncherForAll\Set_AppsFlat.config"))
                 {
-                    // DirectorySecurity ds = Directory.GetAccessControl(programData + @"\LauncherForAll");
-                    // ds.AddAccessRule(new FileSystemAccessRule("Everyone", FileSystemRights.FullControl, AccessControlType.Allow));
-                    // Directory.SetAccessControl(programData + @"\LauncherForAll", ds);
-
                     File.Delete(programData + @"\LauncherForAll\Set_AppsFlat.config");
-
                 }
                 else
                 {
-                    // AppsFlat
-                    // DirectorySecurity ds = Directory.GetAccessControl(programData + @"\LauncherForAll");
-                    // ds.AddAccessRule(new FileSystemAccessRule("Everyone", FileSystemRights.FullControl, AccessControlType.Allow));
-                    // Directory.SetAccessControl(programData + @"\LauncherForAll", ds);
-
                     try
                     {
                         File.Delete(programData + @"\LauncherForAll\Set_AppsFlat.config");
@@ -285,38 +279,20 @@ namespace LauncherForAll
 
             if (this.rjToggleButton4.Checked)
             {
-                if (File.Exists(programData + @"\LauncherForAll\Set_BrowseApps.config"))
+                if (!File.Exists(programData + @"\LauncherForAll\Set_BrowseApps.config"))
                 {
-                    // Nothing
-                }
-                else
-                {
-                    // DirectorySecurity ds = Directory.GetAccessControl(programData + @"\LauncherForAll");
-                    // ds.AddAccessRule(new FileSystemAccessRule("Everyone", FileSystemRights.FullControl, AccessControlType.Allow));
-                    // Directory.SetAccessControl(programData + @"\LauncherForAll", ds);
-
                     File.WriteAllText(programData + @"\LauncherForAll\Set_BrowseApps.config", "1");
                 }
             }
             else
             {
-                // Not    
                 if (File.Exists(programData + @"\LauncherForAll\Set_BrowseApps.config"))
                 {
-                    // DirectorySecurity ds = Directory.GetAccessControl(programData + @"\LauncherForAll");
-                    // ds.AddAccessRule(new FileSystemAccessRule("Everyone", FileSystemRights.FullControl, AccessControlType.Allow));
-                    // Directory.SetAccessControl(programData + @"\LauncherForAll", ds);
-
                     File.Delete(programData + @"\LauncherForAll\Set_BrowseApps.config");
 
                 }
                 else
                 {
-                    // Browse
-                    // DirectorySecurity ds = Directory.GetAccessControl(programData + @"\LauncherForAll");
-                    // ds.AddAccessRule(new FileSystemAccessRule("Everyone", FileSystemRights.FullControl, AccessControlType.Allow));
-                    // Directory.SetAccessControl(programData + @"\LauncherForAll", ds);
-
                     try
                     {
                         File.Delete(programData + @"\LauncherForAll\Set_BrowseApps.config");
@@ -325,6 +301,41 @@ namespace LauncherForAll
                     catch (Exception)
                     {
                         File.WriteAllText(programData + @"\LauncherForAll\Set_BrowseApps.config", "1");
+                    }
+                }
+            }
+        }
+
+        private void rjToggleButton5_CheckedChanged(object sender, EventArgs e)
+        {
+            string programData = Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData);
+            if (this.rjToggleButton5.Checked)
+            {
+                if (!File.Exists(programData + @"\LauncherForAll\Set_ProfilePict.temp"))
+                {
+                    File.WriteAllText(programData + @"\LauncherForAll\Set_ProfilePict.temp", "1");
+                    Application.Restart();
+                }
+            }
+            else
+            {
+                if (File.Exists(programData + @"\LauncherForAll\Set_ProfilePict.temp"))
+                {
+                    File.Delete(programData + @"\LauncherForAll\Set_ProfilePict.temp");
+                    Application.Restart();
+                }
+                else
+                {
+                    try
+                    {
+                        File.Delete(programData + @"\LauncherForAll\Set_ProfilePict.temp");
+                        File.WriteAllText(programData + @"\LauncherForAll\Set_ProfilePict.temp", "1");
+                        Application.Restart();
+                    }
+                    catch (Exception)
+                    {
+                        File.WriteAllText(programData + @"\LauncherForAll\Set_ProfilePict.temp", "1");
+                        Application.Restart();
                     }
                 }
             }

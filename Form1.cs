@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Runtime.InteropServices;
+using System.Security.Principal;
 using System.Windows.Forms;
 
 namespace LauncherForAll
@@ -56,6 +58,37 @@ namespace LauncherForAll
             label2.Text = Environment.UserName;
         }
 
+        private Image GetUserProfileImage()
+        {
+            try
+            {
+                // Open The Key
+                using (RegistryKey userKey = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\AccountPicture\Users\"))
+                {
+                    // Get SID (Security Identifier) of Current User
+                    string currentUserSID = WindowsIdentity.GetCurrent().User.Value;
+
+                    // Open subkey
+                    using (RegistryKey currentUserKey = userKey.OpenSubKey(currentUserSID))
+                    {
+                        // Read Access Path to Image
+                        string userProfileImagePath = (string)currentUserKey.GetValue("Image64");
+
+                        // Get data
+                        if (!string.IsNullOrEmpty(userProfileImagePath) && File.Exists(userProfileImagePath))
+                        {
+                            return Image.FromFile(userProfileImagePath);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return null;
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
             siticoneShadowForm1.SetShadowForm(this);
@@ -63,11 +96,7 @@ namespace LauncherForAll
             string programData = Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData);
 
             // StartNotification ?
-            if (File.Exists(programData + @"\LauncherForAll\Set_StartNotification.config"))
-            {
-                // Nothing
-            }
-            else
+            if (!File.Exists(programData + @"\LauncherForAll\Set_StartNotification.config"))
             {
                 // redMod
                 if (File.Exists(programData + @"\LauncherForAll\Set_redMod.config"))
@@ -88,14 +117,21 @@ namespace LauncherForAll
             // RedMod ?
             if (File.Exists(programData + @"\LauncherForAll\Set_redMod.config"))
             {
-                // RegistryKey key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\AccountPicture\Users\");
-
-
                 this.BackColor = PurpleColor;
 
                 this.panel1.BackColor = BlackPurpleColor;
 
-                this.pictureBox1.Image = Properties.Resources.RedMod_ProfileDefault_2;
+                // Get User Profile Picture
+                Image userProfileImage = GetUserProfileImage();
+
+                if (userProfileImage != null & File.Exists(programData + @"\LauncherForAll\Set_ProfilePict.temp"))
+                {
+                    pictureBox1.Image = userProfileImage;
+                }
+                else
+                {
+                    pictureBox1.Image = Properties.Resources.RedMod_ProfileDefault_2;
+                }
 
                 // Title
                 this.pictureBox2.Image = Properties.Resources.RedMod_Title;
@@ -134,7 +170,17 @@ namespace LauncherForAll
 
                 this.panel1.BackColor = BackBlackBlueColor;
 
-                this.pictureBox1.BackgroundImage = Properties.Resources.ProfileDefault;
+                // Get User Profile Picture
+                Image userProfileImage = GetUserProfileImage();
+
+                if (userProfileImage != null & File.Exists(programData + @"\LauncherForAll\Set_ProfilePict.temp"))
+                {
+                    pictureBox1.Image = userProfileImage;
+                }
+                else
+                {
+                    pictureBox1.Image = Properties.Resources.ProfileDefault;
+                }
 
                 this.label2.ForeColor = BlueColor;
                 this.pnlNav.BackColor = BlueColor;

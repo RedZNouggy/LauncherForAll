@@ -398,6 +398,8 @@
   <ItemGroup>
     <Content Include="LauncherForAll.ico" />
     <Content Include="RedMod-Logo.ico" />
+    <None Include="Resources\defaut_use_white.png" />
+    <None Include="Resources\defaut_user.png" />
     <None Include="Resources\heimdall.png" />
     <None Include="Resources\duckdns.png" />
     <None Include="Resources\opensense.png" />

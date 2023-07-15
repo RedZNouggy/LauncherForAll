@@ -209,7 +209,6 @@ namespace LauncherForAll
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::LauncherForAll.Properties.Resources.ProfileDefault;
             this.pictureBox1.Location = new System.Drawing.Point(115, 50);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(60, 60);

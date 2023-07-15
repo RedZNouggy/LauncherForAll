@@ -343,6 +343,26 @@ namespace LauncherForAll.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap defaut_use_white {
+            get {
+                object obj = ResourceManager.GetObject("defaut_use_white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap defaut_user {
+            get {
+                object obj = ResourceManager.GetObject("defaut_user", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap DisableNotifIcon {
             get {
                 object obj = ResourceManager.GetObject("DisableNotifIcon", resourceCulture);

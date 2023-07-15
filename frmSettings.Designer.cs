@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSettings));
             this.pnlFormLoader = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.rjToggleButton5 = new LauncherForAll.RJControls.RJToggleButton();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -45,6 +48,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.buttonSettingsWifi = new System.Windows.Forms.Button();
             this.pnlFormLoader.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -53,6 +57,9 @@
             // 
             // pnlFormLoader
             // 
+            this.pnlFormLoader.Controls.Add(this.pictureBox5);
+            this.pnlFormLoader.Controls.Add(this.label5);
+            this.pnlFormLoader.Controls.Add(this.rjToggleButton5);
             this.pnlFormLoader.Controls.Add(this.pictureBox4);
             this.pnlFormLoader.Controls.Add(this.pictureBox3);
             this.pnlFormLoader.Controls.Add(this.label4);
@@ -71,6 +78,42 @@
             this.pnlFormLoader.Name = "pnlFormLoader";
             this.pnlFormLoader.Size = new System.Drawing.Size(1000, 625);
             this.pnlFormLoader.TabIndex = 0;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackgroundImage = global::LauncherForAll.Properties.Resources.defaut_user;
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox5.Location = new System.Drawing.Point(699, 314);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox5.TabIndex = 19;
+            this.pictureBox5.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label5.Location = new System.Drawing.Point(729, 314);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(158, 20);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "Enable Profile Picture";
+            // 
+            // rjToggleButton5
+            // 
+            this.rjToggleButton5.AutoSize = true;
+            this.rjToggleButton5.Location = new System.Drawing.Point(894, 316);
+            this.rjToggleButton5.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rjToggleButton5.Name = "rjToggleButton5";
+            this.rjToggleButton5.OffBackColor = System.Drawing.Color.Gray;
+            this.rjToggleButton5.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rjToggleButton5.OnBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjToggleButton5.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rjToggleButton5.Size = new System.Drawing.Size(45, 22);
+            this.rjToggleButton5.TabIndex = 17;
+            this.rjToggleButton5.UseVisualStyleBackColor = true;
+            this.rjToggleButton5.CheckedChanged += new System.EventHandler(this.rjToggleButton5_CheckedChanged);
             // 
             // pictureBox4
             // 
@@ -256,6 +299,7 @@
             this.Text = "frmSettings";
             this.pnlFormLoader.ResumeLayout(false);
             this.pnlFormLoader.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -281,5 +325,8 @@
         private RJControls.RJToggleButton rjToggleButton4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private RJControls.RJToggleButton rjToggleButton5;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Label label5;
     }
 }

@@ -64,9 +64,6 @@ namespace LauncherForAll
                 this.buttonSonarr.FlatAppearance.BorderSize = 0;
                 this.buttonSonarr.FlatStyle = FlatStyle.Flat;
 
-                this.buttonTransmission.FlatAppearance.BorderSize = 0;
-                this.buttonTransmission.FlatStyle = FlatStyle.Flat;
-
                 this.buttonOwncloud.FlatAppearance.BorderSize = 0;
                 this.buttonOwncloud.FlatStyle = FlatStyle.Flat;
 
@@ -146,9 +143,6 @@ namespace LauncherForAll
 
                 this.buttonSonarr.FlatAppearance.BorderSize = 1;
                 this.buttonSonarr.FlatStyle = FlatStyle.Popup;
-
-                this.buttonTransmission.FlatAppearance.BorderSize = 1;
-                this.buttonTransmission.FlatStyle = FlatStyle.Popup;
 
                 this.buttonOwncloud.FlatAppearance.BorderSize = 1;
                 this.buttonOwncloud.FlatStyle = FlatStyle.Popup;
@@ -633,14 +627,8 @@ namespace LauncherForAll
 
         private void buttonTautulli_Click(object sender, EventArgs e)
         {
-            Process.Start("http://samtautulli:8181/home");
+            Process.Start("http://samtautulli.local:8181/home");
             this.Alert("Tautulli Launched", Form_Alert.enmType.Success);
-        }
-
-        private void buttonTransmission_Click(object sender, EventArgs e)
-        {
-            Process.Start("http://samsrv:9091/transmission/web/");
-            this.Alert("Transmission Launched", Form_Alert.enmType.Success);
         }
 
         private void buttonSonarr_Click(object sender, EventArgs e)
@@ -662,31 +650,31 @@ namespace LauncherForAll
         }
         private void buttonPortainer_Click(object sender, EventArgs e)
         {
-            Process.Start("https://samdocker:9443");
+            Process.Start("https://samdocker.local:9443");
             this.Alert("Portainer Launched", Form_Alert.enmType.Success);
         }
 
         private void buttonHeimdall_Click(object sender, EventArgs e)
         {
-            Process.Start("http://samdocker:5080");
+            Process.Start("http://samdocker.local:5080");
             this.Alert("Heimdall Launched", Form_Alert.enmType.Success);
         }
 
         private void buttonTpLink_Click(object sender, EventArgs e)
         {
-            Process.Start("http://192.168.1.3/webpages/login.html?t=1476264749915");
+            Process.Start("http://tplink.local/webpages/login.html?t=1476264749915");
             this.Alert("AdminTpLink Launched", Form_Alert.enmType.Success);
         }
 
         private void buttonPihole_Click(object sender, EventArgs e)
         {
-            Process.Start("http://pihole/admin");
+            Process.Start("http://pihole.local/admin");
             this.Alert("Pihole Launched", Form_Alert.enmType.Success);
         }
 
         private void buttonAdguard_Click(object sender, EventArgs e)
         {
-            Process.Start("http://samadguard");
+            Process.Start("http://samadguard.local");
             this.Alert("Adguard Launched", Form_Alert.enmType.Success);
         }
 
@@ -704,13 +692,13 @@ namespace LauncherForAll
 
         private void buttonProxmox2_Click(object sender, EventArgs e)
         {
-            Process.Start("https://samproxmox2:8006");
+            Process.Start("https://samproxmox2.local:8006");
             this.Alert("Samproxmox2 Launched", Form_Alert.enmType.Success);
         }
 
         private void buttonOwncloud_Click(object sender, EventArgs e)
         {
-            Process.Start("http://samowncloud");
+            Process.Start("http://samowncloud.local");
             this.Alert("Owncloud Launched", Form_Alert.enmType.Success);
         }
     }
