@@ -129,6 +129,15 @@ namespace LauncherForAll
 
                 this.buttonTpLink.FlatAppearance.BorderSize = 0;
                 this.buttonTpLink.FlatStyle = FlatStyle.Flat;
+
+                this.buttonNZBFinder.FlatAppearance.BorderSize = 0;
+                this.buttonNZBFinder.FlatStyle = FlatStyle.Flat;
+
+                this.buttonNZBGet.FlatAppearance.BorderSize = 0;
+                this.buttonNZBGet.FlatStyle = FlatStyle.Flat;
+
+                this.buttonUsenetFarm.FlatAppearance.BorderSize = 0;
+                this.buttonUsenetFarm.FlatStyle = FlatStyle.Flat;
             }
             else
             {
@@ -215,6 +224,15 @@ namespace LauncherForAll
 
                 this.buttonTpLink.FlatAppearance.BorderSize = 1;
                 this.buttonTpLink.FlatStyle = FlatStyle.Popup;
+
+                this.buttonNZBFinder.FlatAppearance.BorderSize = 1;
+                this.buttonNZBFinder.FlatStyle = FlatStyle.Popup;
+
+                this.buttonNZBGet.FlatAppearance.BorderSize = 1;
+                this.buttonNZBGet.FlatStyle = FlatStyle.Popup;
+
+                this.buttonUsenetFarm.FlatAppearance.BorderSize = 1;
+                this.buttonUsenetFarm.FlatStyle = FlatStyle.Popup;
             }
         }
 
@@ -645,8 +663,8 @@ namespace LauncherForAll
 
         private void buttonProxmox_Click(object sender, EventArgs e)
         {
-            Process.Start("https://samproxmox:8006");
-            this.Alert("Portainer Launched", Form_Alert.enmType.Success);
+            Process.Start("https://samproxmox.local:8006");
+            this.Alert("Samproxmox Launched", Form_Alert.enmType.Success);
         }
         private void buttonPortainer_Click(object sender, EventArgs e)
         {
@@ -700,6 +718,36 @@ namespace LauncherForAll
         {
             Process.Start("http://samowncloud.local");
             this.Alert("Owncloud Launched", Form_Alert.enmType.Success);
+        }
+
+        private void buttonNZBFinder_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://nzbfinder.ws/");
+            this.Alert("NZBFinder Launched", Form_Alert.enmType.Success);
+        }
+
+        private void buttonNZBGet_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://samsrv:6789/");
+            this.Alert("NZBGet Launched", Form_Alert.enmType.Success);
+        }
+
+        private void buttonUsenetFarm_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://usenet.farm/members.html#dashboard");
+            this.Alert("Usenet.Farm Launched", Form_Alert.enmType.Success);
+        }
+
+        private void buttonHomeassistant_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://samvpn:8123/");
+            this.Alert("Homeassistant Launched", Form_Alert.enmType.Success);
+        }
+
+        private void buttonPortainer1_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://samvpn:9002/");
+            this.Alert("Portainer Launched", Form_Alert.enmType.Success);
         }
     }
 }

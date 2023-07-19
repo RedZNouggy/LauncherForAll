@@ -533,6 +533,16 @@ namespace LauncherForAll.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Homeassistant {
+            get {
+                object obj = ResourceManager.GetObject("Homeassistant", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hosts_PT {
             get {
                 object obj = ResourceManager.GetObject("hosts_PT", resourceCulture);
@@ -666,6 +676,26 @@ namespace LauncherForAll.Properties {
         internal static System.Drawing.Bitmap NoBorder {
             get {
                 object obj = ResourceManager.GetObject("NoBorder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NZBFinder {
+            get {
+                object obj = ResourceManager.GetObject("NZBFinder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NZBGet {
+            get {
+                object obj = ResourceManager.GetObject("NZBGet", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1266,6 +1296,16 @@ namespace LauncherForAll.Properties {
         internal static System.Drawing.Bitmap Twitch {
             get {
                 object obj = ResourceManager.GetObject("Twitch", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UsenetFarm {
+            get {
+                object obj = ResourceManager.GetObject("UsenetFarm", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

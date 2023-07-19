@@ -398,6 +398,10 @@
   <ItemGroup>
     <Content Include="LauncherForAll.ico" />
     <Content Include="RedMod-Logo.ico" />
+    <None Include="Resources\Homeassistant.png" />
+    <None Include="Resources\UsenetFarm.png" />
+    <None Include="Resources\NZBFinder.png" />
+    <None Include="Resources\NZBGet.png" />
     <None Include="Resources\defaut_use_white.png" />
     <None Include="Resources\defaut_user.png" />
     <None Include="Resources\heimdall.png" />
