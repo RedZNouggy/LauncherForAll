@@ -45,7 +45,7 @@ namespace LauncherForAll
                 this.buttonHome.BackgroundImage = Properties.Resources.RedMod_Home;
                 this.buttonBackRight.BackgroundImage = Properties.Resources.RedMod_BackRight;
                 this.buttonBack.BackgroundImage = Properties.Resources.RedMod_Back;
-
+                this.buttonReload.BackgroundImage = Properties.Resources.reload_red;
             }
             else
             {
@@ -53,6 +53,7 @@ namespace LauncherForAll
                 this.buttonHome.BackgroundImage = Properties.Resources.Home;
                 this.buttonBackRight.BackgroundImage = Properties.Resources.BackRight;
                 this.buttonBack.BackgroundImage = Properties.Resources.Back;
+                this.buttonReload.BackgroundImage = Properties.Resources.reload1;
             }
         }
 
@@ -69,6 +70,16 @@ namespace LauncherForAll
         private void buttonHome_Click(object sender, EventArgs e)
         {
             this.webBrowser1.Navigate("https://google.com");
+        }
+
+        private void buttonReload_Click(object sender, EventArgs e)
+        {
+            // Skip refresh if about:blank is loaded to avoid removing
+            // content specified by the DocumentText property.
+            if (!webBrowser1.Url.Equals("about:blank"))
+            {
+                webBrowser1.Refresh();
+            }
         }
     }
 }

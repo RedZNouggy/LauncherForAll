@@ -398,6 +398,9 @@
   <ItemGroup>
     <Content Include="LauncherForAll.ico" />
     <Content Include="RedMod-Logo.ico" />
+    <None Include="Resources\reload1.png" />
+    <None Include="Resources\reload-red.png" />
+    <None Include="Resources\reload.png" />
     <None Include="Resources\Homeassistant.png" />
     <None Include="Resources\UsenetFarm.png" />
     <None Include="Resources\NZBFinder.png" />

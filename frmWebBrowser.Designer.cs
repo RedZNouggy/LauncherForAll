@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmWebBrowser));
             this.pnlFormLoader = new System.Windows.Forms.Panel();
+            this.buttonReload = new System.Windows.Forms.Button();
             this.buttonBack = new System.Windows.Forms.Button();
             this.buttonBackRight = new System.Windows.Forms.Button();
             this.buttonHome = new System.Windows.Forms.Button();
@@ -39,6 +40,7 @@
             // 
             // pnlFormLoader
             // 
+            this.pnlFormLoader.Controls.Add(this.buttonReload);
             this.pnlFormLoader.Controls.Add(this.buttonBack);
             this.pnlFormLoader.Controls.Add(this.buttonBackRight);
             this.pnlFormLoader.Controls.Add(this.buttonHome);
@@ -47,6 +49,19 @@
             this.pnlFormLoader.Name = "pnlFormLoader";
             this.pnlFormLoader.Size = new System.Drawing.Size(1000, 625);
             this.pnlFormLoader.TabIndex = 1;
+            // 
+            // buttonReload
+            // 
+            this.buttonReload.BackgroundImage = global::LauncherForAll.Properties.Resources.reload1;
+            this.buttonReload.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonReload.FlatAppearance.BorderSize = 0;
+            this.buttonReload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonReload.Location = new System.Drawing.Point(12, 193);
+            this.buttonReload.Name = "buttonReload";
+            this.buttonReload.Size = new System.Drawing.Size(45, 45);
+            this.buttonReload.TabIndex = 4;
+            this.buttonReload.UseVisualStyleBackColor = true;
+            this.buttonReload.Click += new System.EventHandler(this.buttonReload_Click);
             // 
             // buttonBack
             // 
@@ -120,5 +135,6 @@
         private System.Windows.Forms.Button buttonHome;
         private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Button buttonBackRight;
+        private System.Windows.Forms.Button buttonReload;
     }
 }
