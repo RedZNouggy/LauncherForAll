@@ -36,7 +36,7 @@
             this.buttonUsenetFarm = new System.Windows.Forms.Button();
             this.buttonNZBFinder = new System.Windows.Forms.Button();
             this.buttonProxmox2 = new System.Windows.Forms.Button();
-            this.buttonHeimdall = new System.Windows.Forms.Button();
+            this.buttonHomarr = new System.Windows.Forms.Button();
             this.buttonDuckdns = new System.Windows.Forms.Button();
             this.buttonOpensense = new System.Windows.Forms.Button();
             this.buttonAdguard = new System.Windows.Forms.Button();
@@ -74,7 +74,7 @@
             this.pnlFormLoader.Controls.Add(this.buttonUsenetFarm);
             this.pnlFormLoader.Controls.Add(this.buttonNZBFinder);
             this.pnlFormLoader.Controls.Add(this.buttonProxmox2);
-            this.pnlFormLoader.Controls.Add(this.buttonHeimdall);
+            this.pnlFormLoader.Controls.Add(this.buttonHomarr);
             this.pnlFormLoader.Controls.Add(this.buttonDuckdns);
             this.pnlFormLoader.Controls.Add(this.buttonOpensense);
             this.pnlFormLoader.Controls.Add(this.buttonAdguard);
@@ -173,16 +173,16 @@
             this.buttonProxmox2.UseVisualStyleBackColor = true;
             this.buttonProxmox2.Click += new System.EventHandler(this.buttonProxmox2_Click);
             // 
-            // buttonHeimdall
+            // buttonHomarr
             // 
-            this.buttonHeimdall.BackgroundImage = global::LauncherForAll.Properties.Resources.heimdall;
-            this.buttonHeimdall.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonHeimdall.Location = new System.Drawing.Point(280, 195);
-            this.buttonHeimdall.Name = "buttonHeimdall";
-            this.buttonHeimdall.Size = new System.Drawing.Size(70, 70);
-            this.buttonHeimdall.TabIndex = 188;
-            this.buttonHeimdall.UseVisualStyleBackColor = true;
-            this.buttonHeimdall.Click += new System.EventHandler(this.buttonHeimdall_Click);
+            this.buttonHomarr.BackgroundImage = global::LauncherForAll.Properties.Resources.Homarr;
+            this.buttonHomarr.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonHomarr.Location = new System.Drawing.Point(280, 195);
+            this.buttonHomarr.Name = "buttonHomarr";
+            this.buttonHomarr.Size = new System.Drawing.Size(70, 70);
+            this.buttonHomarr.TabIndex = 188;
+            this.buttonHomarr.UseVisualStyleBackColor = true;
+            this.buttonHomarr.Click += new System.EventHandler(this.buttonHomarr_Click);
             // 
             // buttonDuckdns
             // 
@@ -516,7 +516,7 @@
         private System.Windows.Forms.Button buttonAdguard;
         private System.Windows.Forms.Button buttonOpensense;
         private System.Windows.Forms.Button buttonDuckdns;
-        private System.Windows.Forms.Button buttonHeimdall;
+        private System.Windows.Forms.Button buttonHomarr;
         private System.Windows.Forms.Button buttonProxmox2;
         private System.Windows.Forms.Button buttonNZBGet;
         private System.Windows.Forms.Button buttonUsenetFarm;

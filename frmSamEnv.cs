@@ -118,8 +118,8 @@ namespace LauncherForAll
                 this.buttonOpensense.FlatAppearance.BorderSize = 0;
                 this.buttonOpensense.FlatStyle = FlatStyle.Flat;
 
-                this.buttonHeimdall.FlatAppearance.BorderSize = 0;
-                this.buttonHeimdall.FlatStyle = FlatStyle.Flat;
+                this.buttonHomarr.FlatAppearance.BorderSize = 0;
+                this.buttonHomarr.FlatStyle = FlatStyle.Flat;
 
                 this.buttonPortainer.FlatAppearance.BorderSize = 0;
                 this.buttonPortainer.FlatStyle = FlatStyle.Flat;
@@ -213,8 +213,8 @@ namespace LauncherForAll
                 this.buttonOpensense.FlatAppearance.BorderSize = 1;
                 this.buttonOpensense.FlatStyle = FlatStyle.Popup;
 
-                this.buttonHeimdall.FlatAppearance.BorderSize = 1;
-                this.buttonHeimdall.FlatStyle = FlatStyle.Popup;
+                this.buttonHomarr.FlatAppearance.BorderSize = 1;
+                this.buttonHomarr.FlatStyle = FlatStyle.Popup;
 
                 this.buttonPortainer.FlatAppearance.BorderSize = 1;
                 this.buttonPortainer.FlatStyle = FlatStyle.Popup;
@@ -672,10 +672,10 @@ namespace LauncherForAll
             this.Alert("Portainer Launched", Form_Alert.enmType.Success);
         }
 
-        private void buttonHeimdall_Click(object sender, EventArgs e)
+        private void buttonHomarr_Click(object sender, EventArgs e)
         {
-            Process.Start("http://samdocker.local:5080");
-            this.Alert("Heimdall Launched", Form_Alert.enmType.Success);
+            Process.Start("http://samdocker.local:7575/fr");
+            this.Alert("Homarr Launched", Form_Alert.enmType.Success);
         }
 
         private void buttonTpLink_Click(object sender, EventArgs e)
