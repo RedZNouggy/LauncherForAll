@@ -138,6 +138,15 @@ namespace LauncherForAll
 
                 this.buttonUsenetFarm.FlatAppearance.BorderSize = 0;
                 this.buttonUsenetFarm.FlatStyle = FlatStyle.Flat;
+
+                this.buttonOverseer.FlatAppearance.BorderSize = 0;
+                this.buttonOverseer.FlatStyle = FlatStyle.Flat;
+
+                this.buttonNoIP.FlatAppearance.BorderSize = 0;
+                this.buttonNoIP.FlatStyle = FlatStyle.Flat;
+
+                this.buttonSwitch00.FlatAppearance.BorderSize = 0;
+                this.buttonSwitch00.FlatStyle = FlatStyle.Flat;
             }
             else
             {
@@ -233,6 +242,15 @@ namespace LauncherForAll
 
                 this.buttonUsenetFarm.FlatAppearance.BorderSize = 1;
                 this.buttonUsenetFarm.FlatStyle = FlatStyle.Popup;
+
+                this.buttonOverseer.FlatAppearance.BorderSize = 1;
+                this.buttonOverseer.FlatStyle = FlatStyle.Popup;
+
+                this.buttonNoIP.FlatAppearance.BorderSize = 1;
+                this.buttonNoIP.FlatStyle = FlatStyle.Popup;
+
+                this.buttonSwitch00.FlatAppearance.BorderSize = 1;
+                this.buttonSwitch00.FlatStyle = FlatStyle.Popup;
             }
         }
 
