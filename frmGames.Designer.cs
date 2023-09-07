@@ -152,7 +152,7 @@
             // 
             // buttonCSGO
             // 
-            this.buttonCSGO.BackgroundImage = global::LauncherForAll.Properties.Resources.CSGO;
+            this.buttonCSGO.BackgroundImage = global::LauncherForAll.Properties.Resources.cs2;
             this.buttonCSGO.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonCSGO.Location = new System.Drawing.Point(625, 7);
             this.buttonCSGO.Name = "buttonCSGO";

@@ -68,10 +68,10 @@
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup>
-    <ManifestCertificateThumbprint>485D8ED9672C3AB06DC8471E596FF07D7077C150</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>21C58719421025183B4A3E683A4E4DDBA58C01B8</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>LauncherForAll_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>LauncherForAll_1_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -268,6 +268,7 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="LauncherForAll_1_TemporaryKey.pfx" />
     <None Include="LauncherForAll_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\app.manifest" />
@@ -398,6 +399,7 @@
   <ItemGroup>
     <Content Include="LauncherForAll.ico" />
     <Content Include="RedMod-Logo.ico" />
+    <None Include="Resources\cs2.jpg" />
     <None Include="Resources\switch.png" />
     <None Include="Resources\NoIP.png" />
     <None Include="Resources\Overseer.png" />

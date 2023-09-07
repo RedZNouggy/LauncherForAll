@@ -242,7 +242,7 @@ namespace LauncherForAll
         }
         private void buttonCSGO_Click(object sender, EventArgs e)
         {
-            if (Process.GetProcessesByName("csgo").Length == 0)
+            if (Process.GetProcessesByName("cs2").Length == 0)
             {
                 if (Process.GetProcessesByName("Steam").Length == 0)
                 {
@@ -260,35 +260,33 @@ namespace LauncherForAll
                 }
                 Process csgo = new Process();
 
-                // Preparing the launch of csgo
-                csgo.StartInfo.FileName = @"steam://rungameid/730";
-                csgo.StartInfo.Arguments = @"+fps_max 165 - high - novid - refresh 165 - nojoy + r_dynamic 0 - console - threads 4 + cl_interp 0 + cl_interp_ratio 1 + cl_updaterate 128 + cl_forcepreload 1";
-
+                // Preparing the launch of cs2
+                csgo.StartInfo.FileName = @"steam://launch/730/Dialog";
                 // Launch csgo
                 csgo.Start();
                 if (csgo.Responding == true)
                 {
-                    this.Alert("CS:GO Launched", Form_Alert.enmType.Success);
+                    this.Alert("CS2 Launched", Form_Alert.enmType.Success);
                 }
                 else
                 {
-                    this.Alert("CS:GO not Launched", Form_Alert.enmType.Success);
+                    this.Alert("CS2 not Launched", Form_Alert.enmType.Success);
                 }
             }
-            else if (Process.GetProcessesByName("csgo").Length > 0)
+            else if (Process.GetProcessesByName("cs2").Length > 0)
             {
-                this.Alert("CS:GO is already Launched", Form_Alert.enmType.Warning);
+                this.Alert("CS2 is already Launched", Form_Alert.enmType.Warning);
             }
-            if (Process.GetProcessesByName("vibranceGUI").Length == 0)
-            {
-                Process vibranceGUI = new Process();
-
-                // Preparing the launch of VibranceGUI
-                vibranceGUI.StartInfo.FileName = @"D:\TOUT\APPLICATIONS\vibranceGUI.exe";
-                
-                // Launch vibranceGUI
-                vibranceGUI.Start();
-            }
+         //   if (Process.GetProcessesByName("vibranceGUI").Length == 0)
+         //   {
+         //       Process vibranceGUI = new Process();
+         //
+         //       // Preparing the launch of VibranceGUI
+         //       vibranceGUI.StartInfo.FileName = @"D:\TOUT\APPLICATIONS\vibranceGUI.exe";
+         //       
+         //      // Launch vibranceGUI
+         //       vibranceGUI.Start();
+         //   }
         }
         private void buttonValorant_Click(object sender, EventArgs e)
         {
