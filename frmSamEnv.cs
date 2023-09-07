@@ -749,5 +749,24 @@ namespace LauncherForAll
             Process.Start("http://samvpn:9002/");
             this.Alert("Portainer Launched", Form_Alert.enmType.Success);
         }
+
+        private void buttonOverseer_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://samdocker.local:5055/");
+            this.Alert("Overseer Launched", Form_Alert.enmType.Success);
+        }
+
+        private void buttonNoIP_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://www.noip.com/login");
+            this.Alert("NoIP Launched", Form_Alert.enmType.Success);
+        }
+
+        private void buttonSwitch00_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://192.168.1.196");
+            Process.Start("http://192.168.1.38");
+            this.Alert("Switch00 Launched", Form_Alert.enmType.Success);
+        }
     }
 }

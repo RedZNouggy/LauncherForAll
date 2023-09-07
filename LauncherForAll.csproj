@@ -398,6 +398,9 @@
   <ItemGroup>
     <Content Include="LauncherForAll.ico" />
     <Content Include="RedMod-Logo.ico" />
+    <None Include="Resources\switch.png" />
+    <None Include="Resources\NoIP.png" />
+    <None Include="Resources\Overseer.png" />
     <None Include="Resources\Homarr.png" />
     <None Include="Resources\reload1.png" />
     <None Include="Resources\reload-red.png" />

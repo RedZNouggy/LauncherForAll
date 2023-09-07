@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSamEnv));
             this.pnlFormLoader = new System.Windows.Forms.Panel();
+            this.buttonSwitch00 = new System.Windows.Forms.Button();
+            this.buttonOverseer = new System.Windows.Forms.Button();
+            this.buttonNoIP = new System.Windows.Forms.Button();
             this.buttonHomeassistant = new System.Windows.Forms.Button();
             this.buttonPortainer1 = new System.Windows.Forms.Button();
             this.buttonNZBGet = new System.Windows.Forms.Button();
@@ -68,6 +71,9 @@
             // 
             // pnlFormLoader
             // 
+            this.pnlFormLoader.Controls.Add(this.buttonSwitch00);
+            this.pnlFormLoader.Controls.Add(this.buttonOverseer);
+            this.pnlFormLoader.Controls.Add(this.buttonNoIP);
             this.pnlFormLoader.Controls.Add(this.buttonHomeassistant);
             this.pnlFormLoader.Controls.Add(this.buttonPortainer1);
             this.pnlFormLoader.Controls.Add(this.buttonNZBGet);
@@ -105,6 +111,39 @@
             this.pnlFormLoader.Name = "pnlFormLoader";
             this.pnlFormLoader.Size = new System.Drawing.Size(1000, 625);
             this.pnlFormLoader.TabIndex = 0;
+            // 
+            // buttonSwitch00
+            // 
+            this.buttonSwitch00.BackgroundImage = global::LauncherForAll.Properties.Resources._switch;
+            this.buttonSwitch00.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonSwitch00.Location = new System.Drawing.Point(651, 195);
+            this.buttonSwitch00.Name = "buttonSwitch00";
+            this.buttonSwitch00.Size = new System.Drawing.Size(70, 70);
+            this.buttonSwitch00.TabIndex = 198;
+            this.buttonSwitch00.UseVisualStyleBackColor = true;
+            this.buttonSwitch00.Click += new System.EventHandler(this.buttonSwitch00_Click);
+            // 
+            // buttonOverseer
+            // 
+            this.buttonOverseer.BackgroundImage = global::LauncherForAll.Properties.Resources.Overseer;
+            this.buttonOverseer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonOverseer.Location = new System.Drawing.Point(280, 195);
+            this.buttonOverseer.Name = "buttonOverseer";
+            this.buttonOverseer.Size = new System.Drawing.Size(70, 70);
+            this.buttonOverseer.TabIndex = 197;
+            this.buttonOverseer.UseVisualStyleBackColor = true;
+            this.buttonOverseer.Click += new System.EventHandler(this.buttonOverseer_Click);
+            // 
+            // buttonNoIP
+            // 
+            this.buttonNoIP.BackgroundImage = global::LauncherForAll.Properties.Resources.NoIP;
+            this.buttonNoIP.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonNoIP.Location = new System.Drawing.Point(831, 195);
+            this.buttonNoIP.Name = "buttonNoIP";
+            this.buttonNoIP.Size = new System.Drawing.Size(70, 70);
+            this.buttonNoIP.TabIndex = 196;
+            this.buttonNoIP.UseVisualStyleBackColor = true;
+            this.buttonNoIP.Click += new System.EventHandler(this.buttonNoIP_Click);
             // 
             // buttonHomeassistant
             // 
@@ -177,7 +216,7 @@
             // 
             this.buttonHomarr.BackgroundImage = global::LauncherForAll.Properties.Resources.Homarr;
             this.buttonHomarr.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonHomarr.Location = new System.Drawing.Point(280, 195);
+            this.buttonHomarr.Location = new System.Drawing.Point(373, 195);
             this.buttonHomarr.Name = "buttonHomarr";
             this.buttonHomarr.Size = new System.Drawing.Size(70, 70);
             this.buttonHomarr.TabIndex = 188;
@@ -188,7 +227,7 @@
             // 
             this.buttonDuckdns.BackgroundImage = global::LauncherForAll.Properties.Resources.duckdns;
             this.buttonDuckdns.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonDuckdns.Location = new System.Drawing.Point(651, 195);
+            this.buttonDuckdns.Location = new System.Drawing.Point(831, 295);
             this.buttonDuckdns.Name = "buttonDuckdns";
             this.buttonDuckdns.Size = new System.Drawing.Size(70, 70);
             this.buttonDuckdns.TabIndex = 187;
@@ -232,7 +271,7 @@
             // 
             this.buttonTpLink.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonTpLink.BackgroundImage")));
             this.buttonTpLink.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTpLink.Location = new System.Drawing.Point(471, 195);
+            this.buttonTpLink.Location = new System.Drawing.Point(561, 195);
             this.buttonTpLink.Name = "buttonTpLink";
             this.buttonTpLink.Size = new System.Drawing.Size(70, 70);
             this.buttonTpLink.TabIndex = 183;
@@ -243,7 +282,7 @@
             // 
             this.buttonPortainer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonPortainer.BackgroundImage")));
             this.buttonPortainer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonPortainer.Location = new System.Drawing.Point(373, 195);
+            this.buttonPortainer.Location = new System.Drawing.Point(471, 195);
             this.buttonPortainer.Name = "buttonPortainer";
             this.buttonPortainer.Size = new System.Drawing.Size(70, 70);
             this.buttonPortainer.TabIndex = 182;
@@ -353,7 +392,7 @@
             // 
             this.buttonAngryIP.BackgroundImage = global::LauncherForAll.Properties.Resources.angry;
             this.buttonAngryIP.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonAngryIP.Location = new System.Drawing.Point(741, 195);
+            this.buttonAngryIP.Location = new System.Drawing.Point(831, 95);
             this.buttonAngryIP.Name = "buttonAngryIP";
             this.buttonAngryIP.Size = new System.Drawing.Size(70, 70);
             this.buttonAngryIP.TabIndex = 172;
@@ -364,7 +403,7 @@
             // 
             this.buttonAWS.BackgroundImage = global::LauncherForAll.Properties.Resources.AWS;
             this.buttonAWS.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonAWS.Location = new System.Drawing.Point(561, 195);
+            this.buttonAWS.Location = new System.Drawing.Point(741, 195);
             this.buttonAWS.Name = "buttonAWS";
             this.buttonAWS.Size = new System.Drawing.Size(70, 70);
             this.buttonAWS.TabIndex = 171;
@@ -523,5 +562,8 @@
         private System.Windows.Forms.Button buttonNZBFinder;
         private System.Windows.Forms.Button buttonPortainer1;
         private System.Windows.Forms.Button buttonHomeassistant;
+        private System.Windows.Forms.Button buttonNoIP;
+        private System.Windows.Forms.Button buttonOverseer;
+        private System.Windows.Forms.Button buttonSwitch00;
     }
 }

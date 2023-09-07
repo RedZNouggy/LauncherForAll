@@ -73,6 +73,16 @@ namespace LauncherForAll.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _switch {
+            get {
+                object obj = ResourceManager.GetObject("switch", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ada216e157757c965a766aae6e21423a {
             get {
                 object obj = ResourceManager.GetObject("ada216e157757c965a766aae6e21423a", resourceCulture);
@@ -693,6 +703,16 @@ namespace LauncherForAll.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap NoIP {
+            get {
+                object obj = ResourceManager.GetObject("NoIP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap NZBFinder {
             get {
                 object obj = ResourceManager.GetObject("NZBFinder", resourceCulture);
@@ -756,6 +776,16 @@ namespace LauncherForAll.Properties {
         internal static System.Drawing.Bitmap Outlook {
             get {
                 object obj = ResourceManager.GetObject("Outlook", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Overseer {
+            get {
+                object obj = ResourceManager.GetObject("Overseer", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
