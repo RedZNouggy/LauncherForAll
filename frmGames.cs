@@ -261,7 +261,7 @@ namespace LauncherForAll
                 Process csgo = new Process();
 
                 // Preparing the launch of cs2
-                csgo.StartInfo.FileName = @"steam://launch/730/Dialog";
+                csgo.StartInfo.FileName = @"steam://rungameid/730";
                 // Launch csgo
                 csgo.Start();
                 if (csgo.Responding == true)
