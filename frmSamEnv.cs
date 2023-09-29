@@ -55,6 +55,9 @@ namespace LauncherForAll
                 this.buttonWireguard.FlatAppearance.BorderSize = 0;
                 this.buttonWireguard.FlatStyle = FlatStyle.Flat;
 
+                this.buttonDLink.FlatAppearance.BorderSize = 0;
+                this.buttonDLink.FlatStyle = FlatStyle.Flat;
+
                 this.buttonPlex.FlatAppearance.BorderSize = 0;
                 this.buttonPlex.FlatStyle = FlatStyle.Flat;
 
@@ -112,23 +115,14 @@ namespace LauncherForAll
                 this.buttonDuckdns.FlatAppearance.BorderSize = 0;
                 this.buttonDuckdns.FlatStyle = FlatStyle.Flat;
 
-                this.buttonPihole.FlatAppearance.BorderSize = 0;
-                this.buttonPihole.FlatStyle = FlatStyle.Flat;
-
-                this.buttonOpensense.FlatAppearance.BorderSize = 0;
-                this.buttonOpensense.FlatStyle = FlatStyle.Flat;
-
                 this.buttonHomarr.FlatAppearance.BorderSize = 0;
                 this.buttonHomarr.FlatStyle = FlatStyle.Flat;
 
                 this.buttonPortainer.FlatAppearance.BorderSize = 0;
                 this.buttonPortainer.FlatStyle = FlatStyle.Flat;
 
-                this.buttonProxmox2.FlatAppearance.BorderSize = 0;
-                this.buttonProxmox2.FlatStyle = FlatStyle.Flat;
-
-                this.buttonTpLink.FlatAppearance.BorderSize = 0;
-                this.buttonTpLink.FlatStyle = FlatStyle.Flat;
+                this.buttonDLink.FlatAppearance.BorderSize = 0;
+                this.buttonDLink.FlatStyle = FlatStyle.Flat;
 
                 this.buttonNZBFinder.FlatAppearance.BorderSize = 0;
                 this.buttonNZBFinder.FlatStyle = FlatStyle.Flat;
@@ -147,6 +141,9 @@ namespace LauncherForAll
 
                 this.buttonSwitch00.FlatAppearance.BorderSize = 0;
                 this.buttonSwitch00.FlatStyle = FlatStyle.Flat;
+
+                this.buttonSamSptodl.FlatAppearance.BorderSize = 0;
+                this.buttonSamSptodl.FlatStyle = FlatStyle.Flat;
             }
             else
             {
@@ -158,6 +155,12 @@ namespace LauncherForAll
 
                 this.buttonRadarr.FlatAppearance.BorderSize = 1;
                 this.buttonRadarr.FlatStyle = FlatStyle.Popup;
+
+                this.buttonDLink.FlatAppearance.BorderSize = 1;
+                this.buttonDLink.FlatStyle = FlatStyle.Popup;
+
+                this.buttonSamSptodl.FlatAppearance.BorderSize = 1;
+                this.buttonSamSptodl.FlatStyle = FlatStyle.Popup;
 
                 this.buttonSonarr.FlatAppearance.BorderSize = 1;
                 this.buttonSonarr.FlatStyle = FlatStyle.Popup;
@@ -216,23 +219,14 @@ namespace LauncherForAll
                 this.buttonDuckdns.FlatAppearance.BorderSize = 1;
                 this.buttonDuckdns.FlatStyle = FlatStyle.Popup;
 
-                this.buttonPihole.FlatAppearance.BorderSize = 1;
-                this.buttonPihole.FlatStyle = FlatStyle.Popup;
-
-                this.buttonOpensense.FlatAppearance.BorderSize = 1;
-                this.buttonOpensense.FlatStyle = FlatStyle.Popup;
-
                 this.buttonHomarr.FlatAppearance.BorderSize = 1;
                 this.buttonHomarr.FlatStyle = FlatStyle.Popup;
 
                 this.buttonPortainer.FlatAppearance.BorderSize = 1;
                 this.buttonPortainer.FlatStyle = FlatStyle.Popup;
 
-                this.buttonProxmox2.FlatAppearance.BorderSize = 1;
-                this.buttonProxmox2.FlatStyle = FlatStyle.Popup;
-
-                this.buttonTpLink.FlatAppearance.BorderSize = 1;
-                this.buttonTpLink.FlatStyle = FlatStyle.Popup;
+                this.buttonDLink.FlatAppearance.BorderSize = 1;
+                this.buttonDLink.FlatStyle = FlatStyle.Popup;
 
                 this.buttonNZBFinder.FlatAppearance.BorderSize = 1;
                 this.buttonNZBFinder.FlatStyle = FlatStyle.Popup;
@@ -696,16 +690,10 @@ namespace LauncherForAll
             this.Alert("Homarr Launched", Form_Alert.enmType.Success);
         }
 
-        private void buttonTpLink_Click(object sender, EventArgs e)
+        private void buttonDLink_Click(object sender, EventArgs e)
         {
-            Process.Start("http://tplink.local/webpages/login.html?t=1476264749915");
-            this.Alert("AdminTpLink Launched", Form_Alert.enmType.Success);
-        }
-
-        private void buttonPihole_Click(object sender, EventArgs e)
-        {
-            Process.Start("http://pihole.local/admin");
-            this.Alert("Pihole Launched", Form_Alert.enmType.Success);
+            Process.Start("http://sw01.local/www/main.html");
+            this.Alert("Dlink Launched", Form_Alert.enmType.Success);
         }
 
         private void buttonAdguard_Click(object sender, EventArgs e)
@@ -714,22 +702,10 @@ namespace LauncherForAll
             this.Alert("Adguard Launched", Form_Alert.enmType.Success);
         }
 
-        private void buttonOpensense_Click(object sender, EventArgs e)
-        {
-            Process.Start("https://192.168.1.254");
-            this.Alert("Opensense Launched", Form_Alert.enmType.Success);
-        }
-
         private void buttonDuckdns_Click(object sender, EventArgs e)
         {
             Process.Start("https://www.duckdns.org/domains");
             this.Alert("DuckDns Launched", Form_Alert.enmType.Success);
-        }
-
-        private void buttonProxmox2_Click(object sender, EventArgs e)
-        {
-            Process.Start("https://samproxmox2.local:8006");
-            this.Alert("Samproxmox2 Launched", Form_Alert.enmType.Success);
         }
 
         private void buttonOwncloud_Click(object sender, EventArgs e)
@@ -783,8 +759,13 @@ namespace LauncherForAll
         private void buttonSwitch00_Click(object sender, EventArgs e)
         {
             Process.Start("http://192.168.1.196");
-            Process.Start("http://192.168.1.38");
             this.Alert("Switch00 Launched", Form_Alert.enmType.Success);
+        }
+
+        private void buttonSamSptodl_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://samsrv2");
+            this.Alert("SamSpotdl Launched", Form_Alert.enmType.Success);
         }
     }
 }

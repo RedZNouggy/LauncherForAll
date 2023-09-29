@@ -343,6 +343,16 @@ namespace LauncherForAll.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap D_Link {
+            get {
+                object obj = ResourceManager.GetObject("D-Link", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap D4 {
             get {
                 object obj = ResourceManager.GetObject("D4", resourceCulture);
@@ -1216,6 +1226,16 @@ namespace LauncherForAll.Properties {
         internal static System.Drawing.Bitmap RTX {
             get {
                 object obj = ResourceManager.GetObject("RTX", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SamSpotdl {
+            get {
+                object obj = ResourceManager.GetObject("SamSpotdl", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
