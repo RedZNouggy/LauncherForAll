@@ -30,8 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmOtherApps));
             this.pnlFormLoader = new System.Windows.Forms.Panel();
+            this.buttonNotion = new System.Windows.Forms.Button();
+            this.buttonSignal = new System.Windows.Forms.Button();
             this.buttonFirefox = new System.Windows.Forms.Button();
-            this.buttonFileZilla = new System.Windows.Forms.Button();
             this.buttonParsec = new System.Windows.Forms.Button();
             this.buttonTeamViewer = new System.Windows.Forms.Button();
             this.buttonZoom = new System.Windows.Forms.Button();
@@ -64,15 +65,14 @@
             this.buttonOutlook = new System.Windows.Forms.Button();
             this.buttonDiscord = new System.Windows.Forms.Button();
             this.buttonDashlane = new System.Windows.Forms.Button();
-            this.buttonSignal = new System.Windows.Forms.Button();
             this.pnlFormLoader.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlFormLoader
             // 
+            this.pnlFormLoader.Controls.Add(this.buttonNotion);
             this.pnlFormLoader.Controls.Add(this.buttonSignal);
             this.pnlFormLoader.Controls.Add(this.buttonFirefox);
-            this.pnlFormLoader.Controls.Add(this.buttonFileZilla);
             this.pnlFormLoader.Controls.Add(this.buttonParsec);
             this.pnlFormLoader.Controls.Add(this.buttonTeamViewer);
             this.pnlFormLoader.Controls.Add(this.buttonZoom);
@@ -110,6 +110,27 @@
             this.pnlFormLoader.Size = new System.Drawing.Size(1000, 625);
             this.pnlFormLoader.TabIndex = 0;
             // 
+            // buttonNotion
+            // 
+            this.buttonNotion.BackgroundImage = global::LauncherForAll.Properties.Resources.Notion;
+            this.buttonNotion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonNotion.Location = new System.Drawing.Point(468, 89);
+            this.buttonNotion.Name = "buttonNotion";
+            this.buttonNotion.Size = new System.Drawing.Size(70, 70);
+            this.buttonNotion.TabIndex = 180;
+            this.buttonNotion.UseVisualStyleBackColor = true;
+            // 
+            // buttonSignal
+            // 
+            this.buttonSignal.BackgroundImage = global::LauncherForAll.Properties.Resources.Signal;
+            this.buttonSignal.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonSignal.Location = new System.Drawing.Point(468, 290);
+            this.buttonSignal.Name = "buttonSignal";
+            this.buttonSignal.Size = new System.Drawing.Size(70, 70);
+            this.buttonSignal.TabIndex = 178;
+            this.buttonSignal.UseVisualStyleBackColor = true;
+            this.buttonSignal.Click += new System.EventHandler(this.buttonSignal_Click);
+            // 
             // buttonFirefox
             // 
             this.buttonFirefox.BackgroundImage = global::LauncherForAll.Properties.Resources.Firefox;
@@ -120,17 +141,6 @@
             this.buttonFirefox.TabIndex = 177;
             this.buttonFirefox.UseVisualStyleBackColor = true;
             this.buttonFirefox.Click += new System.EventHandler(this.buttonFirefox_Click);
-            // 
-            // buttonFileZilla
-            // 
-            this.buttonFileZilla.BackgroundImage = global::LauncherForAll.Properties.Resources.FileZilla;
-            this.buttonFileZilla.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonFileZilla.Location = new System.Drawing.Point(664, 89);
-            this.buttonFileZilla.Name = "buttonFileZilla";
-            this.buttonFileZilla.Size = new System.Drawing.Size(70, 70);
-            this.buttonFileZilla.TabIndex = 176;
-            this.buttonFileZilla.UseVisualStyleBackColor = true;
-            this.buttonFileZilla.Click += new System.EventHandler(this.buttonFileZilla_Click);
             // 
             // buttonParsec
             // 
@@ -147,7 +157,7 @@
             // 
             this.buttonTeamViewer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonTeamViewer.BackgroundImage")));
             this.buttonTeamViewer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonTeamViewer.Location = new System.Drawing.Point(468, 89);
+            this.buttonTeamViewer.Location = new System.Drawing.Point(664, 89);
             this.buttonTeamViewer.Name = "buttonTeamViewer";
             this.buttonTeamViewer.Size = new System.Drawing.Size(70, 70);
             this.buttonTeamViewer.TabIndex = 174;
@@ -495,17 +505,6 @@
             this.buttonDashlane.UseVisualStyleBackColor = true;
             this.buttonDashlane.Click += new System.EventHandler(this.buttonDashlane_Click);
             // 
-            // buttonSignal
-            // 
-            this.buttonSignal.BackgroundImage = global::LauncherForAll.Properties.Resources.Signal;
-            this.buttonSignal.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonSignal.Location = new System.Drawing.Point(468, 290);
-            this.buttonSignal.Name = "buttonSignal";
-            this.buttonSignal.Size = new System.Drawing.Size(70, 70);
-            this.buttonSignal.TabIndex = 178;
-            this.buttonSignal.UseVisualStyleBackColor = true;
-            this.buttonSignal.Click += new System.EventHandler(this.buttonSignal_Click);
-            // 
             // frmOtherApps
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -558,8 +557,8 @@
         private System.Windows.Forms.Button buttonZoom;
         private System.Windows.Forms.Button buttonTeamViewer;
         private System.Windows.Forms.Button buttonParsec;
-        private System.Windows.Forms.Button buttonFileZilla;
         private System.Windows.Forms.Button buttonFirefox;
         private System.Windows.Forms.Button buttonSignal;
+        private System.Windows.Forms.Button buttonNotion;
     }
 }

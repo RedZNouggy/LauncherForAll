@@ -141,9 +141,6 @@ namespace LauncherForAll
                 this.buttonRiotGames.FlatAppearance.BorderSize = 0;
                 this.buttonRiotGames.FlatStyle = FlatStyle.Flat;
 
-                this.buttonFileZilla.FlatAppearance.BorderSize = 0;
-                this.buttonFileZilla.FlatStyle = FlatStyle.Flat;
-
                 this.buttonTeamViewer.FlatAppearance.BorderSize = 0;
                 this.buttonTeamViewer.FlatStyle = FlatStyle.Flat;
 
@@ -238,9 +235,6 @@ namespace LauncherForAll
 
                 this.buttonRiotGames.FlatAppearance.BorderSize = 1;
                 this.buttonRiotGames.FlatStyle = FlatStyle.Popup;
-
-                this.buttonFileZilla.FlatAppearance.BorderSize = 1;
-                this.buttonFileZilla.FlatStyle = FlatStyle.Popup;
 
                 this.buttonTeamViewer.FlatAppearance.BorderSize = 1;
                 this.buttonTeamViewer.FlatStyle = FlatStyle.Popup;
@@ -1016,32 +1010,6 @@ namespace LauncherForAll
             }
         }
 
-        private void buttonFileZilla_Click(object sender, EventArgs e)
-        {
-            Process FilzZilla = new Process();
-            // Preparing to FilzZilla FilzZilla
-            FilzZilla.StartInfo.FileName = @"D:\FileZilla\FileZilla FTP Client\filezilla.exe";
-            FilzZilla.StartInfo.WorkingDirectory = @"D:\FileZilla\FileZilla FTP Client";
-
-            if (Process.GetProcessesByName("FilzZilla").Length == 0)
-            {
-                // Launch FilzZilla
-                try
-                {
-                    FilzZilla.Start();
-                    this.Alert("FilzZilla Launched", Form_Alert.enmType.Success);
-                }
-                catch
-                {
-                    this.Alert("FilzZilla can't be launch", Form_Alert.enmType.Error);
-                }
-            }
-            else
-            {
-                this.Alert("FilzZilla is already Launched", Form_Alert.enmType.Warning);
-            }
-        }
-
         private void buttonRiotGames_Click(object sender, EventArgs e)
         {
 
@@ -1141,6 +1109,34 @@ namespace LauncherForAll
             else
             {
                 this.Alert("Signal is already Launched", Form_Alert.enmType.Warning);
+            }
+        }
+
+        private void buttonNotion_Click(object sender, EventArgs e)
+        {
+            if(Process.GetProcessesByName("Notion").Length == 0)
+            {
+                Process Notion = new Process();
+
+                // Preparing to Launch Notion
+                Notion.StartInfo.FileName = @"C:\Users\samen\AppData\Local\Programs\Notion\Notion.exe";
+                Notion.StartInfo.WorkingDirectory = @"C:\Users\samen\AppData\Local\Programs\Notion";
+
+                //Launch Notion
+                Notion.Start();
+
+                if (Notion.Responding == true)
+                {
+                    this.Alert("Notion Launched", Form_Alert.enmType.Success);
+                }
+                else
+                {
+                    this.Alert("Notion not Launched", Form_Alert.enmType.Error);
+                }
+            }
+            else
+            {
+                this.Alert("Notion is already Launched", Form_Alert.enmType.Warning);
             }
         }
     }
