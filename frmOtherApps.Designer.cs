@@ -119,6 +119,7 @@
             this.buttonNotion.Size = new System.Drawing.Size(70, 70);
             this.buttonNotion.TabIndex = 180;
             this.buttonNotion.UseVisualStyleBackColor = true;
+            this.buttonNotion.Click += new System.EventHandler(this.buttonNotion_Click);
             // 
             // buttonSignal
             // 

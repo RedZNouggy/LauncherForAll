@@ -1114,7 +1114,7 @@ namespace LauncherForAll
 
         private void buttonNotion_Click(object sender, EventArgs e)
         {
-            if(Process.GetProcessesByName("Notion").Length == 0)
+            if (Process.GetProcessesByName("Notion").Length == 0)
             {
                 Process Notion = new Process();
 
