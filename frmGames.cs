@@ -75,7 +75,7 @@ namespace LauncherForAll
                     // Preparing the launch of RocketLeague
                     Process RocketLeague = new Process();
 
-                    RocketLeague.StartInfo.FileName = File.ReadAllLines(programData + @"\LauncherForAll\PathList\RimWorld.config").ToString(); 
+                    RocketLeague.StartInfo.FileName = File.ReadAllLines(programData + @"\LauncherForAll\PathList\RocketLeague.config").ToString(); 
 
                 }
                 else 
@@ -88,11 +88,11 @@ namespace LauncherForAll
                     {
                         // Preparing the launch of EpicGames
                         Process EpicGames = new Process();
-                        EpicGames.StartInfo.FileName = @"S:\Epic Games\Launcher\Portal\Binaries\Win32\EpicGamesLauncher.exe";
+                        EpicGames.StartInfo.FileName = @"D:\Epic Games\Launcher\Portal\Binaries\Win32\EpicGamesLauncher.exe";
 
                         // Preparing the launch of BakkesMod
                         Process BakkesMod = new Process();
-                        BakkesMod.StartInfo.FileName = @"C:\Program Files\BakkesMod\BakkesMod.exe";
+                        BakkesMod.StartInfo.FileName = @"D:\BakkesMod\BakkesMod.exe";
 
                         //Launching BakkesMod & EpicGames
                         BakkesMod.Start();
@@ -121,7 +121,7 @@ namespace LauncherForAll
 
                             // Preparing the launch of EpicGames
                             Process EpicGames = new Process();
-                            EpicGames.StartInfo.FileName = @"S:\Epic Games\Launcher\Portal\Binaries\Win32\EpicGamesLauncher.exe";
+                            EpicGames.StartInfo.FileName = @"D:\Epic Games\Launcher\Portal\Binaries\Win32\EpicGamesLauncher.exe";
 
                             //Launching EpicGames
                             EpicGames.Start();
@@ -148,7 +148,7 @@ namespace LauncherForAll
 
                             // Preparing the launch of BakkesMod
                             Process BakkesMod = new Process();
-                            BakkesMod.StartInfo.FileName = @"S:\BakkesMod\BakkesMod.exe";
+                            BakkesMod.StartInfo.FileName = @"D:\BakkesMod\BakkesMod.exe";
 
 
                             //Launching BakkesMod

@@ -68,10 +68,10 @@
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup>
-    <ManifestCertificateThumbprint>21C58719421025183B4A3E683A4E4DDBA58C01B8</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>F5DB95BD11831B58CF5A9B4A7F9DAC396D68ED8F</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>LauncherForAll_1_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>LauncherForAll_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -268,7 +268,6 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="LauncherForAll_1_TemporaryKey.pfx" />
     <None Include="LauncherForAll_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\app.manifest" />
