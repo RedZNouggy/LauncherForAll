@@ -351,7 +351,7 @@ namespace LauncherForAll
                 Process Plex = new Process();
 
                 // Preparing to Launch Plex
-                Plex.StartInfo.FileName = @"C:\Program Files\Plex\Plex\Plex.exe";
+                Plex.StartInfo.FileName = @"D:\Plex\Plex.exe";
 
                 // Launch Plex
                 try
@@ -378,8 +378,8 @@ namespace LauncherForAll
                 Process AngryIPScanner = new Process();
 
                 // Preparing to Launch AngryIPScanner
-                AngryIPScanner.StartInfo.FileName = @"C:\Program Files\Angry IP Scanner\ipscan.exe";
-                AngryIPScanner.StartInfo.WorkingDirectory = @"C:\Program Files\Angry IP Scanner";
+                AngryIPScanner.StartInfo.FileName = @"D:\Angry IP Scanner\ipscan.exe";
+                AngryIPScanner.StartInfo.WorkingDirectory = @"D:\Angry IP Scanner";
 
                 // Launch AngryIPScanner
                 try
@@ -501,7 +501,7 @@ namespace LauncherForAll
                 Process VS = new Process();
 
                 // Preparing to Launch VS
-                VS.StartInfo.FileName = @"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\devenv.exe";
+                VS.StartInfo.FileName = @"D:\Microsoft Visual Studio\2022\Community\Common7\IDE\devenv.exe";
 
                 // Launch VS
                 VS.Start();

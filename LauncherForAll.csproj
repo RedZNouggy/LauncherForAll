@@ -292,6 +292,8 @@
     <None Include="Resources\Steam.png" />
     <None Include="Resources\SteelSeries.png" />
     <None Include="Resources\Title1.png" />
+    <None Include="Scripts\jquery-3.7.1.min.map" />
+    <None Include="Scripts\jquery-3.7.1.slim.min.map" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -398,6 +400,11 @@
   <ItemGroup>
     <Content Include="LauncherForAll.ico" />
     <Content Include="RedMod-Logo.ico" />
+    <Content Include="Scripts\jquery-3.7.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.7.1.js" />
+    <Content Include="Scripts\jquery-3.7.1.min.js" />
+    <Content Include="Scripts\jquery-3.7.1.slim.js" />
+    <Content Include="Scripts\jquery-3.7.1.slim.min.js" />
     <None Include="Resources\Notion.png" />
     <None Include="Resources\SamSpotdl.png" />
     <None Include="Resources\D-Link.png" />
