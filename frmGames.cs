@@ -400,31 +400,22 @@ namespace LauncherForAll
 
         private void buttonHMM_Click(object sender, EventArgs e)
         {
-            // If HMM Is already Running Dont do anithing...
-            if (Process.GetProcessesByName("HOMM3 2.0").Length > 0)
+            // If HOTA Is already Running Dont do anithing...
+            if ((Process.GetProcessesByName("HeroesLauncher").Length > 0) ||
+                (Process.GetProcessesByName("h3hota HD").Length > 0))
             {
-                this.Alert("HoM&M is already running", Form_Alert.enmType.Warning);
+                this.Alert("HOTA is already running", Form_Alert.enmType.Warning);
             }
             else
             {
-                // If Steam Is already Running :
-                if (Process.GetProcessesByName("Steam").Length == 0)
-                {
-                    // Preparing the launch of Steam
-                    Process Steam = new Process();
-                    Steam.StartInfo.FileName = @"S:\Steam\Steam.exe";
+                // Preparing the launch of HOTA
+                Process HOTA = new Process();
+                HOTA.StartInfo.FileName = @"S:\HoMM 3 - Launcher\HeroesLauncher\HeroesLauncher.exe";
+                HOTA.StartInfo.WorkingDirectory = @"S:\HoMM 3 - Launcher\HeroesLauncher";
 
-                    // Launch Steam
-                    Steam.Start();
-                }
-
-                // Preparing the launch of HMM
-                Process HMM = new Process();
-                HMM.StartInfo.FileName = @"steam://rungameid/297000";
-
-                // Launch HMM
-                HMM.Start();
-                this.Alert("HoM&M Launched", Form_Alert.enmType.Success);
+                // Launch HOTA
+                HOTA.Start();
+                this.Alert("HOTA Launched", Form_Alert.enmType.Success);
             }
         }
 

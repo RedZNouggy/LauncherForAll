@@ -86,7 +86,7 @@
             // 
             // buttonHMM
             // 
-            this.buttonHMM.BackgroundImage = global::LauncherForAll.Properties.Resources.HMM;
+            this.buttonHMM.BackgroundImage = global::LauncherForAll.Properties.Resources.Horn_of_the_Abyss;
             this.buttonHMM.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonHMM.Location = new System.Drawing.Point(625, 417);
             this.buttonHMM.Name = "buttonHMM";

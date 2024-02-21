@@ -543,16 +543,6 @@ namespace LauncherForAll.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap HMM {
-            get {
-                object obj = ResourceManager.GetObject("HMM", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Homarr {
             get {
                 object obj = ResourceManager.GetObject("Homarr", resourceCulture);
@@ -576,6 +566,16 @@ namespace LauncherForAll.Properties {
         internal static System.Drawing.Bitmap Homeassistant {
             get {
                 object obj = ResourceManager.GetObject("Homeassistant", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Horn_of_the_Abyss {
+            get {
+                object obj = ResourceManager.GetObject("Horn_of_the_Abyss", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
