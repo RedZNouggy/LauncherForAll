@@ -103,6 +103,16 @@ namespace LauncherForAll.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Affine {
+            get {
+                object obj = ResourceManager.GetObject("Affine", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap angry {
             get {
                 object obj = ResourceManager.GetObject("angry", resourceCulture);
@@ -136,6 +146,16 @@ namespace LauncherForAll.Properties {
         internal static System.Drawing.Bitmap AWS {
             get {
                 object obj = ResourceManager.GetObject("AWS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Azure {
+            get {
+                object obj = ResourceManager.GetObject("Azure", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -253,16 +273,6 @@ namespace LauncherForAll.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Bazarr {
-            get {
-                object obj = ResourceManager.GetObject("Bazarr", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Blue_samsrv {
             get {
                 object obj = ResourceManager.GetObject("Blue_samsrv", resourceCulture);
@@ -313,6 +323,36 @@ namespace LauncherForAll.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ChatGPT {
+            get {
+                object obj = ResourceManager.GetObject("ChatGPT", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Cloudflare {
+            get {
+                object obj = ResourceManager.GetObject("Cloudflare", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap codeserver {
+            get {
+                object obj = ResourceManager.GetObject("codeserver", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CODMW {
             get {
                 object obj = ResourceManager.GetObject("CODMW", resourceCulture);
@@ -326,16 +366,6 @@ namespace LauncherForAll.Properties {
         internal static System.Drawing.Bitmap cs2 {
             get {
                 object obj = ResourceManager.GetObject("cs2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap CSGO {
-            get {
-                object obj = ResourceManager.GetObject("CSGO", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -393,6 +423,16 @@ namespace LauncherForAll.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Deluge_Logo {
+            get {
+                object obj = ResourceManager.GetObject("Deluge-Logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap DisableNotifIcon {
             get {
                 object obj = ResourceManager.GetObject("DisableNotifIcon", resourceCulture);
@@ -416,16 +456,6 @@ namespace LauncherForAll.Properties {
         internal static System.Drawing.Bitmap DS4 {
             get {
                 object obj = ResourceManager.GetObject("DS4", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap duckdns {
-            get {
-                object obj = ResourceManager.GetObject("duckdns", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -513,29 +543,19 @@ namespace LauncherForAll.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap GoogleCloud {
+            get {
+                object obj = ResourceManager.GetObject("GoogleCloud", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap GTAV {
             get {
                 object obj = ResourceManager.GetObject("GTAV", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap HandBrake_Icon {
-            get {
-                object obj = ResourceManager.GetObject("HandBrake_Icon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap heimdall {
-            get {
-                object obj = ResourceManager.GetObject("heimdall", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -623,16 +643,6 @@ namespace LauncherForAll.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap HyperV {
-            get {
-                object obj = ResourceManager.GetObject("HyperV", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap info {
             get {
                 object obj = ResourceManager.GetObject("info", resourceCulture);
@@ -656,6 +666,26 @@ namespace LauncherForAll.Properties {
         internal static System.Drawing.Bitmap infos1 {
             get {
                 object obj = ResourceManager.GetObject("infos1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Jackett {
+            get {
+                object obj = ResourceManager.GetObject("Jackett", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap K8 {
+            get {
+                object obj = ResourceManager.GetObject("K8", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -703,9 +733,9 @@ namespace LauncherForAll.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap netdata {
+        internal static System.Drawing.Bitmap MySpeed {
             get {
-                object obj = ResourceManager.GetObject("netdata", resourceCulture);
+                object obj = ResourceManager.GetObject("MySpeed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -753,9 +783,9 @@ namespace LauncherForAll.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap NZBGet {
+        internal static System.Drawing.Bitmap NZBGET {
             get {
-                object obj = ResourceManager.GetObject("NZBGet", resourceCulture);
+                object obj = ResourceManager.GetObject("NZBGET", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -803,6 +833,16 @@ namespace LauncherForAll.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap OracleCloud {
+            get {
+                object obj = ResourceManager.GetObject("OracleCloud", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Outlook {
             get {
                 object obj = ResourceManager.GetObject("Outlook", resourceCulture);
@@ -823,29 +863,9 @@ namespace LauncherForAll.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Overwatch {
-            get {
-                object obj = ResourceManager.GetObject("Overwatch", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap overwatch_2 {
             get {
                 object obj = ResourceManager.GetObject("overwatch-2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Ow2 {
-            get {
-                object obj = ResourceManager.GetObject("Ow2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -876,16 +896,6 @@ namespace LauncherForAll.Properties {
         internal static System.Drawing.Bitmap Parsec {
             get {
                 object obj = ResourceManager.GetObject("Parsec", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap pihole {
-            get {
-                object obj = ResourceManager.GetObject("pihole", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1333,6 +1343,16 @@ namespace LauncherForAll.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Stirling_PDF {
+            get {
+                object obj = ResourceManager.GetObject("Stirling-PDF", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap success {
             get {
                 object obj = ResourceManager.GetObject("success", resourceCulture);
@@ -1386,16 +1406,6 @@ namespace LauncherForAll.Properties {
         internal static System.Drawing.Bitmap Tplink {
             get {
                 object obj = ResourceManager.GetObject("Tplink", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Transmission {
-            get {
-                object obj = ResourceManager.GetObject("Transmission", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1473,9 +1483,29 @@ namespace LauncherForAll.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Wallos {
+            get {
+                object obj = ResourceManager.GetObject("Wallos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap warning {
             get {
                 object obj = ResourceManager.GetObject("warning", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Wazuh {
+            get {
+                object obj = ResourceManager.GetObject("Wazuh", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

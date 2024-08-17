@@ -94,9 +94,6 @@ namespace LauncherForAll
                 this.buttonPlexamp.FlatAppearance.BorderSize = 0;
                 this.buttonPlexamp.FlatStyle = FlatStyle.Flat;
 
-                this.buttonHandbrake.FlatAppearance.BorderSize = 0;
-                this.buttonHandbrake.FlatStyle = FlatStyle.Flat;
-
                 this.buttonOpenVPN.FlatAppearance.BorderSize = 0;
                 this.buttonOpenVPN.FlatStyle = FlatStyle.Flat;
 
@@ -112,9 +109,6 @@ namespace LauncherForAll
                 this.buttonAdguard.FlatAppearance.BorderSize = 0;
                 this.buttonAdguard.FlatStyle = FlatStyle.Flat;
 
-                this.buttonDuckdns.FlatAppearance.BorderSize = 0;
-                this.buttonDuckdns.FlatStyle = FlatStyle.Flat;
-
                 this.buttonHomarr.FlatAppearance.BorderSize = 0;
                 this.buttonHomarr.FlatStyle = FlatStyle.Flat;
 
@@ -126,9 +120,6 @@ namespace LauncherForAll
 
                 this.buttonNZBFinder.FlatAppearance.BorderSize = 0;
                 this.buttonNZBFinder.FlatStyle = FlatStyle.Flat;
-
-                this.buttonNZBGet.FlatAppearance.BorderSize = 0;
-                this.buttonNZBGet.FlatStyle = FlatStyle.Flat;
 
                 this.buttonUsenetFarm.FlatAppearance.BorderSize = 0;
                 this.buttonUsenetFarm.FlatStyle = FlatStyle.Flat;
@@ -144,6 +135,51 @@ namespace LauncherForAll
 
                 this.buttonSamSptodl.FlatAppearance.BorderSize = 0;
                 this.buttonSamSptodl.FlatStyle = FlatStyle.Flat;
+
+                this.buttonAzure.FlatAppearance.BorderSize = 0;
+                this.buttonAzure.FlatStyle = FlatStyle.Flat;
+
+                this.buttonChatGPT.FlatAppearance.BorderSize = 0;
+                this.buttonChatGPT.FlatStyle = FlatStyle.Flat;
+
+                this.buttonGoogleCloud.FlatAppearance.BorderSize = 0;
+                this.buttonGoogleCloud.FlatStyle = FlatStyle.Flat;
+
+                this.buttonJackett.FlatAppearance.BorderSize = 0;
+                this.buttonJackett.FlatStyle = FlatStyle.Flat;
+
+                this.buttonK8.FlatAppearance.BorderSize = 0;
+                this.buttonK8.FlatStyle = FlatStyle.Flat;
+
+                this.buttonMySpeed.FlatAppearance.BorderSize = 0;
+                this.buttonMySpeed.FlatStyle = FlatStyle.Flat;
+
+                this.buttonCloudflare.FlatAppearance.BorderSize = 0;
+                this.buttonCloudflare.FlatStyle = FlatStyle.Flat;
+
+                this.buttonWazuh.FlatAppearance.BorderSize = 0;
+                this.buttonWazuh.FlatStyle = FlatStyle.Flat;
+
+                this.buttonCodeServer.FlatAppearance.BorderSize = 0;
+                this.buttonCodeServer.FlatStyle = FlatStyle.Flat;
+
+                this.buttonAffine.FlatAppearance.BorderSize = 0;
+                this.buttonAffine.FlatStyle = FlatStyle.Flat;
+
+                this.buttonWallos.FlatAppearance.BorderSize = 0;
+                this.buttonWallos.FlatStyle = FlatStyle.Flat;
+
+                this.buttonNZBGET.FlatAppearance.BorderSize = 0;
+                this.buttonNZBGET.FlatStyle = FlatStyle.Flat;
+
+                this.buttonStirlingPDF.FlatAppearance.BorderSize = 0;
+                this.buttonStirlingPDF.FlatStyle = FlatStyle.Flat;
+
+                this.buttonDeluged.FlatAppearance.BorderSize = 0;
+                this.buttonDeluged.FlatStyle = FlatStyle.Flat;
+
+                this.buttonOracleCloud.FlatAppearance.BorderSize = 0;
+                this.buttonOracleCloud.FlatStyle = FlatStyle.Flat;
             }
             else
             {
@@ -189,9 +225,6 @@ namespace LauncherForAll
                 this.buttonPlexamp.FlatAppearance.BorderSize = 1;
                 this.buttonPlexamp.FlatStyle = FlatStyle.Popup;
 
-                this.buttonHandbrake.FlatAppearance.BorderSize = 1;
-                this.buttonHandbrake.FlatStyle = FlatStyle.Popup;
-
                 this.buttonVSCode.FlatAppearance.BorderSize = 1;
                 this.buttonVSCode.FlatStyle = FlatStyle.Popup;
 
@@ -216,9 +249,6 @@ namespace LauncherForAll
                 this.buttonAdguard.FlatAppearance.BorderSize = 1;
                 this.buttonAdguard.FlatStyle = FlatStyle.Popup;
 
-                this.buttonDuckdns.FlatAppearance.BorderSize = 1;
-                this.buttonDuckdns.FlatStyle = FlatStyle.Popup;
-
                 this.buttonHomarr.FlatAppearance.BorderSize = 1;
                 this.buttonHomarr.FlatStyle = FlatStyle.Popup;
 
@@ -231,9 +261,6 @@ namespace LauncherForAll
                 this.buttonNZBFinder.FlatAppearance.BorderSize = 1;
                 this.buttonNZBFinder.FlatStyle = FlatStyle.Popup;
 
-                this.buttonNZBGet.FlatAppearance.BorderSize = 1;
-                this.buttonNZBGet.FlatStyle = FlatStyle.Popup;
-
                 this.buttonUsenetFarm.FlatAppearance.BorderSize = 1;
                 this.buttonUsenetFarm.FlatStyle = FlatStyle.Popup;
 
@@ -245,6 +272,51 @@ namespace LauncherForAll
 
                 this.buttonSwitch00.FlatAppearance.BorderSize = 1;
                 this.buttonSwitch00.FlatStyle = FlatStyle.Popup;
+
+                this.buttonAzure.FlatAppearance.BorderSize = 1;
+                this.buttonAzure.FlatStyle = FlatStyle.Popup;
+
+                this.buttonChatGPT.FlatAppearance.BorderSize = 1;
+                this.buttonChatGPT.FlatStyle = FlatStyle.Popup;
+
+                this.buttonGoogleCloud.FlatAppearance.BorderSize = 1;
+                this.buttonGoogleCloud.FlatStyle = FlatStyle.Popup;
+
+                this.buttonJackett.FlatAppearance.BorderSize = 1;
+                this.buttonJackett.FlatStyle = FlatStyle.Popup;
+
+                this.buttonK8.FlatAppearance.BorderSize = 1;
+                this.buttonK8.FlatStyle = FlatStyle.Popup;
+
+                this.buttonMySpeed.FlatAppearance.BorderSize = 1;
+                this.buttonMySpeed.FlatStyle = FlatStyle.Popup;
+
+                this.buttonCloudflare.FlatAppearance.BorderSize = 1;
+                this.buttonCloudflare.FlatStyle = FlatStyle.Popup;
+
+                this.buttonWazuh.FlatAppearance.BorderSize = 1;
+                this.buttonWazuh.FlatStyle = FlatStyle.Popup;
+
+                this.buttonCodeServer.FlatAppearance.BorderSize = 1;
+                this.buttonCodeServer.FlatStyle = FlatStyle.Popup;
+
+                this.buttonAffine.FlatAppearance.BorderSize = 1;
+                this.buttonAffine.FlatStyle = FlatStyle.Popup;
+
+                this.buttonWallos.FlatAppearance.BorderSize = 1;
+                this.buttonWallos.FlatStyle = FlatStyle.Popup;
+
+                this.buttonNZBGET.FlatAppearance.BorderSize = 1;
+                this.buttonNZBGET.FlatStyle = FlatStyle.Popup;
+
+                this.buttonStirlingPDF.FlatAppearance.BorderSize = 1;
+                this.buttonStirlingPDF.FlatStyle = FlatStyle.Popup;
+
+                this.buttonDeluged.FlatAppearance.BorderSize = 1;
+                this.buttonDeluged.FlatStyle = FlatStyle.Popup;
+
+                this.buttonOracleCloud.FlatAppearance.BorderSize = 1;
+                this.buttonOracleCloud.FlatStyle = FlatStyle.Popup;
             }
         }
 
@@ -256,8 +328,32 @@ namespace LauncherForAll
 
         private void buttonAWS_Click(object sender, EventArgs e)
         {
-            Process.Start("https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fus-east-1.console.aws.amazon.com%2Fconsole%2Fhome%3FhashArgs%3D%2523%26isauthcode%3Dtrue%26nc2%3Dh_ct%26region%3Dus-east-1%26skipRegion%3Dtrue%26src%3Dheader-signin%26state%3DhashArgsFromTB_us-east-1_d1ff62bdc895fc29&client_id=arn%3Aaws%3Asignin%3A%3A%3Aconsole%2Fcanvas&forceMobileApp=0&code_challenge=-Yh_03EoTGCpRiR-TxhBRtVY4Xu3N8R-qhu02xe1rzM&code_challenge_method=SHA-256");
+            Process.Start("https://console.aws.amazon.com/console/home?nc2=h_ct&src=header-signin");
             this.Alert("AWS Launched", Form_Alert.enmType.Success);
+        }
+
+        private void buttonGoogleCloud_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://console.cloud.google.com");
+            this.Alert("GoogleCloud Launched", Form_Alert.enmType.Success);
+        }
+
+        private void buttonAzure_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://portal.azure.com");
+            this.Alert("Azure Launched", Form_Alert.enmType.Success);
+        }
+
+        private void buttonOracleCloud_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://cloud.oracle.com/?region=eu-paris-1");
+            this.Alert("OracleCloud Launched", Form_Alert.enmType.Success);
+        }
+
+        private void buttonCloudflare_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://dash.cloudflare.com/login");
+            this.Alert("CloudFlare Launched", Form_Alert.enmType.Success);
         }
 
         private void buttonVirtualBox_Click(object sender, EventArgs e)
@@ -424,34 +520,6 @@ namespace LauncherForAll
             else
             {
                 this.Alert("Plexamp is already Launched", Form_Alert.enmType.Warning);
-            }
-        }
-
-        private void buttonHandbrake_Click(object sender, EventArgs e)
-        {
-            if (Process.GetProcessesByName("HandBrake").Length == 0)
-            {
-                Process HandBrake = new Process();
-
-                // Preparing to Launch HandBrake
-                HandBrake.StartInfo.FileName = @"C:\Program Files\HandBrake\HandBrake.exe";
-                HandBrake.StartInfo.WorkingDirectory = @"C:\Program Files\HandBrake\doc";
-
-                // Launch HandBrake
-                try
-                {
-                    HandBrake.Start();
-                    this.Alert("HandBrake Launched", Form_Alert.enmType.Success);
-                }
-                catch (Exception ex)
-                {
-                    this.Alert("HandBrake Error Admin Rights Needed ?", Form_Alert.enmType.Error);
-                    Console.Write(ex.ToString());
-                }
-            }
-            else
-            {
-                this.Alert("HandBrake is already Launched", Form_Alert.enmType.Warning);
             }
         }
 
@@ -661,16 +729,34 @@ namespace LauncherForAll
             this.Alert("Tautulli Launched", Form_Alert.enmType.Success);
         }
 
+        private void buttonRadarr_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://samdownload.local:7878");
+            this.Alert("Radarr Launched", Form_Alert.enmType.Success);
+        }
+
         private void buttonSonarr_Click(object sender, EventArgs e)
         {
-            Process.Start("http://samsrv:8989");
+            Process.Start("http://samdownload.local:8989");
             this.Alert("Sonarr Launched", Form_Alert.enmType.Success);
         }
 
-        private void buttonRadarr_Click(object sender, EventArgs e)
+        private void buttonJackett_Click(object sender, EventArgs e)
         {
-            Process.Start("http://samsrv:7878");
-            this.Alert("Radarr Launched", Form_Alert.enmType.Success);
+            Process.Start("http://samdownload.local:9117");
+            this.Alert("Jackett Launched", Form_Alert.enmType.Success);
+        }
+
+        private void buttonDeluged_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://samdownload.local:8112");
+            this.Alert("Deluged Launched", Form_Alert.enmType.Success);
+        }
+
+        private void buttonNZBGET_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://samdownload.local:6789");
+            this.Alert("NZBGET Launched", Form_Alert.enmType.Success);
         }
 
         private void buttonProxmox_Click(object sender, EventArgs e)
@@ -702,34 +788,10 @@ namespace LauncherForAll
             this.Alert("Adguard Launched", Form_Alert.enmType.Success);
         }
 
-        private void buttonDuckdns_Click(object sender, EventArgs e)
-        {
-            Process.Start("https://www.duckdns.org/domains");
-            this.Alert("DuckDns Launched", Form_Alert.enmType.Success);
-        }
-
         private void buttonOwncloud_Click(object sender, EventArgs e)
         {
             Process.Start("http://samowncloud.local");
             this.Alert("Owncloud Launched", Form_Alert.enmType.Success);
-        }
-
-        private void buttonNZBFinder_Click(object sender, EventArgs e)
-        {
-            Process.Start("https://nzbfinder.ws/");
-            this.Alert("NZBFinder Launched", Form_Alert.enmType.Success);
-        }
-
-        private void buttonNZBGet_Click(object sender, EventArgs e)
-        {
-            Process.Start("http://samsrv:6789/");
-            this.Alert("NZBGet Launched", Form_Alert.enmType.Success);
-        }
-
-        private void buttonUsenetFarm_Click(object sender, EventArgs e)
-        {
-            Process.Start("https://usenet.farm/members.html#dashboard");
-            this.Alert("Usenet.Farm Launched", Form_Alert.enmType.Success);
         }
 
         private void buttonHomeassistant_Click(object sender, EventArgs e)
@@ -766,6 +828,70 @@ namespace LauncherForAll
         {
             Process.Start("http://samsrv2");
             this.Alert("SamSpotdl Launched", Form_Alert.enmType.Success);
+        }
+
+        private void buttonMySpeed_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://sammyspeed.local:5216");
+            this.Alert("MySpeed Launched", Form_Alert.enmType.Success);
+        }
+
+        private void buttonWazuh_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://samwazuh.local");
+            this.Alert("Wazuh Launched", Form_Alert.enmType.Success);
+        }
+        
+        private void buttonWallos_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://samdocker.local:8282/stats.php");
+            this.Alert("Wallos Launched", Form_Alert.enmType.Success);
+        }
+
+        private void buttonStirlingPDF_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://samdocker.local:8080");
+            this.Alert("StirlingPDF Launched", Form_Alert.enmType.Success);
+        }
+
+        private void buttonK8_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://samkubemaster.local:8443/#/login");
+            this.Alert("Kubernetes Launched", Form_Alert.enmType.Success);
+        }
+
+        private void buttonAffine_Click(object sender, EventArgs e)
+        {
+            Process Affine = new Process();
+
+            // Preparing the launch of Affine
+            Affine.StartInfo.FileName = @"C:\Program Files\Google\Chrome\Application\chrome_proxy.exe";
+            Affine.StartInfo.Arguments = @" --profile-directory=Default --app-id=ckoakcjpdanabpmnnmofmkpccnmfoagl";
+            Affine.StartInfo.WorkingDirectory = @"C:\Program Files\Google\Chrome\Application";
+
+            // Launch Affine
+            Affine.Start();
+            this.Alert("Affine Launched", Form_Alert.enmType.Success);
+        }
+        
+        private void buttonCodeServer_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://samcode.local:8080/?workspace=/root/.local/share/code-server/User/Workspaces/Untitled-1713292254041.code-workspace");
+            this.Alert("CodeServer Launched", Form_Alert.enmType.Success);
+        }
+
+        private void buttonChatGPT_Click(object sender, EventArgs e)
+        {
+            Process ChatGPT = new Process();
+
+            // Preparing the launch of ChatGPT
+            ChatGPT.StartInfo.FileName = @"C:\Program Files\Google\Chrome\Application\chrome_proxy.exe";
+            ChatGPT.StartInfo.Arguments = @" --profile-directory=Default --app-id=jckaldkomadaenmmgladeopgmfbahfjm";
+            ChatGPT.StartInfo.WorkingDirectory = @"C:\Program Files\Google\Chrome\Application";
+
+            // Launch ChatGPT
+            ChatGPT.Start();
+            this.Alert("ChatGPT Launched", Form_Alert.enmType.Success);
         }
     }
 }
