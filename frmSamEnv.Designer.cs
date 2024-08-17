@@ -39,7 +39,6 @@
             this.buttonAzure = new System.Windows.Forms.Button();
             this.buttonGoogleCloud = new System.Windows.Forms.Button();
             this.buttonMySpeed = new System.Windows.Forms.Button();
-            this.buttonNZBGET = new System.Windows.Forms.Button();
             this.buttonDeluged = new System.Windows.Forms.Button();
             this.buttonStirlingPDF = new System.Windows.Forms.Button();
             this.buttonWallos = new System.Windows.Forms.Button();
@@ -90,7 +89,6 @@
             this.pnlFormLoader.Controls.Add(this.buttonAzure);
             this.pnlFormLoader.Controls.Add(this.buttonGoogleCloud);
             this.pnlFormLoader.Controls.Add(this.buttonMySpeed);
-            this.pnlFormLoader.Controls.Add(this.buttonNZBGET);
             this.pnlFormLoader.Controls.Add(this.buttonDeluged);
             this.pnlFormLoader.Controls.Add(this.buttonStirlingPDF);
             this.pnlFormLoader.Controls.Add(this.buttonWallos);
@@ -231,17 +229,6 @@
             this.buttonMySpeed.UseVisualStyleBackColor = true;
             this.buttonMySpeed.Click += new System.EventHandler(this.buttonMySpeed_Click);
             // 
-            // buttonNZBGET
-            // 
-            this.buttonNZBGET.BackgroundImage = global::LauncherForAll.Properties.Resources.NZBGET;
-            this.buttonNZBGET.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonNZBGET.Location = new System.Drawing.Point(831, 264);
-            this.buttonNZBGET.Name = "buttonNZBGET";
-            this.buttonNZBGET.Size = new System.Drawing.Size(70, 70);
-            this.buttonNZBGET.TabIndex = 207;
-            this.buttonNZBGET.UseVisualStyleBackColor = true;
-            this.buttonNZBGET.Click += new System.EventHandler(this.buttonNZBGET_Click);
-            // 
             // buttonDeluged
             // 
             this.buttonDeluged.BackgroundImage = global::LauncherForAll.Properties.Resources.Deluge_Logo;
@@ -334,7 +321,7 @@
             // 
             this.buttonNoIP.BackgroundImage = global::LauncherForAll.Properties.Resources.NoIP;
             this.buttonNoIP.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonNoIP.Location = new System.Drawing.Point(831, 364);
+            this.buttonNoIP.Location = new System.Drawing.Point(831, 264);
             this.buttonNoIP.Name = "buttonNoIP";
             this.buttonNoIP.Size = new System.Drawing.Size(70, 70);
             this.buttonNoIP.TabIndex = 196;
@@ -686,7 +673,6 @@
         private System.Windows.Forms.Button buttonWallos;
         private System.Windows.Forms.Button buttonStirlingPDF;
         private System.Windows.Forms.Button buttonDeluged;
-        private System.Windows.Forms.Button buttonNZBGET;
         private System.Windows.Forms.Button buttonMySpeed;
         private System.Windows.Forms.Button buttonAzure;
         private System.Windows.Forms.Button buttonGoogleCloud;

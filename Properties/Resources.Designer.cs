@@ -783,16 +783,6 @@ namespace LauncherForAll.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap NZBGET {
-            get {
-                object obj = ResourceManager.GetObject("NZBGET", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Office {
             get {
                 object obj = ResourceManager.GetObject("Office", resourceCulture);

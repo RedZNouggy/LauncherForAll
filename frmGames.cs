@@ -410,7 +410,7 @@ namespace LauncherForAll
             {
                 // Preparing the launch of HOTA
                 Process HOTA = new Process();
-                HOTA.StartInfo.FileName = @"S:\HoMM 3 - Launcher\HeroesLauncher\HeroesLauncher.exe";
+                HOTA.StartInfo.FileName = @"S:\HoMM 3 - Launcher\HeroesLauncher\Heroes Launcher.exe";
                 HOTA.StartInfo.WorkingDirectory = @"S:\HoMM 3 - Launcher\HeroesLauncher";
 
                 // Launch HOTA
