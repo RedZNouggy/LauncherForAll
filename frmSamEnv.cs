@@ -829,7 +829,7 @@ namespace LauncherForAll
             Process.Start("https://samwazuh.local");
             this.Alert("Wazuh Launched", Form_Alert.enmType.Success);
         }
-        
+
         private void buttonWallos_Click(object sender, EventArgs e)
         {
             Process.Start("http://samdocker.local:8282/stats.php");
@@ -861,7 +861,7 @@ namespace LauncherForAll
             Affine.Start();
             this.Alert("Affine Launched", Form_Alert.enmType.Success);
         }
-        
+
         private void buttonCodeServer_Click(object sender, EventArgs e)
         {
             Process.Start("http://samcode.local:8080/?workspace=/root/.local/share/code-server/User/Workspaces/Untitled-1713292254041.code-workspace");

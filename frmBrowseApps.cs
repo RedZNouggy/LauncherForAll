@@ -1,14 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Runtime.InteropServices;
 using System.Security.AccessControl;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace LauncherForAll
@@ -453,7 +447,7 @@ namespace LauncherForAll
                 myDirectorySecurity1.AddAccessRule(new FileSystemAccessRule(usr, FileSystemRights.Write, AccessControlType.Allow));
                 myDirectoryInfo1.SetAccessControl(myDirectorySecurity1);
 
-                if(Directory.Exists(@"\LauncherForAll\PathList"))
+                if (Directory.Exists(@"\LauncherForAll\PathList"))
                 {
                     File.WriteAllText(programData + @"\LauncherForAll\PathList\LeagueOfLegends.config", fdlg.FileName);
                 }

@@ -2,7 +2,6 @@
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
-using System.Runtime.InteropServices;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -75,10 +74,10 @@ namespace LauncherForAll
                     // Preparing the launch of RocketLeague
                     Process RocketLeague = new Process();
 
-                    RocketLeague.StartInfo.FileName = File.ReadAllLines(programData + @"\LauncherForAll\PathList\RocketLeague.config").ToString(); 
+                    RocketLeague.StartInfo.FileName = File.ReadAllLines(programData + @"\LauncherForAll\PathList\RocketLeague.config").ToString();
 
                 }
-                else 
+                else
                 {
                     // Preparing the launch of RocketLeague
                     Process RocketLeague = new Process();
@@ -277,16 +276,16 @@ namespace LauncherForAll
             {
                 this.Alert("CS2 is already Launched", Form_Alert.enmType.Warning);
             }
-         //   if (Process.GetProcessesByName("vibranceGUI").Length == 0)
-         //   {
-         //       Process vibranceGUI = new Process();
-         //
-         //       // Preparing the launch of VibranceGUI
-         //       vibranceGUI.StartInfo.FileName = @"D:\TOUT\APPLICATIONS\vibranceGUI.exe";
-         //       
-         //      // Launch vibranceGUI
-         //       vibranceGUI.Start();
-         //   }
+            //   if (Process.GetProcessesByName("vibranceGUI").Length == 0)
+            //   {
+            //       Process vibranceGUI = new Process();
+            //
+            //       // Preparing the launch of VibranceGUI
+            //       vibranceGUI.StartInfo.FileName = @"D:\TOUT\APPLICATIONS\vibranceGUI.exe";
+            //       
+            //      // Launch vibranceGUI
+            //       vibranceGUI.Start();
+            //   }
         }
         private void buttonValorant_Click(object sender, EventArgs e)
         {
