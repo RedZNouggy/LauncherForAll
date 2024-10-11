@@ -169,9 +169,6 @@ namespace LauncherForAll
                 this.buttonWallos.FlatAppearance.BorderSize = 0;
                 this.buttonWallos.FlatStyle = FlatStyle.Flat;
 
-                this.buttonNZBGET.FlatAppearance.BorderSize = 0;
-                this.buttonNZBGET.FlatStyle = FlatStyle.Flat;
-
                 this.buttonStirlingPDF.FlatAppearance.BorderSize = 0;
                 this.buttonStirlingPDF.FlatStyle = FlatStyle.Flat;
 
@@ -305,9 +302,6 @@ namespace LauncherForAll
 
                 this.buttonWallos.FlatAppearance.BorderSize = 1;
                 this.buttonWallos.FlatStyle = FlatStyle.Popup;
-
-                this.buttonNZBGET.FlatAppearance.BorderSize = 1;
-                this.buttonNZBGET.FlatStyle = FlatStyle.Popup;
 
                 this.buttonStirlingPDF.FlatAppearance.BorderSize = 1;
                 this.buttonStirlingPDF.FlatStyle = FlatStyle.Popup;
@@ -751,12 +745,6 @@ namespace LauncherForAll
         {
             Process.Start("http://samdownload.local:8112");
             this.Alert("Deluged Launched", Form_Alert.enmType.Success);
-        }
-
-        private void buttonNZBGET_Click(object sender, EventArgs e)
-        {
-            Process.Start("http://samdownload.local:6789");
-            this.Alert("NZBGET Launched", Form_Alert.enmType.Success);
         }
 
         private void buttonProxmox_Click(object sender, EventArgs e)
