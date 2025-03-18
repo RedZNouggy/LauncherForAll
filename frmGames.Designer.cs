@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGames));
             this.pnlFormLoader = new System.Windows.Forms.Panel();
-            this.buttonNext1 = new Siticone.Desktop.UI.WinForms.SiticoneRoundedButton();
+            this.buttonNext1 = new Siticone.Desktop.UI.WinForms.SiticoneButton();
             this.buttonHMM = new System.Windows.Forms.Button();
             this.buttonAOE3D = new System.Windows.Forms.Button();
             this.buttonMinecraft = new System.Windows.Forms.Button();
@@ -211,6 +211,6 @@
         private System.Windows.Forms.Button buttonCSGO;
         private System.Windows.Forms.Button buttonLeagueOfLegends;
         private System.Windows.Forms.Button buttonRocketLeague;
-        private Siticone.Desktop.UI.WinForms.SiticoneRoundedButton buttonNext1;
+        private Siticone.Desktop.UI.WinForms.SiticoneButton buttonNext1;
     }
 }

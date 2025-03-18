@@ -44,7 +44,7 @@
             this.buttonOBSLauncher = new System.Windows.Forms.Button();
             this.buttonSteel = new System.Windows.Forms.Button();
             this.buttonPaintNet = new System.Windows.Forms.Button();
-            this.buttonNext1 = new Siticone.Desktop.UI.WinForms.SiticoneRoundedButton();
+            this.buttonNext1 = new Siticone.Desktop.UI.WinForms.SiticoneButton();
             this.buttonMyCanal = new System.Windows.Forms.Button();
             this.buttonTwitch = new System.Windows.Forms.Button();
             this.buttonYoutube = new System.Windows.Forms.Button();
@@ -546,7 +546,7 @@
         private System.Windows.Forms.Button buttonDiscord;
         private System.Windows.Forms.Button buttonDashlane;
         private System.Windows.Forms.Button buttonMyCanal;
-        private Siticone.Desktop.UI.WinForms.SiticoneRoundedButton buttonNext1;
+        private Siticone.Desktop.UI.WinForms.SiticoneButton buttonNext1;
         private System.Windows.Forms.Button buttonOBSLauncher;
         private System.Windows.Forms.Button buttonSteel;
         private System.Windows.Forms.Button buttonPaintNet;

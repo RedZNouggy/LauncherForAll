@@ -172,9 +172,6 @@
   <data name="RedMod_Logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RedMod-Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Blue_samsrv" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Blue_samsrv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="NZBFinder" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NZBFinder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -190,8 +187,8 @@
   <data name="EpicGames" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\EpicGames.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="info" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="infos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\infos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Background.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -261,8 +258,8 @@
   <data name="GoogleCloud" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GoogleCloud1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Steam" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Steam.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Blue_samsrv" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Blue_samsrv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="RedMod-Wupdate" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RedMod-Wupdate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -279,11 +276,14 @@
   <data name="infos1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\infos1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="OracleCloud" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OracleCloud.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="reload" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reload.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="infos" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\infos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="opensense" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\opensense.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Minecraft" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Minecraft.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -291,8 +291,8 @@
   <data name="RedMod-ProfileDefault" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RedMod-ProfileDefault.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="HWiNFO64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\HWiNFO64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Background-Buttons" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Background-Buttons.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -327,14 +327,14 @@
   <data name="RedMod-NoBorder" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RedMod-NoBorder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="RedMod-Back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RedMod-Back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="warning" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\warning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="RedMod-Ethernet" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RedMod-Ethernet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="RedMod-settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RedMod-settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Parsec" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Parsec.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -354,14 +354,11 @@
   <data name="Excel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Excel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="HotSpot" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\HotSpot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="blueMod" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\blueMod1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Title1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Title1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="OpenVPN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OpenVPN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BackgroundImage1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BackgroundImage1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -378,9 +375,6 @@
   <data name="840128" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\840128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="OpenVPN" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\OpenVPN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Portainer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Portainer1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -395,6 +389,9 @@
   </data>
   <data name="FileZilla" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FileZilla.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Azure" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Azure.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -474,20 +471,32 @@
   <data name="ChatGPT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ChatGPT.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Home" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Tautulli" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tautulli.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="codeserver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\codeserver1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Porofessor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Porofessor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BlueMod-Apps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BlueMod-Apps.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Discord" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Discord.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Steam" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Steam.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="WindowsTerminal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WindowsTerminal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BlueMod-Apps" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BlueMod-Apps.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="info" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="HW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -501,8 +510,8 @@
   <data name="Red_samsrv" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Red_samsrv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Home" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="HotSpot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HotSpot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Homeassistant" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Homeassistant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -510,8 +519,8 @@
   <data name="wireguard" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wireguard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="OracleCloud" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\OracleCloud.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Title1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Title1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PPT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PPT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -521,9 +530,6 @@
   </data>
   <data name="CODMW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CODMW.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Outlook" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Outlook.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="defaut_user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\defaut_user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -558,17 +564,14 @@
   <data name="DisableNotifIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DisableNotifIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Background-Buttons" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Background-Buttons.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="RedMod-settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RedMod-settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="RedMod-Back" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RedMod-Back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="HWiNFO64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HWiNFO64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SamSpotdl" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SamSpotdl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Overseer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Overseer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BackgroundImageLite" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BackgroundImageLite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -576,13 +579,16 @@
   <data name="BakkesMod" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BakkesMod1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SL" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Outlook" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Outlook.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="opensense" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\opensense.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Overseer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Overseer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="codeserver" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\codeserver1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Startup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Startup1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StartupWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StartupWhite1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

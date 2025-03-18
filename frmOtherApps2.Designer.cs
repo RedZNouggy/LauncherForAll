@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmOtherApps2));
             this.pnlFormLoader = new System.Windows.Forms.Panel();
-            this.buttonNext1 = new Siticone.Desktop.UI.WinForms.SiticoneRoundedButton();
+            this.buttonNext1 = new Siticone.Desktop.UI.WinForms.SiticoneButton();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
@@ -514,7 +514,7 @@
         private System.Windows.Forms.Button button31;
         private System.Windows.Forms.Button buttonj;
         private System.Windows.Forms.Button buttonm;
-        private Siticone.Desktop.UI.WinForms.SiticoneRoundedButton buttonNext1;
+        private Siticone.Desktop.UI.WinForms.SiticoneButton buttonNext1;
         private System.Windows.Forms.Button button27;
         private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Button button28;

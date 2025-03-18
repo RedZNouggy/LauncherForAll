@@ -10,37 +10,6 @@ namespace LauncherForAll
 {
     public partial class frmSettings : Form
     {
-        private Image GetUserProfileImage()
-        {
-            try
-            {
-                // Open The Key
-                using (RegistryKey userKey = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\AccountPicture\Users\"))
-                {
-                    // Get SID (Security Identifier) of Current User
-                    string currentUserSID = WindowsIdentity.GetCurrent().User.Value;
-
-                    // Open subkey
-                    using (RegistryKey currentUserKey = userKey.OpenSubKey(currentUserSID))
-                    {
-                        // Read Access Path to Image
-                        string userProfileImagePath = (string)currentUserKey.GetValue("Image64");
-
-                        // Get data
-                        if (!string.IsNullOrEmpty(userProfileImagePath) && File.Exists(userProfileImagePath))
-                        {
-                            return Image.FromFile(userProfileImagePath);
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-            return null;
-        }
-
         // RedMod Colors
         // 255 255 255 White
         private Color WhiteColor = Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -69,12 +38,14 @@ namespace LauncherForAll
                 this.pictureBox3.BackgroundImage = Properties.Resources.RedMod_NoBorder;
                 this.pictureBox4.BackgroundImage = Properties.Resources.RedMod_Apps_Icon;
                 this.pictureBox5.BackgroundImage = Properties.Resources.defaut_use_white;
+                this.pictureBox6.BackgroundImage = Properties.Resources.StartupWhite;
 
                 this.label1.ForeColor = WhiteColor;
                 this.label2.ForeColor = WhiteColor;
                 this.label3.ForeColor = WhiteColor;
                 this.label4.ForeColor = WhiteColor;
                 this.label5.ForeColor = WhiteColor;
+                this.label6.ForeColor = WhiteColor;
 
                 this.buttonSettingsWifi.FlatAppearance.BorderColor = WhiteColor;
 
@@ -97,12 +68,14 @@ namespace LauncherForAll
                 this.pictureBox3.BackgroundImage = Properties.Resources.NoBorder;
                 this.pictureBox4.BackgroundImage = Properties.Resources.Apps_Icon;
                 this.pictureBox5.BackgroundImage = Properties.Resources.defaut_user;
+                this.pictureBox6.BackgroundImage = Properties.Resources.Startup;
 
                 this.label1.ForeColor = Color.Black;
                 this.label2.ForeColor = Color.Black;
                 this.label3.ForeColor = Color.Black;
                 this.label4.ForeColor = Color.Black;
                 this.label5.ForeColor = Color.Black;
+                this.label6.ForeColor = Color.Black;
 
                 this.buttonSettingsWifi.ForeColor = Color.Black;
                 this.buttonSettingsWifi.FlatAppearance.BorderColor = Color.Black;
@@ -153,6 +126,24 @@ namespace LauncherForAll
                 this.rjToggleButton5.CheckState = CheckState.Unchecked;
             }
 
+            // Startup ?
+            string regPath = @"Software\Microsoft\Windows\CurrentVersion\Run";
+            string keyName = "LauncherForAll";
+            string keyValue = @"C:\Program Files\LauncherForAll\LauncherForAll.exe";
+
+            using (RegistryKey key = Registry.CurrentUser.OpenSubKey(regPath, true) ?? Registry.CurrentUser.CreateSubKey(regPath, true))
+            {
+                object existKeyValue = key.GetValue(keyName);
+
+                if (existKeyValue != null && existKeyValue.ToString() == keyValue)
+                {
+                     this.rjToggleButton6.CheckState = CheckState.Checked;
+                }
+                else
+                {
+                    this.rjToggleButton6.CheckState = CheckState.Unchecked;
+                }
+            }
         }
 
         public void Alert(string msg, Form_Alert.enmType type)
@@ -336,6 +327,25 @@ namespace LauncherForAll
                         File.WriteAllText(programData + @"\LauncherForAll\Set_ProfilePict.temp", "1");
                         Application.Restart();
                     }
+                }
+            }
+        }
+        private void rjToggleButton6_CheckedChanged(object sender, EventArgs e)
+        {
+            string regPath = @"Software\Microsoft\Windows\CurrentVersion\Run";
+            string keyName = "LauncherForAll";
+            string keyValue = @"C:\Program Files\LauncherForAll\LauncherForAll.exe";
+
+            using (RegistryKey key = Registry.CurrentUser.OpenSubKey(regPath, true) ?? Registry.CurrentUser.CreateSubKey(regPath, true))
+            {
+                object existKeyValue = key.GetValue(keyName);
+                if (this.rjToggleButton6.Checked)
+                {
+                    key.SetValue(keyName, keyValue, RegistryValueKind.String);
+                }
+                else 
+                { 
+                    key.DeleteValue(keyName);
                 }
             }
         }

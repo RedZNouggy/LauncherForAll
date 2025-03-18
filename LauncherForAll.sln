@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LauncherForAll", "LauncherForAll.csproj", "{71AA582C-1D4F-41C4-9ED1-481AA35BE2B9}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupLauncher", "..\SetupLaucher\SetupLauncher\SetupLauncher.vdproj", "{B38C7B42-BDEB-422E-8B75-9FF8272D43E9}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupLauncher", "..\SetupLaucher\SetupLauncherForAll\SetupLauncherForAll.vdproj", "{B38C7B42-BDEB-422E-8B75-9FF8272D43E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

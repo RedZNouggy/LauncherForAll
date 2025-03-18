@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGames2));
             this.pnlFormLoader = new System.Windows.Forms.Panel();
-            this.buttonNext1 = new Siticone.Desktop.UI.WinForms.SiticoneRoundedButton();
+            this.buttonNext1 = new Siticone.Desktop.UI.WinForms.SiticoneButton();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -203,6 +203,6 @@
         private System.Windows.Forms.Button buttonGTAV;
         private System.Windows.Forms.Button buttonCODMW;
         private System.Windows.Forms.Button buttonR6;
-        private Siticone.Desktop.UI.WinForms.SiticoneRoundedButton buttonNext1;
+        private Siticone.Desktop.UI.WinForms.SiticoneButton buttonNext1;
     }
 }

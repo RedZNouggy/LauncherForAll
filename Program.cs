@@ -4,7 +4,6 @@ using System.Windows.Forms;
 
 namespace LauncherForAll
 {
-
     internal static class Program
     {
         public static void Alert(string msg, Form_Alert.enmType type)
