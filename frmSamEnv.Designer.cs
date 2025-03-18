@@ -50,8 +50,6 @@
             this.buttonNoIP = new System.Windows.Forms.Button();
             this.buttonHomeassistant = new System.Windows.Forms.Button();
             this.buttonPortainer1 = new System.Windows.Forms.Button();
-            this.buttonUsenetFarm = new System.Windows.Forms.Button();
-            this.buttonNZBFinder = new System.Windows.Forms.Button();
             this.buttonHomarr = new System.Windows.Forms.Button();
             this.buttonAdguard = new System.Windows.Forms.Button();
             this.buttonDLink = new System.Windows.Forms.Button();
@@ -100,8 +98,6 @@
             this.pnlFormLoader.Controls.Add(this.buttonNoIP);
             this.pnlFormLoader.Controls.Add(this.buttonHomeassistant);
             this.pnlFormLoader.Controls.Add(this.buttonPortainer1);
-            this.pnlFormLoader.Controls.Add(this.buttonUsenetFarm);
-            this.pnlFormLoader.Controls.Add(this.buttonNZBFinder);
             this.pnlFormLoader.Controls.Add(this.buttonHomarr);
             this.pnlFormLoader.Controls.Add(this.buttonAdguard);
             this.pnlFormLoader.Controls.Add(this.buttonDLink);
@@ -349,20 +345,6 @@
             this.buttonPortainer1.TabIndex = 194;
             this.buttonPortainer1.UseVisualStyleBackColor = true;
             this.buttonPortainer1.Click += new System.EventHandler(this.buttonPortainer1_Click);
-            // 
-            // buttonUsenetFarm
-            // 
-            this.buttonUsenetFarm.Location = new System.Drawing.Point(0, 0);
-            this.buttonUsenetFarm.Name = "buttonUsenetFarm";
-            this.buttonUsenetFarm.Size = new System.Drawing.Size(75, 23);
-            this.buttonUsenetFarm.TabIndex = 202;
-            // 
-            // buttonNZBFinder
-            // 
-            this.buttonNZBFinder.Location = new System.Drawing.Point(0, 0);
-            this.buttonNZBFinder.Name = "buttonNZBFinder";
-            this.buttonNZBFinder.Size = new System.Drawing.Size(75, 23);
-            this.buttonNZBFinder.TabIndex = 203;
             // 
             // buttonHomarr
             // 
@@ -660,8 +642,6 @@
         private System.Windows.Forms.Button buttonDLink;
         private System.Windows.Forms.Button buttonAdguard;
         private System.Windows.Forms.Button buttonHomarr;
-        private System.Windows.Forms.Button buttonUsenetFarm;
-        private System.Windows.Forms.Button buttonNZBFinder;
         private System.Windows.Forms.Button buttonPortainer1;
         private System.Windows.Forms.Button buttonHomeassistant;
         private System.Windows.Forms.Button buttonNoIP;
