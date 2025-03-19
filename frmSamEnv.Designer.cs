@@ -30,16 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSamEnv));
             this.pnlFormLoader = new System.Windows.Forms.Panel();
+            this.buttonqBittorrent = new System.Windows.Forms.Button();
+            this.buttonCheckmk = new System.Windows.Forms.Button();
+            this.buttonMemos = new System.Windows.Forms.Button();
             this.buttonChatGPT = new System.Windows.Forms.Button();
             this.buttonOracleCloud = new System.Windows.Forms.Button();
-            this.buttonWazuh = new System.Windows.Forms.Button();
             this.buttonAffine = new System.Windows.Forms.Button();
             this.buttonCodeServer = new System.Windows.Forms.Button();
             this.buttonK8 = new System.Windows.Forms.Button();
             this.buttonAzure = new System.Windows.Forms.Button();
             this.buttonGoogleCloud = new System.Windows.Forms.Button();
             this.buttonMySpeed = new System.Windows.Forms.Button();
-            this.buttonDeluged = new System.Windows.Forms.Button();
             this.buttonStirlingPDF = new System.Windows.Forms.Button();
             this.buttonWallos = new System.Windows.Forms.Button();
             this.buttonJackett = new System.Windows.Forms.Button();
@@ -55,7 +56,6 @@
             this.buttonDLink = new System.Windows.Forms.Button();
             this.buttonPortainer = new System.Windows.Forms.Button();
             this.buttonPowerToys = new System.Windows.Forms.Button();
-            this.buttonOpenVPN = new System.Windows.Forms.Button();
             this.buttonHotSpot = new System.Windows.Forms.Button();
             this.buttonWindowsTerminal = new System.Windows.Forms.Button();
             this.buttonHWM = new System.Windows.Forms.Button();
@@ -78,16 +78,17 @@
             // 
             // pnlFormLoader
             // 
+            this.pnlFormLoader.Controls.Add(this.buttonqBittorrent);
+            this.pnlFormLoader.Controls.Add(this.buttonCheckmk);
+            this.pnlFormLoader.Controls.Add(this.buttonMemos);
             this.pnlFormLoader.Controls.Add(this.buttonChatGPT);
             this.pnlFormLoader.Controls.Add(this.buttonOracleCloud);
-            this.pnlFormLoader.Controls.Add(this.buttonWazuh);
             this.pnlFormLoader.Controls.Add(this.buttonAffine);
             this.pnlFormLoader.Controls.Add(this.buttonCodeServer);
             this.pnlFormLoader.Controls.Add(this.buttonK8);
             this.pnlFormLoader.Controls.Add(this.buttonAzure);
             this.pnlFormLoader.Controls.Add(this.buttonGoogleCloud);
             this.pnlFormLoader.Controls.Add(this.buttonMySpeed);
-            this.pnlFormLoader.Controls.Add(this.buttonDeluged);
             this.pnlFormLoader.Controls.Add(this.buttonStirlingPDF);
             this.pnlFormLoader.Controls.Add(this.buttonWallos);
             this.pnlFormLoader.Controls.Add(this.buttonJackett);
@@ -103,7 +104,6 @@
             this.pnlFormLoader.Controls.Add(this.buttonDLink);
             this.pnlFormLoader.Controls.Add(this.buttonPortainer);
             this.pnlFormLoader.Controls.Add(this.buttonPowerToys);
-            this.pnlFormLoader.Controls.Add(this.buttonOpenVPN);
             this.pnlFormLoader.Controls.Add(this.buttonHotSpot);
             this.pnlFormLoader.Controls.Add(this.buttonWindowsTerminal);
             this.pnlFormLoader.Controls.Add(this.buttonHWM);
@@ -125,6 +125,39 @@
             this.pnlFormLoader.Name = "pnlFormLoader";
             this.pnlFormLoader.Size = new System.Drawing.Size(1000, 625);
             this.pnlFormLoader.TabIndex = 0;
+            // 
+            // buttonqBittorrent
+            // 
+            this.buttonqBittorrent.BackgroundImage = global::LauncherForAll.Properties.Resources.qBittorrent;
+            this.buttonqBittorrent.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonqBittorrent.Location = new System.Drawing.Point(741, 264);
+            this.buttonqBittorrent.Name = "buttonqBittorrent";
+            this.buttonqBittorrent.Size = new System.Drawing.Size(70, 70);
+            this.buttonqBittorrent.TabIndex = 219;
+            this.buttonqBittorrent.UseVisualStyleBackColor = true;
+            this.buttonqBittorrent.Click += new System.EventHandler(this.buttonqBittorrent_Click);
+            // 
+            // buttonCheckmk
+            // 
+            this.buttonCheckmk.BackgroundImage = global::LauncherForAll.Properties.Resources.checkmk;
+            this.buttonCheckmk.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonCheckmk.Location = new System.Drawing.Point(741, 364);
+            this.buttonCheckmk.Name = "buttonCheckmk";
+            this.buttonCheckmk.Size = new System.Drawing.Size(70, 70);
+            this.buttonCheckmk.TabIndex = 218;
+            this.buttonCheckmk.UseVisualStyleBackColor = true;
+            this.buttonCheckmk.Click += new System.EventHandler(this.buttonCheckmk_Click);
+            // 
+            // buttonMemos
+            // 
+            this.buttonMemos.BackgroundImage = global::LauncherForAll.Properties.Resources.Memos;
+            this.buttonMemos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonMemos.Location = new System.Drawing.Point(651, 364);
+            this.buttonMemos.Name = "buttonMemos";
+            this.buttonMemos.Size = new System.Drawing.Size(70, 70);
+            this.buttonMemos.TabIndex = 217;
+            this.buttonMemos.UseVisualStyleBackColor = true;
+            this.buttonMemos.Click += new System.EventHandler(this.buttonMemos_Click);
             // 
             // buttonChatGPT
             // 
@@ -148,22 +181,11 @@
             this.buttonOracleCloud.UseVisualStyleBackColor = true;
             this.buttonOracleCloud.Click += new System.EventHandler(this.buttonOracleCloud_Click);
             // 
-            // buttonWazuh
-            // 
-            this.buttonWazuh.BackgroundImage = global::LauncherForAll.Properties.Resources.Wazuh;
-            this.buttonWazuh.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonWazuh.Location = new System.Drawing.Point(471, 364);
-            this.buttonWazuh.Name = "buttonWazuh";
-            this.buttonWazuh.Size = new System.Drawing.Size(70, 70);
-            this.buttonWazuh.TabIndex = 214;
-            this.buttonWazuh.UseVisualStyleBackColor = true;
-            this.buttonWazuh.Click += new System.EventHandler(this.buttonWazuh_Click);
-            // 
             // buttonAffine
             // 
             this.buttonAffine.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonAffine.BackgroundImage")));
             this.buttonAffine.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonAffine.Location = new System.Drawing.Point(561, 364);
+            this.buttonAffine.Location = new System.Drawing.Point(471, 364);
             this.buttonAffine.Name = "buttonAffine";
             this.buttonAffine.Size = new System.Drawing.Size(70, 70);
             this.buttonAffine.TabIndex = 213;
@@ -174,7 +196,7 @@
             // 
             this.buttonCodeServer.BackgroundImage = global::LauncherForAll.Properties.Resources.codeserver;
             this.buttonCodeServer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonCodeServer.Location = new System.Drawing.Point(651, 364);
+            this.buttonCodeServer.Location = new System.Drawing.Point(561, 364);
             this.buttonCodeServer.Name = "buttonCodeServer";
             this.buttonCodeServer.Size = new System.Drawing.Size(70, 70);
             this.buttonCodeServer.TabIndex = 212;
@@ -225,22 +247,11 @@
             this.buttonMySpeed.UseVisualStyleBackColor = true;
             this.buttonMySpeed.Click += new System.EventHandler(this.buttonMySpeed_Click);
             // 
-            // buttonDeluged
-            // 
-            this.buttonDeluged.BackgroundImage = global::LauncherForAll.Properties.Resources.Deluge_Logo;
-            this.buttonDeluged.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonDeluged.Location = new System.Drawing.Point(741, 264);
-            this.buttonDeluged.Name = "buttonDeluged";
-            this.buttonDeluged.Size = new System.Drawing.Size(70, 70);
-            this.buttonDeluged.TabIndex = 206;
-            this.buttonDeluged.UseVisualStyleBackColor = true;
-            this.buttonDeluged.Click += new System.EventHandler(this.buttonDeluged_Click);
-            // 
             // buttonStirlingPDF
             // 
             this.buttonStirlingPDF.BackgroundImage = global::LauncherForAll.Properties.Resources.Stirling_PDF;
             this.buttonStirlingPDF.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonStirlingPDF.Location = new System.Drawing.Point(741, 164);
+            this.buttonStirlingPDF.Location = new System.Drawing.Point(651, 164);
             this.buttonStirlingPDF.Name = "buttonStirlingPDF";
             this.buttonStirlingPDF.Size = new System.Drawing.Size(70, 70);
             this.buttonStirlingPDF.TabIndex = 205;
@@ -251,7 +262,7 @@
             // 
             this.buttonWallos.BackgroundImage = global::LauncherForAll.Properties.Resources.Wallos;
             this.buttonWallos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonWallos.Location = new System.Drawing.Point(561, 164);
+            this.buttonWallos.Location = new System.Drawing.Point(471, 164);
             this.buttonWallos.Name = "buttonWallos";
             this.buttonWallos.Size = new System.Drawing.Size(70, 70);
             this.buttonWallos.TabIndex = 204;
@@ -284,7 +295,7 @@
             // 
             this.buttonSamSptodl.BackgroundImage = global::LauncherForAll.Properties.Resources.SamSpotdl;
             this.buttonSamSptodl.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonSamSptodl.Location = new System.Drawing.Point(471, 164);
+            this.buttonSamSptodl.Location = new System.Drawing.Point(741, 164);
             this.buttonSamSptodl.Name = "buttonSamSptodl";
             this.buttonSamSptodl.Size = new System.Drawing.Size(70, 70);
             this.buttonSamSptodl.TabIndex = 199;
@@ -350,7 +361,7 @@
             // 
             this.buttonHomarr.BackgroundImage = global::LauncherForAll.Properties.Resources.Homarr;
             this.buttonHomarr.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonHomarr.Location = new System.Drawing.Point(651, 164);
+            this.buttonHomarr.Location = new System.Drawing.Point(561, 164);
             this.buttonHomarr.Name = "buttonHomarr";
             this.buttonHomarr.Size = new System.Drawing.Size(70, 70);
             this.buttonHomarr.TabIndex = 188;
@@ -401,22 +412,11 @@
             this.buttonPowerToys.UseVisualStyleBackColor = true;
             this.buttonPowerToys.Click += new System.EventHandler(this.buttonPowerToys_Click);
             // 
-            // buttonOpenVPN
-            // 
-            this.buttonOpenVPN.BackgroundImage = global::LauncherForAll.Properties.Resources.OpenVPN;
-            this.buttonOpenVPN.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonOpenVPN.Location = new System.Drawing.Point(471, 64);
-            this.buttonOpenVPN.Name = "buttonOpenVPN";
-            this.buttonOpenVPN.Size = new System.Drawing.Size(70, 70);
-            this.buttonOpenVPN.TabIndex = 180;
-            this.buttonOpenVPN.UseVisualStyleBackColor = true;
-            this.buttonOpenVPN.Click += new System.EventHandler(this.buttonOpenVPN_Click);
-            // 
             // buttonHotSpot
             // 
             this.buttonHotSpot.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonHotSpot.BackgroundImage")));
             this.buttonHotSpot.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonHotSpot.Location = new System.Drawing.Point(561, 64);
+            this.buttonHotSpot.Location = new System.Drawing.Point(471, 64);
             this.buttonHotSpot.Name = "buttonHotSpot";
             this.buttonHotSpot.Size = new System.Drawing.Size(70, 70);
             this.buttonHotSpot.TabIndex = 179;
@@ -438,7 +438,7 @@
             // 
             this.buttonHWM.BackgroundImage = global::LauncherForAll.Properties.Resources.HW;
             this.buttonHWM.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonHWM.Location = new System.Drawing.Point(741, 64);
+            this.buttonHWM.Location = new System.Drawing.Point(651, 64);
             this.buttonHWM.Name = "buttonHWM";
             this.buttonHWM.Size = new System.Drawing.Size(70, 70);
             this.buttonHWM.TabIndex = 177;
@@ -504,7 +504,7 @@
             // 
             this.buttonVirtualBox.BackgroundImage = global::LauncherForAll.Properties.Resources.Virtualbox_logo;
             this.buttonVirtualBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonVirtualBox.Location = new System.Drawing.Point(749, 464);
+            this.buttonVirtualBox.Location = new System.Drawing.Point(741, 464);
             this.buttonVirtualBox.Name = "buttonVirtualBox";
             this.buttonVirtualBox.Size = new System.Drawing.Size(70, 70);
             this.buttonVirtualBox.TabIndex = 170;
@@ -570,7 +570,7 @@
             // 
             this.buttonWireguard.BackgroundImage = global::LauncherForAll.Properties.Resources.wireguard;
             this.buttonWireguard.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonWireguard.Location = new System.Drawing.Point(651, 64);
+            this.buttonWireguard.Location = new System.Drawing.Point(561, 64);
             this.buttonWireguard.Name = "buttonWireguard";
             this.buttonWireguard.Size = new System.Drawing.Size(70, 70);
             this.buttonWireguard.TabIndex = 129;
@@ -631,7 +631,6 @@
         private System.Windows.Forms.Button buttonAWS;
         private System.Windows.Forms.Button buttonAngryIP;
         private System.Windows.Forms.Button buttonPlexamp;
-        private System.Windows.Forms.Button buttonOpenVPN;
         private System.Windows.Forms.Button buttonHotSpot;
         private System.Windows.Forms.Button buttonWindowsTerminal;
         private System.Windows.Forms.Button buttonHWM;
@@ -652,15 +651,16 @@
         private System.Windows.Forms.Button buttonJackett;
         private System.Windows.Forms.Button buttonWallos;
         private System.Windows.Forms.Button buttonStirlingPDF;
-        private System.Windows.Forms.Button buttonDeluged;
         private System.Windows.Forms.Button buttonMySpeed;
         private System.Windows.Forms.Button buttonAzure;
         private System.Windows.Forms.Button buttonGoogleCloud;
         private System.Windows.Forms.Button buttonK8;
         private System.Windows.Forms.Button buttonCodeServer;
         private System.Windows.Forms.Button buttonAffine;
-        private System.Windows.Forms.Button buttonWazuh;
         private System.Windows.Forms.Button buttonOracleCloud;
         private System.Windows.Forms.Button buttonChatGPT;
+        private System.Windows.Forms.Button buttonMemos;
+        private System.Windows.Forms.Button buttonCheckmk;
+        private System.Windows.Forms.Button buttonqBittorrent;
     }
 }

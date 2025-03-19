@@ -350,9 +350,9 @@ namespace LauncherForAll
 
             // Preparing to Launch Snapchat
             Snapchat.StartInfo.FileName = @"C:\Program Files\Google\Chrome\Application\chrome_proxy.exe";
-            Snapchat.StartInfo.Arguments = " --profile-directory=Default --app-id=abdndmcckigaeepaljhpcngbfdkbiggb";
+            Snapchat.StartInfo.Arguments = " --profile-directory=Default --app-id=gfgbgjphjkdhefmnmbhogcpckgpapbag";
 
-            // Launch Signal
+            // Launch Snapchat
             Snapchat.Start();
             this.Alert("Snapchat Launched", Form_Alert.enmType.Success);
         }

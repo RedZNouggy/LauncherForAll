@@ -387,6 +387,9 @@
   <ItemGroup>
     <Content Include="LauncherForAll.ico" />
     <Content Include="RedMod-Logo.ico" />
+    <None Include="Resources\qBittorrent.png" />
+    <None Include="Resources\checkmk.png" />
+    <None Include="Resources\Memos.png" />
     <None Include="Resources\Horn_of_the_Abyss.png" />
     <None Include="Resources\Jackett.png" />
     <None Include="Resources\Wallos.png" />

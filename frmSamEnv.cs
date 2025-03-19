@@ -94,9 +94,6 @@ namespace LauncherForAll
                 this.buttonPlexamp.FlatAppearance.BorderSize = 0;
                 this.buttonPlexamp.FlatStyle = FlatStyle.Flat;
 
-                this.buttonOpenVPN.FlatAppearance.BorderSize = 0;
-                this.buttonOpenVPN.FlatStyle = FlatStyle.Flat;
-
                 this.buttonVSCode.FlatAppearance.BorderSize = 0;
                 this.buttonVSCode.FlatStyle = FlatStyle.Flat;
 
@@ -151,9 +148,6 @@ namespace LauncherForAll
                 this.buttonCloudflare.FlatAppearance.BorderSize = 0;
                 this.buttonCloudflare.FlatStyle = FlatStyle.Flat;
 
-                this.buttonWazuh.FlatAppearance.BorderSize = 0;
-                this.buttonWazuh.FlatStyle = FlatStyle.Flat;
-
                 this.buttonCodeServer.FlatAppearance.BorderSize = 0;
                 this.buttonCodeServer.FlatStyle = FlatStyle.Flat;
 
@@ -166,11 +160,11 @@ namespace LauncherForAll
                 this.buttonStirlingPDF.FlatAppearance.BorderSize = 0;
                 this.buttonStirlingPDF.FlatStyle = FlatStyle.Flat;
 
-                this.buttonDeluged.FlatAppearance.BorderSize = 0;
-                this.buttonDeluged.FlatStyle = FlatStyle.Flat;
-
                 this.buttonOracleCloud.FlatAppearance.BorderSize = 0;
                 this.buttonOracleCloud.FlatStyle = FlatStyle.Flat;
+
+                this.buttonMemos.FlatAppearance.BorderSize = 0;
+                this.buttonMemos.FlatStyle = FlatStyle.Flat;
             }
             else
             {
@@ -231,9 +225,6 @@ namespace LauncherForAll
                 this.buttonHotSpot.FlatAppearance.BorderSize = 1;
                 this.buttonHotSpot.FlatStyle = FlatStyle.Popup;
 
-                this.buttonOpenVPN.FlatAppearance.BorderSize = 1;
-                this.buttonOpenVPN.FlatStyle = FlatStyle.Popup;
-
                 this.buttonPowerToys.FlatAppearance.BorderSize = 1;
                 this.buttonPowerToys.FlatStyle = FlatStyle.Popup;
 
@@ -279,9 +270,6 @@ namespace LauncherForAll
                 this.buttonCloudflare.FlatAppearance.BorderSize = 1;
                 this.buttonCloudflare.FlatStyle = FlatStyle.Popup;
 
-                this.buttonWazuh.FlatAppearance.BorderSize = 1;
-                this.buttonWazuh.FlatStyle = FlatStyle.Popup;
-
                 this.buttonCodeServer.FlatAppearance.BorderSize = 1;
                 this.buttonCodeServer.FlatStyle = FlatStyle.Popup;
 
@@ -294,11 +282,11 @@ namespace LauncherForAll
                 this.buttonStirlingPDF.FlatAppearance.BorderSize = 1;
                 this.buttonStirlingPDF.FlatStyle = FlatStyle.Popup;
 
-                this.buttonDeluged.FlatAppearance.BorderSize = 1;
-                this.buttonDeluged.FlatStyle = FlatStyle.Popup;
-
                 this.buttonOracleCloud.FlatAppearance.BorderSize = 1;
                 this.buttonOracleCloud.FlatStyle = FlatStyle.Popup;
+
+                this.buttonMemos.FlatAppearance.BorderSize = 1;
+                this.buttonMemos.FlatStyle = FlatStyle.Popup;
             }
         }
 
@@ -374,7 +362,7 @@ namespace LauncherForAll
             if (Process.GetProcessesByName("vmware").Length == 0)
             {
                 // Preparing to Launch VMWare Pro
-                VMWarePro.StartInfo.FileName = @"D:\VMWare\vmware.exe";
+                VMWarePro.StartInfo.FileName = @"D:\VMWare Workstation\vmware.exe";
 
                 // Launch VMWare Pro
                 VMWarePro.Start();
@@ -551,7 +539,7 @@ namespace LauncherForAll
                 Process VS = new Process();
 
                 // Preparing to Launch VS
-                VS.StartInfo.FileName = @"D:\Microsoft Visual Studio\2022\Community\Common7\IDE\devenv.exe";
+                VS.StartInfo.FileName = @"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\devenv.exe";
 
                 // Launch VS
                 VS.Start();
@@ -571,31 +559,6 @@ namespace LauncherForAll
             }
         }
 
-        private void buttonOpenVPN_Click(object sender, EventArgs e)
-        {
-            if (Process.GetProcessesByName("OpenVPNConnect").Length == 0)
-            {
-                Process OpenVPNConnect = new Process();
-
-                // Preparing to Launch OpenVPNConnect
-                OpenVPNConnect.StartInfo.FileName = @"C:\Program Files\OpenVPN Connect\OpenVPNConnect.exe";
-
-                // Launch OpenVPNConnect
-                try
-                {
-                    OpenVPNConnect.Start();
-                    this.Alert("OpenVPNConnect Launched", Form_Alert.enmType.Success);
-                }
-                catch
-                {
-                    this.Alert("OpenVPNConnect Error Admin Rights Needed ?", Form_Alert.enmType.Error);
-                }
-            }
-            else
-            {
-                this.Alert("OpenVPNConnect is already Launched", Form_Alert.enmType.Warning);
-            }
-        }
 
         private void buttonWindowsTerminal_Click(object sender, EventArgs e)
         {
@@ -667,7 +630,6 @@ namespace LauncherForAll
                 }
             }
         }
-
         private void buttonPowerToys_Click(object sender, EventArgs e)
         {
             if (Process.GetProcessesByName("PowerToys.Hosts").Length == 0)
@@ -727,12 +689,6 @@ namespace LauncherForAll
         {
             Process.Start("http://samdownload.local:9117");
             this.Alert("Jackett Launched", Form_Alert.enmType.Success);
-        }
-
-        private void buttonDeluged_Click(object sender, EventArgs e)
-        {
-            Process.Start("http://samdownload.local:8112");
-            this.Alert("Deluged Launched", Form_Alert.enmType.Success);
         }
 
         private void buttonProxmox_Click(object sender, EventArgs e)
@@ -812,12 +768,6 @@ namespace LauncherForAll
             this.Alert("MySpeed Launched", Form_Alert.enmType.Success);
         }
 
-        private void buttonWazuh_Click(object sender, EventArgs e)
-        {
-            Process.Start("https://samwazuh.local");
-            this.Alert("Wazuh Launched", Form_Alert.enmType.Success);
-        }
-
         private void buttonWallos_Click(object sender, EventArgs e)
         {
             Process.Start("http://samdocker.local:8282/stats.php");
@@ -868,6 +818,24 @@ namespace LauncherForAll
             // Launch ChatGPT
             ChatGPT.Start();
             this.Alert("ChatGPT Launched", Form_Alert.enmType.Success);
+        }
+
+        private void buttonMemos_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://sammemos.local:9030/");
+            this.Alert("Memos Launched", Form_Alert.enmType.Success);
+        }
+
+        private void buttonCheckmk_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://samcheckmk.local/monitoring/check_mk/index.py?start_url=%2Fmonitoring%2Fcheck_mk%2Fdashboard.py");
+            this.Alert("Checkmk Launched", Form_Alert.enmType.Success);
+        }
+
+        private void buttonqBittorrent_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://samdownload.local:1340/");
+            this.Alert("qBittorrent Launched", Form_Alert.enmType.Success);
         }
     }
 }

@@ -333,6 +333,16 @@ namespace LauncherForAll.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap checkmk {
+            get {
+                object obj = ResourceManager.GetObject("checkmk", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cloudflare {
             get {
                 object obj = ResourceManager.GetObject("Cloudflare", resourceCulture);
@@ -713,6 +723,16 @@ namespace LauncherForAll.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Memos {
+            get {
+                object obj = ResourceManager.GetObject("Memos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Microsoft_Store {
             get {
                 object obj = ResourceManager.GetObject("Microsoft-Store", resourceCulture);
@@ -966,6 +986,16 @@ namespace LauncherForAll.Properties {
         internal static System.Drawing.Bitmap proxmox {
             get {
                 object obj = ResourceManager.GetObject("proxmox", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap qBittorrent {
+            get {
+                object obj = ResourceManager.GetObject("qBittorrent", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
