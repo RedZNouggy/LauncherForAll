@@ -141,7 +141,7 @@
             // 
             this.buttonCheckmk.BackgroundImage = global::LauncherForAll.Properties.Resources.checkmk;
             this.buttonCheckmk.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonCheckmk.Location = new System.Drawing.Point(741, 364);
+            this.buttonCheckmk.Location = new System.Drawing.Point(831, 364);
             this.buttonCheckmk.Name = "buttonCheckmk";
             this.buttonCheckmk.Size = new System.Drawing.Size(70, 70);
             this.buttonCheckmk.TabIndex = 218;

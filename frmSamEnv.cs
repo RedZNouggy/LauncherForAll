@@ -165,6 +165,15 @@ namespace LauncherForAll
 
                 this.buttonMemos.FlatAppearance.BorderSize = 0;
                 this.buttonMemos.FlatStyle = FlatStyle.Flat;
+
+                this.buttonStirlingPDF.FlatAppearance.BorderSize = 0;
+                this.buttonStirlingPDF.FlatStyle = FlatStyle.Flat;
+
+                this.buttonCheckmk.FlatAppearance.BorderSize = 0;
+                this.buttonCheckmk.FlatStyle = FlatStyle.Flat;
+
+                this.buttonqBittorrent.FlatAppearance.BorderSize = 0;
+                this.buttonqBittorrent.FlatStyle = FlatStyle.Flat;
             }
             else
             {
@@ -287,6 +296,15 @@ namespace LauncherForAll
 
                 this.buttonMemos.FlatAppearance.BorderSize = 1;
                 this.buttonMemos.FlatStyle = FlatStyle.Popup;
+
+                this.buttonStirlingPDF.FlatAppearance.BorderSize = 1;
+                this.buttonStirlingPDF.FlatStyle = FlatStyle.Popup;
+
+                this.buttonCheckmk.FlatAppearance.BorderSize = 1;
+                this.buttonCheckmk.FlatStyle = FlatStyle.Popup;
+
+                this.buttonqBittorrent.FlatAppearance.BorderSize = 1;
+                this.buttonqBittorrent.FlatStyle = FlatStyle.Popup;
             }
         }
 
@@ -776,8 +794,16 @@ namespace LauncherForAll
 
         private void buttonStirlingPDF_Click(object sender, EventArgs e)
         {
-            Process.Start("http://samdocker.local:8080");
-            this.Alert("StirlingPDF Launched", Form_Alert.enmType.Success);
+            Process Stirling = new Process();
+
+            // Preparing the launch of Stirling
+            Stirling.StartInfo.FileName = @"C:\Program Files\Google\Chrome\Application\chrome_proxy.exe";
+            Stirling.StartInfo.Arguments = @"  --profile-directory=Default --app-id=bmbckoeanpiakjlbcighelmobhdhdpko";
+            Stirling.StartInfo.WorkingDirectory = @"C:\Program Files\Google\Chrome\Application";
+
+            // Launch Stirling
+            Stirling.Start();
+            this.Alert("Stirling Launched", Form_Alert.enmType.Success);
         }
 
         private void buttonK8_Click(object sender, EventArgs e)
@@ -812,7 +838,7 @@ namespace LauncherForAll
 
             // Preparing the launch of ChatGPT
             ChatGPT.StartInfo.FileName = @"C:\Program Files\Google\Chrome\Application\chrome_proxy.exe";
-            ChatGPT.StartInfo.Arguments = @" --profile-directory=Default --app-id=jckaldkomadaenmmgladeopgmfbahfjm";
+            ChatGPT.StartInfo.Arguments = @" --profile-directory=Default --app-id=cadlkienfkclaiaibeoongdcgmdikeeg";
             ChatGPT.StartInfo.WorkingDirectory = @"C:\Program Files\Google\Chrome\Application";
 
             // Launch ChatGPT
@@ -822,7 +848,15 @@ namespace LauncherForAll
 
         private void buttonMemos_Click(object sender, EventArgs e)
         {
-            Process.Start("http://sammemos.local:9030/");
+            Process Memos = new Process();
+
+            // Preparing the launch of Memos
+            Memos.StartInfo.FileName = @"C:\Program Files\Google\Chrome\Application\chrome_proxy.exe";
+            Memos.StartInfo.Arguments = @" --profile-directory=Default --app-id=fccbgdgnmkgjimcdadeljnnjldkdgjmp";
+            Memos.StartInfo.WorkingDirectory = @"C:\Program Files\Google\Chrome\Application";
+
+            // Launch Memos
+            Memos.Start();
             this.Alert("Memos Launched", Form_Alert.enmType.Success);
         }
 
