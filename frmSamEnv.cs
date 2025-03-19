@@ -614,18 +614,12 @@ namespace LauncherForAll
 
         private void buttonHWM_Click(object sender, EventArgs e)
         {
-            /*/ TestConnection
-            if (frmGames.CheckForInternetConnection() == false)
-            {
-                this.Alert("Check For your Internet connection...", Form_Alert.enmType.Error);
-            }
-            */
             if (Process.GetProcessesByName("HWMonitor").Length == 0)
             {
                 Process HWMonitor = new Process();
 
                 // Preparing to Launch HWMonitor
-                HWMonitor.StartInfo.FileName = @"C:\Program Files\CPUID\HWMonitor\HWMonitor.exe";
+                HWMonitor.StartInfo.FileName = @"D:\HWMonitor\HWMonitor.exe";
 
                 // Launch HWMonitor
                 try
@@ -655,8 +649,8 @@ namespace LauncherForAll
                 Process PowerToysHosts = new Process();
 
                 // Preparing to Launch PowerToysHosts
-                PowerToysHosts.StartInfo.FileName = @"C:\Program Files\PowerToys\modules\Hosts\PowerToys.Hosts.exe";
-                PowerToysHosts.StartInfo.WorkingDirectory = @"C:\Program Files\PowerToys\modules\Hosts";
+                PowerToysHosts.StartInfo.FileName = @"C:\Users\samen\AppData\Local\PowerToys\WinUI3Apps\PowerToys.Hosts.exe";
+                PowerToysHosts.StartInfo.WorkingDirectory = @"C:\Users\samen\AppData\Local\PowerToys\WinUI3Apps";
                 PowerToysHosts.StartInfo.Verb = "runas"; // Ask admin rights
 
                 // Launch PowerToysHosts
