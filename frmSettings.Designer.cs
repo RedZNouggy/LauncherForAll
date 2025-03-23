@@ -90,7 +90,7 @@
             // 
             this.pictureBox6.BackgroundImage = global::LauncherForAll.Properties.Resources.Startup;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox6.Location = new System.Drawing.Point(743, 352);
+            this.pictureBox6.Location = new System.Drawing.Point(743, 344);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(24, 24);
             this.pictureBox6.TabIndex = 22;
@@ -101,7 +101,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label6.Location = new System.Drawing.Point(773, 353);
+            this.label6.Location = new System.Drawing.Point(773, 345);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(114, 20);
             this.label6.TabIndex = 21;
@@ -110,7 +110,7 @@
             // rjToggleButton6
             // 
             this.rjToggleButton6.AutoSize = true;
-            this.rjToggleButton6.Location = new System.Drawing.Point(894, 354);
+            this.rjToggleButton6.Location = new System.Drawing.Point(894, 346);
             this.rjToggleButton6.MinimumSize = new System.Drawing.Size(45, 22);
             this.rjToggleButton6.Name = "rjToggleButton6";
             this.rjToggleButton6.OffBackColor = System.Drawing.Color.Gray;
@@ -126,7 +126,7 @@
             // 
             this.pictureBox5.BackgroundImage = global::LauncherForAll.Properties.Resources.defaut_user;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox5.Location = new System.Drawing.Point(699, 314);
+            this.pictureBox5.Location = new System.Drawing.Point(699, 306);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(24, 24);
             this.pictureBox5.TabIndex = 19;
@@ -137,7 +137,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label5.Location = new System.Drawing.Point(729, 314);
+            this.label5.Location = new System.Drawing.Point(729, 306);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(158, 20);
             this.label5.TabIndex = 18;
@@ -146,7 +146,7 @@
             // rjToggleButton5
             // 
             this.rjToggleButton5.AutoSize = true;
-            this.rjToggleButton5.Location = new System.Drawing.Point(894, 316);
+            this.rjToggleButton5.Location = new System.Drawing.Point(894, 308);
             this.rjToggleButton5.MinimumSize = new System.Drawing.Size(45, 22);
             this.rjToggleButton5.Name = "rjToggleButton5";
             this.rjToggleButton5.OffBackColor = System.Drawing.Color.Gray;
@@ -162,7 +162,7 @@
             // 
             this.pictureBox4.BackgroundImage = global::LauncherForAll.Properties.Resources.Apps_Icon;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox4.Location = new System.Drawing.Point(625, 268);
+            this.pictureBox4.Location = new System.Drawing.Point(627, 263);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(24, 24);
             this.pictureBox4.TabIndex = 16;
@@ -244,7 +244,7 @@
             // 
             this.pictureBox1.BackgroundImage = global::LauncherForAll.Properties.Resources.DisableNotifIcon;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Location = new System.Drawing.Point(558, 175);
+            this.pictureBox1.Location = new System.Drawing.Point(558, 171);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(24, 24);
             this.pictureBox1.TabIndex = 9;

@@ -172,9 +172,6 @@
   <data name="RedMod_Logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RedMod-Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Blue_samsrv" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Blue_samsrv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="NZBFinder" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NZBFinder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -241,15 +238,15 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="PowerOff" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAbRJREFUSEvd
-        1dsrBVEUx/GDUEIu/4eSFCFKPBG5RPE3IHlVSB4U+RNQSrkkJa8e+BNckssjuRUpecH3V3vVamacc1Ie
-        WPWpvdesPbNnZu+Z1L+PQgxjC5d4CtTexBBU86PowzU+M7hCD7KOPCwh6WQHQdKxRWhsxliAH/ju2q1B
-        0jGZR9rohh+whzKshn5LoPYKyrEf+vKBTiRGAS5gxTvIRT3uQs5fQLk66LHshpycIx+xGIQV3UCza4B/
-        DP4ComOaQAVuQ076EYt1WMEsNDN/RxK9gGjGutM5l1tDLFRoBTVoc32TdAHRi691/VPE4gVWoMcz5vom
-        uorMCPSYrP+MWLzCCoox4frmEEeRnIyjxPU12Vj4R1SFdtfPRHdV7fpniIV/yZPQUtM3x3LfsWU55XKJ
-        L9kv03uUohnR3erpWBO0GR9CThKXaXSjbSAHOoFWheXNCRqhGn1tLf/tRlN0Qdvdireh1aF1rguNBmor
-        VwnteKvX2A6kDW0yGyCPmIbWeVGg9gz0b/C1qssYumW/K7OliWls1tGLX/nh+NDvUKtLn+ZjvAVqL2MA
-        P/5l/oVIpb4AqPH6W6sA5NsAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAbxJREFUSEvd
+        lV0r5lEUxX/IKBkZvofSpEyImrgimpdMjc+A5FYxyYWi+QhDKeUlTU1z62J8BEZi5pK8FSm5GVq1T+32
+        nMfzRC5Yteqc/d97nX3Of+9z4LmjChgEVoF94Myo8Qrw2XzuhQ/AX+CmCP8A72LwXagAvmaExA1jtItz
+        FlsUsyHw2o3fGnPfxJkoFtEfAn4AdcCCzTuNGs8Dr4Cfzv8f0BtFE14Ae855HSgH3gBHmQVka7Fj+e7i
+        doHKKC58ck4Hll1rOAa/gKhvSqAeOHT2j1FcWHIOU5aZ31FugZSxdjrtbItRXJBjcngNdAWhQguI+vHN
+        bv47igsXzkHHM1JAyFdR4pAdU5qfR3Hh0jnUAGMZoV/AZsY+Crx0cyX7H/wRNQLdGaFC1K6a3Hwnigv+
+        J49bqenOiWKRqSwnnC37k32ZHgO1QEemWz31rd2a8cTZs2UaG20ZKDMBVUUU3wbazEe3bbIXbDShz9o9
+        Oa9ZdajOtdCwUWPZGqzjk79ie6JohJrMZ3oKTFqdVxs1/mJvg/eVX1Foy74rS6USU2zJeP9YD46HnkNV
+        l67mLeDKqPE3YOAhT+bTwC2o8fpbfb+5AgAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="Ethernet" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -264,8 +261,8 @@
   <data name="GoogleCloud" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GoogleCloud1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Steam" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Steam.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Blue_samsrv" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Blue_samsrv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="RedMod_Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RedMod-Logo.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -498,6 +495,9 @@
   <data name="Discord" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Discord.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Steam" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Steam.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="WindowsTerminal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WindowsTerminal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -530,6 +530,9 @@
   </data>
   <data name="PPT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PPT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="qBittorrent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\qBittorrent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="VS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\VS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -596,8 +599,5 @@
   </data>
   <data name="opensense" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\opensense.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="qBittorrent" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\qBittorrent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
